@@ -124,6 +124,8 @@ Task
 
  * Update...
 
+TODO: Document plugin updates in Super POM
+
 
 The full list of changes can be found in our [issue management system][4].
 

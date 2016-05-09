@@ -4,6 +4,7 @@ var x = JSON.parse(dataRead);
 
 var authors = {}
 
+
 for (var i=0; i<x.issues.length; i++) {
   var item = x.issues[i]
   var issueName = item.key;
