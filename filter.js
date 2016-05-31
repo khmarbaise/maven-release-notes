@@ -1,5 +1,5 @@
 var fs = require("fs");
-var dataRead = fs.readFileSync("./output.json");
+var dataRead = fs.readFileSync("./release.json");
 var x = JSON.parse(dataRead);
 
 var authors_bugs = {}
@@ -19,7 +19,7 @@ for (var i=0; i<x.issues.length; i++) {
 	  }
 	  authors_bugs [ issueReporter ].push(issueName);
   } else if (issueType == 'Improvement') {
-	  if ( !(issueReporter in authors_bugs) ) {
+	  if ( !(issueReporter in authors_improvements) ) {
 		  authors_improvements [ issueReporter ] = []
 	  }
 	  authors_improvements [ issueReporter ].push(issueName);
