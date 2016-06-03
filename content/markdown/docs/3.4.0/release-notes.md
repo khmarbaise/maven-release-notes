@@ -45,6 +45,11 @@ Reporters and Contributors of this release
 Bugs:
 
  * [MNG-4463] - Version ranges cannot be used for artifacts with 'import' scope
+Author: Rob ten Hove
+   MNG-4463
+
+Bugs:
+
  * [MNG-5359] - Declared execution in PluginMgmt gets bound to lifecycle (regression)
  * [MNG-5368] - UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
  * [MNG-5387] - Add ability to replace an artifact in mid-build
@@ -140,8 +145,8 @@ See [complete release notes for all versions][5]
 [5]: ../../docs/history.html
 [maven-enforcer-plugin]: /enforcer/maven-enforcer-plugin/
 [maven-resources-plugin]: /enforcer/maven-resources-plugin/
-[maven-aether-provider]: /ref/3.3.9/maven-aether-provider/
-[maven-compat]: /ref/3.3.9/maven-compat/
+[maven-aether-provider]: /ref/3.4.0/maven-aether-provider/
+[maven-compat]: /ref/3.4.0/maven-compat/
 [MNG-1977]: https://issues.apache.org/jira/browse/MNG-1977
 [MNG-2199]: https://issues.apache.org/jira/browse/MNG-2199
 [MNG-2478]: https://issues.apache.org/jira/browse/MNG-2478

@@ -9,10 +9,12 @@ var authors_improvements = {}
 for (var i=0; i<x.issues.length; i++) {
   var item = x.issues[i]
   var issueName = item.key
+  var issueSummary = item.fields.summary
   var issueCreator = item.fields.creator.name
   var issueReporter = item.fields.reporter.displayName
   var issueType = item.fields.issuetype.name
 
+  console.log(issueName + ' ' + issueSummary)
   if (issueType == 'Bug') {
 	  if ( !(issueReporter in authors_bugs) ) {
 		  authors_bugs [ issueReporter ] = []
@@ -27,20 +29,20 @@ for (var i=0; i<x.issues.length; i++) {
 
 }
 
-console.log ("Bugs")
+console.log ("Bugs: ")
 for (var key in authors_bugs) {
-  console.log ("Author: " + key)
   var reportedIssues = authors_bugs[key]
   for (var i=0; i<reportedIssues.length; i++) {
     console.log ("   " + reportedIssues[i])
   }
+  console.log ("Author: " + key)
 }
 
 console.log ("Improvements")
 for (var key in authors_improvements) {
-  console.log ("Author: " + key)
   var reportedIssues = authors_improvements[key]
   for (var i=0; i<reportedIssues.length; i++) {
     console.log ("   " + reportedIssues[i])
   }
+  console.log ("Author: " + key)
 }
