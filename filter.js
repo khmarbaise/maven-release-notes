@@ -4,6 +4,8 @@ var x = JSON.parse(dataRead);
 
 var authors_bugs = {}
 var authors_improvements = {}
+var authors_new_features = {}
+var authors_wish = {}
 
 
 for (var i=0; i<x.issues.length; i++) {
@@ -25,10 +27,28 @@ for (var i=0; i<x.issues.length; i++) {
 		  authors_improvements [ issueReporter ] = []
 	  }
 	  authors_improvements [ issueReporter ].push(issueName);
+  } else if (issueType == 'New Features') {
+	  if ( !(issueReporter in authors_new_features) ) {
+		  authors_new_features [ issueReporter ] = []
+	  }
+	  authors_new_features [ issueReporter ].push(issueName);
+  } else if (issueType == 'Wish') {
+	  if ( !(issueReporter in authors_wish) ) {
+		  authors_wish [ issueReporter ] = []
+	  }
+	  authors_wish [ issueReporter ].push(issueName);
   }
 
 }
 
+console.log ("New Features: ")
+for (var key in authors_new_features) {
+  var reportedIssues = authors_new_features[key]
+  for (var i=0; i<reportedIssues.length; i++) {
+    console.log ("   " + reportedIssues[i])
+  }
+  console.log ("Author: " + key)
+}
 console.log ("Bugs: ")
 for (var key in authors_bugs) {
   var reportedIssues = authors_bugs[key]
@@ -41,6 +61,14 @@ for (var key in authors_bugs) {
 console.log ("Improvements")
 for (var key in authors_improvements) {
   var reportedIssues = authors_improvements[key]
+  for (var i=0; i<reportedIssues.length; i++) {
+    console.log ("   " + reportedIssues[i])
+  }
+  console.log ("Author: " + key)
+}
+console.log ("Wish")
+for (var key in authors_wish) {
+  var reportedIssues = authors_wish[key]
   for (var i=0; i<reportedIssues.length; i++) {
     console.log ("   " + reportedIssues[i])
   }
