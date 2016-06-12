@@ -44,37 +44,38 @@ Reporters and Contributors of this release
 
 Bugs: 
 
-MNG-5984 reporter: Gabriël Konat
-MNG-5981 reporter: Stuart McCulloch contributor: Stuart McCulloch
-MNG-5963 reporter: Larry Singer
-MNG-5962 reporter/contributor: Miriam Lee
-MNG-5961 reporter: Mike Drob
-MNG-5958 reporter: Meytal Genah contributor: Anton Tanasenko
-MNG-5939 reporter: chibbe
-MNG-5935 reporter: Marcel Schutte
-MNG-5863 reporter/contributor: Petr Kozelka
-MNG-5852 reporter: Jeffrey Alexander
-MNG-5849 reporter: Ali Reza Sharghi
-MNG-5837 reporter: Erlend Birkedal contributor: barthel
-MNG-5823 reporter: Tobias Oberlies
-MNG-5815 reporter: Peter Kjær Guldbæk
-MNG-5629 reporter: Anthony Whitford
-MNG-5567 reporter: Pablo La Greca
-MNG-5538 reporter: Martin Vavra contributor: barthel
-MNG-5368 reporter: Andrew Haines
-MNG-4463 reporter: Rob ten Hove contributor: barthel
+ * [MNG-5984] reporter: Gabriël Konat
+ * [MNG-5981] reporter: Stuart McCulloch contributor: Stuart McCulloch
+ * [MNG-5963] reporter: Larry Singer
+ * [MNG-5962] reporter/contributor: Miriam Lee
+ * [MNG-5961] reporter: Mike Drob
+ * [MNG-5958] reporter: Meytal Genah contributor: Anton Tanasenko
+ * [MNG-5939] reporter: chibbe
+ * [MNG-5935] reporter: Marcel Schutte
+ * [MNG-5863] reporter/contributor: Petr Kozelka
+ * [MNG-5852] reporter: Jeffrey Alexander
+ * [MNG-5849] reporter: Ali Reza Sharghi
+ * [MNG-5837] reporter: Erlend Birkedal contributor: barthel
+ * [MNG-5823] reporter: Tobias Oberlies
+ * [MNG-5815] reporter: Peter Kjær Guldbæk
+ * [MNG-5629] reporter: Anthony Whitford
+ * [MNG-5567] reporter: Pablo La Greca
+ * [MNG-5538] reporter: Martin Vavra contributor: barthel
+ * [MNG-5368] reporter: Andrew Haines
+ * [MNG-4463] reporter: Rob ten Hove contributor: barthel
 
 Improvements:
 
-MNG-6030 reporter: Andriy contributor: Andriy
-MNG-5992 reporter: Ryan J. McDonough
-MNG-5959 reporter: vongosling
-MNG-5951 reporter: Jörg Sesterhenn
-MNG-5934 reporter/contributor: Alex Henrie 
-MNG-5883 reporter: Ben Caradoc-Davies
-MNG-4508 reporter: Richard van der Hoff
+ * [MNG-6030] reporter: Andriy contributor: Andriy
+ * [MNG-5992] reporter: Ryan J. McDonough
+ * [MNG-5959] reporter: vongosling
+ * [MNG-5951] reporter: Jörg Sesterhenn
+ * [MNG-5934] reporter/contributor: Alex Henrie 
+ * [MNG-5883] reporter: Ben Caradoc-Davies
+ * [MNG-4508] reporter: Richard van der Hoff
 
 Many thanks to all reporters and contributors and for their time and support.
+
 
 
 Bugs:
