@@ -41,6 +41,40 @@ We hope you enjoy using Maven! If you have any questions, please consult:
 
 Reporters and Contributors of this release
 ------------------------------------------
+Bugs: 
+MNG-6029, MNG-6023, MNG-6022 reporter: Michael Osipov
+MNG-5984 reporter: Gabriël Konat
+MNG-5981 reporter: Stuart McCulloch
+MNG-5971 reporter: Stephane Nicoll
+MNG-5963 reporter: Larry Singer
+MNG-5962 reporter: Miriam Lee
+MNG-5961 reporter: Mike Drob
+MNG-5958 reporter: Meytal Genah
+MNG-5939 reporter: chibbe
+MNG-5935 reporter: Marcel Schutte
+MNG-5868 reporter: Karl Heinz Marbaise
+MNG-5863 reporter: Petr Kozelka
+MNG-5852 reporter: Jeffrey Alexander
+MNG-5849 reporter: Ali Reza Sharghi
+MNG-5837 reporter: Erlend Birkedal
+MNG-5836 reporter: Igor Fedorenko
+MNG-5823 reporter: Tobias Oberlies
+MNG-5815 reporter: Peter Kjær Guldbæk
+MNG-5629 reporter: Anthony Whitford
+MNG-5567 reporter: Pablo La Greca
+MNG-5538 reporter: Martin Vavra
+MNG-5387 reporter: Benson Margulies
+MNG-5368 reporter: Andrew Haines
+Improvements
+MNG-6035, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5940, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
+MNG-6030 reporter: Andriy
+MNG-6003, MNG-6001, MNG-5977, MNG-5976, MNG-5975, MNG-5579 reporter: Michael Osipov
+MNG-5992 reporter: Ryan J. McDonough
+MNG-5968 reporter: Christian Schulte
+MNG-5959 reporter: vongosling
+MNG-5951 reporter: Jörg Sesterhenn
+MNG-5934 reporter: Alex Henrie
+MNG-5883 reporter: Ben Caradoc-Davies
 
    MNG-5984 Gabriël Konat
    MNG-5981 Stuart McCulloch

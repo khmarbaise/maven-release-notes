@@ -1,0 +1,133 @@
+MNG-6035 Upgrade animal-sniffer-maven-plugin to 1.15
+MNG-6032 WARNING during build based on absolute path in assembly-descriptor.
+MNG-6030 ReactorModelCache do not used effectively after maven version 3.0.5 which cause a large memory footprint
+MNG-6029 Duplicate conditional and body in MetadataResolutionResult.java
+MNG-6023 Regression: mvn -X broken due to commit ce580ea2fafd7638ee56e1d0574de95a37164322
+MNG-6022 mvn.cmd fails if directory contains an ampersand (&)
+MNG-6017 Removing ArtifactHandler for par LifeCycle
+MNG-6014 Removing ArtifactHandler for ejb3
+MNG-6003 Drastically reduce JAVA_HOME discovery code
+MNG-6001 Replace %HOME% with %USERPROFILE% in mvn.cmd
+MNG-5992 Git passwords are exposed as the Super POM still uses Maven Release Plugin 2.3.2
+MNG-5984 Maven core extension resolution ignores repositories from activeByDefault profiles in settings.xml
+MNG-5981 Plexus lifecycle could be activated too late during overlapping parallel requests
+MNG-5977 Improve output readability of our MavenTransferListener implementations
+MNG-5976 Replace Plexus Utils OS with Commons Lang SystemUtils
+MNG-5975 Use Java 7's SimpleDateFormat in CLIReportingUtils#formatTimestamp
+MNG-5971 Imported dependencies should be available to inheritance processing
+MNG-5968 Default plugin version updates.
+MNG-5967 Dependency updates.
+MNG-5963 mvn.cmd does not return ERROR_CODE
+MNG-5962 mvn fails when the current directory has spaces in between
+MNG-5961 Maven possibly not aware of log4j2
+MNG-5959 Can maven provide a features that exclude dependency gloablly
+MNG-5958 java.lang.String cannot be cast to org.apache.maven.lifecycle.mapping.LifecyclePhase
+MNG-5954 Remove outdated maven-embedder/src/main/resources/META-INF/MANIFEST.MF
+MNG-5951 add an option to avoid path addition to inherited URLs
+MNG-5946 Fix links etc. in README.txt which is part of the delivery
+MNG-5940 Change the maven-source-plugin jar goal into jar-no-fork in Maven Super POM
+MNG-5939 Problem doing release when sources are generate as well
+MNG-5935 Optional true getting lost in managed dependencies when transitive
+MNG-5934 String handling issues identified by PMD
+MNG-5931 Fixing documentation 
+MNG-5904 Remove the whole Ant Build
+MNG-5883 Silence unnecessary legacy local repository warning
+MNG-5878 add support for module name != artifactId in every calculated URLs (SCM, site): special project.directory property
+MNG-5868 Adding serval times the same artifact via MavenProjectHelper (attachArtifact) does not produce a failure 
+MNG-5863 default pom's release-profile should invoke source plugin with goal "jar-no-fork" instead of "jar"
+MNG-5852 "mvn" script invokes /bin/sh but requires /bin/bash functions
+MNG-5849 maven can not be found when current directory is drive/root at least on windows 7 64bit
+MNG-5837 Syntax error in bin/mvn on Solaris SPARC
+MNG-5836 logging config is overwritten by $M2_HOME/lib/ext/*.jar
+MNG-5823 mvnDebug doesn't work with M2_HOME with spaces - missing quotes
+MNG-5815 "mvn.cmd" does not indicate failure properly when using "&&"
+MNG-5629 ClosedChannelException from DefaultUpdateCheckManager.read
+MNG-5607 Don't use M2_HOME in mvn shell/command scripts anymore
+MNG-5579 Unify error output/check logic from shell and batch scripts
+MNG-5567 Zip files are not included in classpaths at all
+MNG-5538 mvn start script causes cygwin warning
+MNG-5387 Add ability to replace an artifact in mid-build
+MNG-5368 UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
+New Features: 
+Bugs: 
+   MNG-6029
+   MNG-6023
+   MNG-6022
+Author: Michael Osipov
+   MNG-5984
+Author: Gabriël Konat
+   MNG-5981
+Author: Stuart McCulloch
+   MNG-5971
+Author: Stephane Nicoll
+   MNG-5963
+Author: Larry Singer
+   MNG-5962
+Author: Miriam Lee
+   MNG-5961
+Author: Mike Drob
+   MNG-5958
+Author: Meytal Genah
+   MNG-5939
+Author: chibbe
+   MNG-5935
+Author: Marcel Schutte
+   MNG-5868
+Author: Karl Heinz Marbaise
+   MNG-5863
+Author: Petr Kozelka
+   MNG-5852
+Author: Jeffrey Alexander
+   MNG-5849
+Author: Ali Reza Sharghi
+   MNG-5837
+Author: Erlend Birkedal
+   MNG-5836
+Author: Igor Fedorenko
+   MNG-5823
+Author: Tobias Oberlies
+   MNG-5815
+Author: Peter Kjær Guldbæk
+   MNG-5629
+Author: Anthony Whitford
+   MNG-5567
+Author: Pablo La Greca
+   MNG-5538
+Author: Martin Vavra
+   MNG-5387
+Author: Benson Margulies
+   MNG-5368
+Author: Andrew Haines
+Improvements
+   MNG-6035
+   MNG-6032
+   MNG-6017
+   MNG-6014
+   MNG-5946
+   MNG-5940
+   MNG-5931
+   MNG-5904
+   MNG-5607
+Author: Karl Heinz Marbaise
+   MNG-6030
+Author: Andriy
+   MNG-6003
+   MNG-6001
+   MNG-5977
+   MNG-5976
+   MNG-5975
+   MNG-5579
+Author: Michael Osipov
+   MNG-5992
+Author: Ryan J. McDonough
+   MNG-5968
+Author: Christian Schulte
+   MNG-5959
+Author: vongosling
+   MNG-5951
+Author: Jörg Sesterhenn
+   MNG-5934
+Author: Alex Henrie
+   MNG-5883
+Author: Ben Caradoc-Davies
+Wish

@@ -41,6 +41,10 @@ for (var i=0; i<x.issues.length; i++) {
 
 }
 
+console.log ("")
+console.log ("")
+console.log ("----------------------------------------------------")
+console.log ("")
 console.log ("New Features: ")
 for (var key in authors_new_features) {
   var reportedIssues = authors_new_features[key]
