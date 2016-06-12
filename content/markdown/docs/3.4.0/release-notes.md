@@ -85,8 +85,8 @@ Overview about the changes
  * The Bootstrapping support via Ant has been removed. You can only bootstrap Maven
    with a previous version of Maven and not with Ant anymore [MNG-5904].
 
- * Zip files have not been part of the classpath which is valid and is now
-   being done. [MGN-5567].
+ * Zip files being part of the classpath has not been supported yet. This
+   has been fixed with [MGN-5567].
  
  * Based on problems in using `M2_HOME` related to different Maven versions and 
    to simplify things the usage of `M2_HOME` has been removed and is not
@@ -96,7 +96,7 @@ Overview about the changes
    for Windows. Those issues have been fixed [MNG-5815], [MNG-5849], [MNG-5852],
    [MNG-5963], [MNG-6022]
 
- * Imported hange for windows users. The usage of `%HOME%` has been replaced
+ * Imported change for windows users: The usage of `%HOME%` has been replaced
    with `%USERPROFILE%` [MNG-6001]
 
  * Hm...[MNG-2478] - add "resources-filtered" filtered resource directories to super POM
@@ -225,9 +225,11 @@ See [complete release notes for all versions][5]
 [MNG-5368]: https://issues.apache.org/jira/browse/MNG-5368
 [MNG-5387]: https://issues.apache.org/jira/browse/MNG-5387
 [MNG-5538]: https://issues.apache.org/jira/browse/MNG-5538
+[MNG-5567]: https://issues.apache.org/jira/browse/MNG-5567
 [MNG-5579]: https://issues.apache.org/jira/browse/MNG-5579
 [MNG-5607]: https://issues.apache.org/jira/browse/MNG-5607
 [MNG-5629]: https://issues.apache.org/jira/browse/MNG-5629
+[MNG-5815]: https://issues.apache.org/jira/browse/MNG-5815
 [MNG-5823]: https://issues.apache.org/jira/browse/MNG-5823
 [MNG-5836]: https://issues.apache.org/jira/browse/MNG-5836
 [MNG-5837]: https://issues.apache.org/jira/browse/MNG-5837
@@ -263,3 +265,4 @@ See [complete release notes for all versions][5]
 [MNG-6003]: https://issues.apache.org/jira/browse/MNG-6003
 [MNG-6014]: https://issues.apache.org/jira/browse/MNG-6014
 [MNG-6017]: https://issues.apache.org/jira/browse/MNG-6017
+[MNG-6022]: https://issues.apache.org/jira/browse/MNG-6022
