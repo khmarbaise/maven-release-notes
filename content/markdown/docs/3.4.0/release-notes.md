@@ -41,114 +41,40 @@ We hope you enjoy using Maven! If you have any questions, please consult:
 
 Reporters and Contributors of this release
 ------------------------------------------
+
 Bugs: 
-MNG-6029, MNG-6023, MNG-6022 reporter: Michael Osipov
+
 MNG-5984 reporter: Gabriël Konat
-MNG-5981 reporter: Stuart McCulloch
-MNG-5971 reporter: Stephane Nicoll
+MNG-5981 reporter: Stuart McCulloch contributor: Stuart McCulloch
 MNG-5963 reporter: Larry Singer
-MNG-5962 reporter: Miriam Lee
+MNG-5962 reporter/contributor: Miriam Lee
 MNG-5961 reporter: Mike Drob
-MNG-5958 reporter: Meytal Genah
+MNG-5958 reporter: Meytal Genah contributor: Anton Tanasenko
 MNG-5939 reporter: chibbe
 MNG-5935 reporter: Marcel Schutte
-MNG-5868 reporter: Karl Heinz Marbaise
-MNG-5863 reporter: Petr Kozelka
+MNG-5863 reporter/contributor: Petr Kozelka
 MNG-5852 reporter: Jeffrey Alexander
 MNG-5849 reporter: Ali Reza Sharghi
-MNG-5837 reporter: Erlend Birkedal
-MNG-5836 reporter: Igor Fedorenko
+MNG-5837 reporter: Erlend Birkedal contributor: barthel
 MNG-5823 reporter: Tobias Oberlies
 MNG-5815 reporter: Peter Kjær Guldbæk
 MNG-5629 reporter: Anthony Whitford
 MNG-5567 reporter: Pablo La Greca
-MNG-5538 reporter: Martin Vavra
-MNG-5387 reporter: Benson Margulies
+MNG-5538 reporter: Martin Vavra contributor: barthel
 MNG-5368 reporter: Andrew Haines
-Improvements
-MNG-6035, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5940, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
-MNG-6030 reporter: Andriy
-MNG-6003, MNG-6001, MNG-5977, MNG-5976, MNG-5975, MNG-5579 reporter: Michael Osipov
+MNG-4463 reporter: Rob ten Hove contributor: barthel
+
+Improvements:
+
+MNG-6030 reporter: Andriy contributor: Andriy
 MNG-5992 reporter: Ryan J. McDonough
-MNG-5968 reporter: Christian Schulte
 MNG-5959 reporter: vongosling
 MNG-5951 reporter: Jörg Sesterhenn
-MNG-5934 reporter: Alex Henrie
+MNG-5934 reporter/contributor: Alex Henrie 
 MNG-5883 reporter: Ben Caradoc-Davies
+MNG-4508 reporter: Richard van der Hoff
 
-   MNG-5984 Gabriël Konat
-   MNG-5981 Stuart McCulloch
-   MNG-5971
-Author: Stephane Nicoll
-   MNG-5963
-Author: Larry Singer
-   MNG-5962
-Author: Miriam Lee
-   MNG-5961
-Author: Mike Drob
-   MNG-5958
-Author: Meytal Genah
-   MNG-5939
-Author: chibbe
-   MNG-5935
-Author: Marcel Schutte
-   MNG-5868
-Author: Karl Heinz Marbaise
-   MNG-5863
-Author: Petr Kozelka
-   MNG-5852
-Author: Jeffrey Alexander
-   MNG-5849
-Author: Ali Reza Sharghi
-   MNG-5837
-Author: Erlend Birkedal
-   MNG-5836
-Author: Igor Fedorenko
-   MNG-5823
-Author: Tobias Oberlies
-   MNG-5815
-Author: Peter Kjær Guldbæk
-   MNG-5629
-Author: Anthony Whitford
-   MNG-5567
-Author: Pablo La Greca
-   MNG-5538
-Author: Martin Vavra
-   MNG-5387
-Author: Benson Margulies
-   MNG-5368
-Author: Andrew Haines
-   MNG-5359
-Author: Anders Hammar
-Improvements
-   MNG-6032
-   MNG-6017
-   MNG-6014
-   MNG-5946
-   MNG-5940
-   MNG-5931
-   MNG-5904
-   MNG-5607
-Author: Karl Heinz Marbaise
-   MNG-6003
-   MNG-6001
-   MNG-5977
-   MNG-5976
-   MNG-5975
-   MNG-5579
-Author: Michael Osipov
-   MNG-5968
-Author: Christian Schulte
-   MNG-5959
-Author: vongosling
-   MNG-5951
-Author: Jörg Sesterhenn
-   MNG-5934
-Author: Alex Henrie
-   MNG-5883
-Author: Ben Caradoc-Davies
-   MNG-4508
-Author: Richard van der Hoff
+Many thanks to all reporters and contributors and for their time and support.
 
 
 Bugs:
@@ -227,7 +153,6 @@ Wish:
  * [MNG-2199] - Support version ranges in parent elements
 
 
-Many thanks to all reporters and contributors and for their time and support.
 
 Improvements
 ------------

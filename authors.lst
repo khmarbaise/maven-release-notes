@@ -1,8 +1,9 @@
+MNG-6038 use Gossip slf4j provider as default logging, since it supports level colorization
+MNG-6037 add gossip slf4j provider support
 MNG-6035 Upgrade animal-sniffer-maven-plugin to 1.15
 MNG-6032 WARNING during build based on absolute path in assembly-descriptor.
 MNG-6030 ReactorModelCache do not used effectively after maven version 3.0.5 which cause a large memory footprint
 MNG-6029 Duplicate conditional and body in MetadataResolutionResult.java
-MNG-6023 Regression: mvn -X broken due to commit ce580ea2fafd7638ee56e1d0574de95a37164322
 MNG-6022 mvn.cmd fails if directory contains an ampersand (&)
 MNG-6017 Removing ArtifactHandler for par LifeCycle
 MNG-6014 Removing ArtifactHandler for ejb3
@@ -48,13 +49,20 @@ MNG-5567 Zip files are not included in classpaths at all
 MNG-5538 mvn start script causes cygwin warning
 MNG-5387 Add ability to replace an artifact in mid-build
 MNG-5368 UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
+MNG-5359 Declared execution in PluginMgmt gets bound to lifecycle (regression)
+MNG-4508 No way to avoid adding artifactId to site urls
+MNG-4463 Version ranges cannot be used for artifacts with 'import' scope
+MNG-3507 ANSI Color logging for improved output visibility.
+MNG-2478 add "resources-filtered" filtered resource directories to super POM
+MNG-2199 Support version ranges in parent elements
+MNG-1977 Global dependency exclusions
 
 
 ----------------------------------------------------
 
 New Features: 
 Bugs: 
-MNG-6029, MNG-6023, MNG-6022 reporter: Michael Osipov
+MNG-6029, MNG-6022 reporter: Michael Osipov
 MNG-5984 reporter: Gabriël Konat
 MNG-5981 reporter: Stuart McCulloch
 MNG-5971 reporter: Stephane Nicoll
@@ -77,6 +85,8 @@ MNG-5567 reporter: Pablo La Greca
 MNG-5538 reporter: Martin Vavra
 MNG-5387 reporter: Benson Margulies
 MNG-5368 reporter: Andrew Haines
+MNG-5359 reporter: Anders Hammar
+MNG-4463 reporter: Rob ten Hove
 Improvements
 MNG-6035, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5940, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
 MNG-6030 reporter: Andriy
@@ -87,4 +97,6 @@ MNG-5959 reporter: vongosling
 MNG-5951 reporter: Jörg Sesterhenn
 MNG-5934 reporter: Alex Henrie
 MNG-5883 reporter: Ben Caradoc-Davies
+MNG-4508 reporter: Richard van der Hoff
 Wish
+MNG-2199 reporter: Christian Schulte
