@@ -44,33 +44,53 @@ for (var i=0; i<x.issues.length; i++) {
 console.log ("New Features: ")
 for (var key in authors_new_features) {
   var reportedIssues = authors_new_features[key]
+  var outputResult = ""
   for (var i=0; i<reportedIssues.length; i++) {
-    console.log ("   " + reportedIssues[i])
+    if (i > 0) {
+      outputResult += ", "
+    }
+    outputResult += reportedIssues[i]
   }
-  console.log ("Author: " + key)
+  outputResult += "reporter: " + key
+  console.log(outputResult)
 }
 console.log ("Bugs: ")
 for (var key in authors_bugs) {
   var reportedIssues = authors_bugs[key]
+  var outputResult = ""
   for (var i=0; i<reportedIssues.length; i++) {
-    console.log ("   " + reportedIssues[i])
+    if (i > 0) {
+      outputResult += ", "
+    }
+    outputResult += reportedIssues[i]
   }
-  console.log ("Author: " + key)
+  outputResult += " reporter: " + key
+  console.log(outputResult)
 }
 
 console.log ("Improvements")
 for (var key in authors_improvements) {
   var reportedIssues = authors_improvements[key]
+  var outputResult = ""
   for (var i=0; i<reportedIssues.length; i++) {
-    console.log ("   " + reportedIssues[i])
+    if (i > 0) {
+      outputResult += ", "
+    }
+    outputResult += reportedIssues[i]
   }
-  console.log ("Author: " + key)
+  outputResult += " reporter: " + key
+  console.log(outputResult)
 }
 console.log ("Wish")
 for (var key in authors_wish) {
   var reportedIssues = authors_wish[key]
+  var outputResult = ""
   for (var i=0; i<reportedIssues.length; i++) {
-    console.log ("   " + reportedIssues[i])
+    if (i > 0) {
+      outputResult += ", "
+    }
+    outputResult += reportedIssues[i]
   }
-  console.log ("Author: " + key)
+  outputResult += " reporter: " + key
+  console.log(outputResult)
 }

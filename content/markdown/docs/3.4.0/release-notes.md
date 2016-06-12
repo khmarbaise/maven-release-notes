@@ -42,19 +42,92 @@ We hope you enjoy using Maven! If you have any questions, please consult:
 Reporters and Contributors of this release
 ------------------------------------------
 
+   MNG-5984 Gabriël Konat
+   MNG-5981 Stuart McCulloch
+   MNG-5971
+Author: Stephane Nicoll
+   MNG-5963
+Author: Larry Singer
+   MNG-5962
+Author: Miriam Lee
+   MNG-5961
+Author: Mike Drob
+   MNG-5958
+Author: Meytal Genah
+   MNG-5939
+Author: chibbe
+   MNG-5935
+Author: Marcel Schutte
+   MNG-5868
+Author: Karl Heinz Marbaise
+   MNG-5863
+Author: Petr Kozelka
+   MNG-5852
+Author: Jeffrey Alexander
+   MNG-5849
+Author: Ali Reza Sharghi
+   MNG-5837
+Author: Erlend Birkedal
+   MNG-5836
+Author: Igor Fedorenko
+   MNG-5823
+Author: Tobias Oberlies
+   MNG-5815
+Author: Peter Kjær Guldbæk
+   MNG-5629
+Author: Anthony Whitford
+   MNG-5567
+Author: Pablo La Greca
+   MNG-5538
+Author: Martin Vavra
+   MNG-5387
+Author: Benson Margulies
+   MNG-5368
+Author: Andrew Haines
+   MNG-5359
+Author: Anders Hammar
+Improvements
+   MNG-6032
+   MNG-6017
+   MNG-6014
+   MNG-5946
+   MNG-5940
+   MNG-5931
+   MNG-5904
+   MNG-5607
+Author: Karl Heinz Marbaise
+   MNG-6003
+   MNG-6001
+   MNG-5977
+   MNG-5976
+   MNG-5975
+   MNG-5579
+Author: Michael Osipov
+   MNG-5968
+Author: Christian Schulte
+   MNG-5959
+Author: vongosling
+   MNG-5951
+Author: Jörg Sesterhenn
+   MNG-5934
+Author: Alex Henrie
+   MNG-5883
+Author: Ben Caradoc-Davies
+   MNG-4508
+Author: Richard van der Hoff
+
+
 Bugs:
 
  * [MNG-4463] - Version ranges cannot be used for artifacts with 'import' scope
-Author: Rob ten Hove
-   MNG-4463
-
-Bugs:
-
  * [MNG-5359] - Declared execution in PluginMgmt gets bound to lifecycle (regression)
- * [MNG-5368] - UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
+ * [MNG-5368] - UnsupportedOperationException thrown when version range is not 
+                correct in dependencyManagement definitions
  * [MNG-5387] - Add ability to replace an artifact in mid-build
  * [MNG-5538] - mvn start script causes cygwin warning
+ * [MNG-5567] - Zip files are not included in classpaths at all
  * [MNG-5629] - ClosedChannelException from DefaultUpdateCheckManager.read
+ * [MNG-5815] - "mvn.cmd" does not indicate failure properly when using "&&"
  * [MNG-5823] - mvnDebug doesn't work with M2_HOME with spaces - missing quotes
  * [MNG-5836] - logging config is overwritten by $M2_HOME/lib/ext/*.jar
  * [MNG-5837] - Syntax error in bin/mvn on Solaris SPARC
@@ -69,8 +142,10 @@ Bugs:
  * [MNG-5962] - mvn fails when the current directory has spaces in between
  * [MNG-5963] - mvn.cmd does not return ERROR_CODE
  * [MNG-5971] - Imported dependencies should be available to inheritance processing
- * [MNG-5981] - Plexus lifecycle could be activated too late during overlapping parallel requests Reporter:Stuart McCulloch
- * [MNG-5984] - Maven core extension resolution ignores repositories from activeByDefault profiles in settings.xml Dependency upgrade Reporter: Gabriël Konat
+ * [MNG-5981] - Plexus lifecycle could be activated too late during overlapping parallel requests
+ * [MNG-5984] - Maven core extension resolution ignores repositories from activeByDefault profiles in settings.xml
+ * [MNG-6022] - mvn.cmd fails if directory contains an ampersand (&)
+ * [MNG-6029] - Duplicate conditional and body in MetadataResolutionResult.java Dependency upgrade
  * [MNG-5967] - Dependency updates.
 
 Improvements:
@@ -90,17 +165,27 @@ Improvements:
  * [MNG-5975] - Use Java 7's SimpleDateFormat in CLIReportingUtils#formatTimestamp
  * [MNG-5976] - Replace Plexus Utils OS with Commons Lang SystemUtils
  * [MNG-5977] - Improve output readability of our MavenTransferListener implementations
+ * [MNG-5992] - Git passwords are exposed as the Super POM still uses Maven Release Plugin 2.3.2
  * [MNG-6001] - Replace %HOME% with %USERPROFILE% in mvn.cmd
  * [MNG-6003] - Drastically reduce JAVA_HOME discovery code
  * [MNG-6014] - Removing ArtifactHandler for ejb3
  * [MNG-6017] - Removing ArtifactHandler for par LifeCycle
+ * [MNG-6030] - ReactorModelCache do not used effectively after maven version 3.0.5 which cause a large memory footprint
+ * [MNG-6032] - WARNING during build based on absolute path in assembly-descriptor.
+ * [MNG-6035] - Upgrade animal-sniffer-maven-plugin to 1.15
 
 New Features:
 
  * [MNG-1977] - Global dependency exclusions
- * [MNG-2478] - add filtered resource directories to super POM
+ * [MNG-2478] - add "resources-filtered" filtered resource directories to super POM
+ * [MNG-3507] - ANSI Color logging for improved output visibility.
  * [MNG-5227] - Make 'optional' flag of a dependency manageable.
- * [MNG-5878] - add support for module name != artifactId in every calculated URLs (SCM, site): special project.directory property Task
+ * [MNG-5878] - add support for module name != artifactId in every calculated URLs (SCM, site): special project.directory property
+ * [MNG-6037] - add gossip slf4j provider support
+ * [MNG-6038] - use Gossip slf4j provider as default logging, since it supports level colorization
+
+Task:
+
  * [MNG-5954] - Remove outdated maven-embedder/src/main/resources/META-INF/MANIFEST.MF
 
 Wish:
