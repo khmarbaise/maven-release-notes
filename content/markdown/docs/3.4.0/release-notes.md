@@ -76,14 +76,37 @@ Improvements:
 
 Many thanks to all reporters and contributors and for their time and support.
 
+Overview about the changes
+--------------------------
+
+ * The `JAVA_HOME` discovery has been reduced to simply if `JAVA_HOME` is set
+   or not and trying to discover via `which java` nothing more [MNG-6003].
+
+ * The Bootstrapping support via Ant has been removed. You can only bootstrap Maven
+   with a previous version of Maven and not with Ant anymore [MNG-5904].
+
+ * Zip files have not been part of the classpath which is valid and is now
+   being done. [MGN-5567].
+ 
+ * Based on problems in using `M2_HOME` related to different Maven versions and 
+   to simplify things the usage of `M2_HOME` has been removed and is not
+   supported anymore [MNG-5823], [MNG-5836], [MNG-5607].
+
+ * Several issues have been reported and fixed related to the `mvn` script also
+   for Windows. Those issues have been fixed [MNG-5815], [MNG-5849], [MNG-5852],
+   [MNG-5963], [MNG-6022]
+
+ * Imported hange for windows users. The usage of `%HOME%` has been replaced
+   with `%USERPROFILE%` [MNG-6001]
+
+ * Hm...[MNG-2478] - add "resources-filtered" filtered resource directories to super POM
 
 
 Bugs:
 
  * [MNG-4463] - Version ranges cannot be used for artifacts with 'import' scope
  * [MNG-5359] - Declared execution in PluginMgmt gets bound to lifecycle (regression)
- * [MNG-5368] - UnsupportedOperationException thrown when version range is not 
-                correct in dependencyManagement definitions
+ * [MNG-5368] - UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
  * [MNG-5387] - Add ability to replace an artifact in mid-build
  * [MNG-5538] - mvn start script causes cygwin warning
  * [MNG-5567] - Zip files are not included in classpaths at all
@@ -102,12 +125,12 @@ Bugs:
  * [MNG-5961] - Maven possibly not aware of log4j2
  * [MNG-5962] - mvn fails when the current directory has spaces in between
  * [MNG-5963] - mvn.cmd does not return ERROR_CODE
+ * [MNG-5967] - Dependency updates.
  * [MNG-5971] - Imported dependencies should be available to inheritance processing
  * [MNG-5981] - Plexus lifecycle could be activated too late during overlapping parallel requests
  * [MNG-5984] - Maven core extension resolution ignores repositories from activeByDefault profiles in settings.xml
  * [MNG-6022] - mvn.cmd fails if directory contains an ampersand (&)
  * [MNG-6029] - Duplicate conditional and body in MetadataResolutionResult.java Dependency upgrade
- * [MNG-5967] - Dependency updates.
 
 Improvements:
 
