@@ -1,3 +1,8 @@
+MNG-6046 upgrade JAnsi from 1.12 to 1.13
+MNG-6045 Document Jansi's native support limitation
+MNG-6044 Document how to configure Gossip
+MNG-6043 Colorization is disabled too late in batch mode
+MNG-6041 Option -l does not disable colorized output
 MNG-6038 use Gossip slf4j provider as default logging, since it supports level colorization
 MNG-6037 add gossip slf4j provider support
 MNG-6035 Upgrade animal-sniffer-maven-plugin to 1.15
@@ -44,12 +49,14 @@ MNG-5823 mvnDebug doesn't work with M2_HOME with spaces - missing quotes
 MNG-5815 "mvn.cmd" does not indicate failure properly when using "&&"
 MNG-5629 ClosedChannelException from DefaultUpdateCheckManager.read
 MNG-5607 Don't use M2_HOME in mvn shell/command scripts anymore
+MNG-5600 Dependency management import should support exclusions.
 MNG-5579 Unify error output/check logic from shell and batch scripts
 MNG-5567 Zip files are not included in classpaths at all
 MNG-5538 mvn start script causes cygwin warning
 MNG-5387 Add ability to replace an artifact in mid-build
 MNG-5368 UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
 MNG-5359 Declared execution in PluginMgmt gets bound to lifecycle (regression)
+MNG-5227 Make 'optional' flag of a dependency manageable.
 MNG-4508 No way to avoid adding artifactId to site urls
 MNG-4463 Version ranges cannot be used for artifacts with 'import' scope
 MNG-3507 ANSI Color logging for improved output visibility.
@@ -62,7 +69,8 @@ MNG-1977 Global dependency exclusions
 
 New Features: 
 Bugs: 
-MNG-6029, MNG-6022 reporter: Michael Osipov
+MNG-6043, MNG-6029, MNG-6022 reporter: Michael Osipov
+MNG-6041, MNG-5868 reporter: Karl Heinz Marbaise
 MNG-5984 reporter: Gabriël Konat
 MNG-5981 reporter: Stuart McCulloch
 MNG-5971 reporter: Stephane Nicoll
@@ -72,7 +80,6 @@ MNG-5961 reporter: Mike Drob
 MNG-5958 reporter: Meytal Genah
 MNG-5939 reporter: chibbe
 MNG-5935 reporter: Marcel Schutte
-MNG-5868 reporter: Karl Heinz Marbaise
 MNG-5863 reporter: Petr Kozelka
 MNG-5852 reporter: Jeffrey Alexander
 MNG-5849 reporter: Ali Reza Sharghi
@@ -88,6 +95,7 @@ MNG-5368 reporter: Andrew Haines
 MNG-5359 reporter: Anders Hammar
 MNG-4463 reporter: Rob ten Hove
 Improvements
+MNG-6046 reporter: Hervé Boutemy
 MNG-6035, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5940, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
 MNG-6030 reporter: Andriy
 MNG-6003, MNG-6001, MNG-5977, MNG-5976, MNG-5975, MNG-5579 reporter: Michael Osipov
@@ -97,6 +105,7 @@ MNG-5959 reporter: vongosling
 MNG-5951 reporter: Jörg Sesterhenn
 MNG-5934 reporter: Alex Henrie
 MNG-5883 reporter: Ben Caradoc-Davies
+MNG-5600 reporter: Radai Rosenblatt
 MNG-4508 reporter: Richard van der Hoff
 Wish
 MNG-2199 reporter: Christian Schulte
