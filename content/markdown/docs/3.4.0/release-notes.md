@@ -85,21 +85,22 @@ Overview about the changes
  * The Bootstrapping support via Ant has been removed. You can only bootstrap Maven
    with a previous version of Maven and not with Ant anymore [MNG-5904].
 
- * Zip files being part of the classpath has not been supported yet. This
+ * In Java it is possible having a ZIP file being used on the classpath as
+   JAR file. This has not been supported in previous Maven versions. This 
    has been fixed with [MGN-5567].
  
  * Based on problems in using `M2_HOME` related to different Maven versions and 
    to simplify things the usage of `M2_HOME` has been removed and is not
    supported anymore [MNG-5823], [MNG-5836], [MNG-5607].
 
- * Several issues have been reported and fixed related to the `mvn` script also
-   for Windows. Those issues have been fixed [MNG-5815], [MNG-5849], [MNG-5852],
-   [MNG-5963], [MNG-6022]
+ * Several issues have been reported and fixed related to the `mvn` script either
+   for Unix/Linux/Cygwin/Solaris or for Windows. Those issues have been fixed [MNG-5538],
+   [MNG-5815], [MNG-5837], [MNG-5849], [MNG-5852], [MNG-5963], [MNG-6022].
 
  * Imported change for windows users: The usage of `%HOME%` has been replaced
    with `%USERPROFILE%` [MNG-6001]
 
- * Hm...[MNG-2478] - add "resources-filtered" filtered resource directories to super POM
+
 
 
 Bugs:
@@ -108,15 +109,8 @@ Bugs:
  * [MNG-5359] - Declared execution in PluginMgmt gets bound to lifecycle (regression)
  * [MNG-5368] - UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
  * [MNG-5387] - Add ability to replace an artifact in mid-build
- * [MNG-5538] - mvn start script causes cygwin warning
- * [MNG-5567] - Zip files are not included in classpaths at all
  * [MNG-5629] - ClosedChannelException from DefaultUpdateCheckManager.read
- * [MNG-5815] - "mvn.cmd" does not indicate failure properly when using "&&"
- * [MNG-5823] - mvnDebug doesn't work with M2_HOME with spaces - missing quotes
- * [MNG-5836] - logging config is overwritten by $M2_HOME/lib/ext/*.jar
- * [MNG-5837] - Syntax error in bin/mvn on Solaris SPARC
  * [MNG-5849] - maven can not be found when current directory is drive/root at least on windows 7 64bit
- * [MNG-5852] - "mvn" script invokes /bin/sh but requires /bin/bash functions
  * [MNG-5863] - default pom's release-profile should invoke source plugin with goal "jar-no-fork" instead of "jar"
  * [MNG-5868] - Adding serval times the same artifact via MavenProjectHelper (attachArtifact) does not produce a failure
  * [MNG-5935] - Optional true getting lost in managed dependencies when transitive
@@ -124,19 +118,16 @@ Bugs:
  * [MNG-5958] - java.lang.String cannot be cast to org.apache.maven.lifecycle.mapping.LifecyclePhase
  * [MNG-5961] - Maven possibly not aware of log4j2
  * [MNG-5962] - mvn fails when the current directory has spaces in between
- * [MNG-5963] - mvn.cmd does not return ERROR_CODE
  * [MNG-5967] - Dependency updates.
  * [MNG-5971] - Imported dependencies should be available to inheritance processing
  * [MNG-5981] - Plexus lifecycle could be activated too late during overlapping parallel requests
  * [MNG-5984] - Maven core extension resolution ignores repositories from activeByDefault profiles in settings.xml
- * [MNG-6022] - mvn.cmd fails if directory contains an ampersand (&)
  * [MNG-6029] - Duplicate conditional and body in MetadataResolutionResult.java Dependency upgrade
 
 Improvements:
 
  * [MNG-4508] - No way to avoid adding artifactId to site urls
  * [MNG-5579] - Unify error output/check logic from shell and batch scripts
- * [MNG-5607] - Don't use M2_HOME in mvn shell/command scripts anymore
  * [MNG-5883] - Silence unnecessary legacy local repository warning
  * [MNG-5904] - Remove the whole Ant Build
  * [MNG-5931] - Fixing documentation
@@ -150,8 +141,6 @@ Improvements:
  * [MNG-5976] - Replace Plexus Utils OS with Commons Lang SystemUtils
  * [MNG-5977] - Improve output readability of our MavenTransferListener implementations
  * [MNG-5992] - Git passwords are exposed as the Super POM still uses Maven Release Plugin 2.3.2
- * [MNG-6001] - Replace %HOME% with %USERPROFILE% in mvn.cmd
- * [MNG-6003] - Drastically reduce JAVA_HOME discovery code
  * [MNG-6014] - Removing ArtifactHandler for ejb3
  * [MNG-6017] - Removing ArtifactHandler for par LifeCycle
  * [MNG-6030] - ReactorModelCache do not used effectively after maven version 3.0.5 which cause a large memory footprint
@@ -178,26 +167,30 @@ Wish:
 
 
 
+New Features
+------------
+
+ * Hm...[MNG-2478] - add "resources-filtered" filtered resource directories to super POM
+
+   Improving the `Convention over Configuration` paradigm the super POM has been enhanced
+   with two supplemental entries for filtered resources.
+
+``` xml
+```
+
+Wishes
+------
+
+
+
 Improvements
 ------------
 
- * The `par` lifecycle has been removed from the default life cycle bindings and the maven-ejb3-plugin
-   has been removed from default bindings, cause it does not exist [MNG-5892][MNG-5892], [MNG-5894][MNG-5894].
 
- * The default bindings defined two different versions for the [maven-resources-plugin][maven-resources-plugin]
-   which has been fixed by [MNG-5893][MNG-5893].
-
-Bugs
-----
-
- * Moving fro...
 
 Task
 ----
 
- * Update...
-
-TODO: Document plugin updates in Super POM
 
 
 The full list of changes can be found in our [issue management system][4].
