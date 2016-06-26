@@ -68,13 +68,22 @@ Improvements:
 
  * [MNG-6030] reporter: Andriy contributor: Andriy
  * [MNG-5992] reporter: Ryan J. McDonough
- * [MNG-5959] reporter: vongosling
  * [MNG-5951] reporter: Jörg Sesterhenn
  * [MNG-5934] reporter/contributor: Alex Henrie 
  * [MNG-5883] reporter: Ben Caradoc-Davies
  * [MNG-4508] reporter: Richard van der Hoff
 
-Many thanks to all reporters and contributors and for their time and support.
+Many thanks to all reporters and contributors for their time and support.
+
+Preliminary Testers
+-------------------
+
+ * Oliver B. Fischer
+ * Jieryn
+ * Torsten Stolpmann
+ * Anton Tanasenko
+
+Thank you also for your time and feedback.
 
 Overview about the changes
 --------------------------
@@ -85,21 +94,21 @@ Overview about the changes
  * The Bootstrapping support via Ant has been removed. You can only bootstrap Maven
    with a previous version of Maven and not with Ant anymore [MNG-5904].
 
- * In Java it is possible having a ZIP file being used on the classpath as
-   JAR file. This has not been supported in previous Maven versions. This 
-   has been fixed with [MGN-5567].
- 
  * Based on problems in using `M2_HOME` related to different Maven versions and 
    to simplify things the usage of `M2_HOME` has been removed and is not
    supported anymore [MNG-5823], [MNG-5836], [MNG-5607].
+
+ * Imported change for windows users: The usage of `%HOME%` has been replaced
+   with `%USERPROFILE%` [MNG-6001]
 
  * Several issues have been reported and fixed related to the `mvn` script either
    for Unix/Linux/Cygwin/Solaris or for Windows. Those issues have been fixed [MNG-5538],
    [MNG-5815], [MNG-5837], [MNG-5849], [MNG-5852], [MNG-5963], [MNG-6022].
 
- * Imported change for windows users: The usage of `%HOME%` has been replaced
-   with `%USERPROFILE%` [MNG-6001]
-
+ * In Java it is possible to have a ZIP file being used on the classpath as
+   JAR file. This has not been supported in previous Maven versions. This 
+   has been fixed with [MGN-5567].
+ 
 
 
 
@@ -135,7 +144,6 @@ Improvements:
  * [MNG-5940] - Change the maven-source-plugin jar goal into jar-no-fork in Maven Super POM
  * [MNG-5946] - Fix links etc. in README.txt which is part of the delivery
  * [MNG-5951] - add an option to avoid path addition to inherited URLs
- * [MNG-5959] - Can maven provide a features that exclude dependency gloablly
  * [MNG-5968] - Default plugin version updates.
  * [MNG-5975] - Use Java 7's SimpleDateFormat in CLIReportingUtils#formatTimestamp
  * [MNG-5976] - Replace Plexus Utils OS with Commons Lang SystemUtils
@@ -242,7 +250,6 @@ See [complete release notes for all versions][5]
 [MNG-5951]: https://issues.apache.org/jira/browse/MNG-5951
 [MNG-5954]: https://issues.apache.org/jira/browse/MNG-5954
 [MNG-5958]: https://issues.apache.org/jira/browse/MNG-5958
-[MNG-5959]: https://issues.apache.org/jira/browse/MNG-5959
 [MNG-5961]: https://issues.apache.org/jira/browse/MNG-5961
 [MNG-5962]: https://issues.apache.org/jira/browse/MNG-5962
 [MNG-5963]: https://issues.apache.org/jira/browse/MNG-5963
