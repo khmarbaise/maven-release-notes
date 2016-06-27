@@ -107,7 +107,7 @@ Overview about the changes
 
  * In Java it is possible to have a ZIP file being used on the classpath as
    well as JAR files. This has not been supported in previous Maven versions. 
-   This has been fixed with [MGN-5567].
+   This has been fixed with [MNG-5567].
  
  * Creating source packages during a release of your artifacts you
    usually had to make workaround based on the current state of the super pom 
@@ -330,6 +330,7 @@ See [complete release notes for all versions][5]
 [MNG-6014]: https://issues.apache.org/jira/browse/MNG-6014
 [MNG-6017]: https://issues.apache.org/jira/browse/MNG-6017
 [MNG-6022]: https://issues.apache.org/jira/browse/MNG-6022
+[MNG-6029]: https://issues.apache.org/jira/browse/MNG-6029
 [MNG-6030]: https://issues.apache.org/jira/browse/MNG-6030
 [MNG-6032]: https://issues.apache.org/jira/browse/MNG-6032
 [MNG-6035]: https://issues.apache.org/jira/browse/MNG-6035
