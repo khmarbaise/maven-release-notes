@@ -106,10 +106,72 @@ Overview about the changes
    [MNG-5815], [MNG-5837], [MNG-5849], [MNG-5852], [MNG-5963], [MNG-6022].
 
  * In Java it is possible to have a ZIP file being used on the classpath as
-   JAR file. This has not been supported in previous Maven versions. This 
-   has been fixed with [MGN-5567].
+   well as JAR files. This has not been supported in previous Maven versions. 
+   This has been fixed with [MGN-5567].
  
+ * Creating source packages during a release of your artifacts you
+   usually had to make workaround based on the current state of the super pom 
+   where the maven-source-plugin is attached to the life cycle with the `jar` 
+   goal. Unfortunately the `jar` goal forkes the life-cycle which is not always 
+   the right thing. So in the majority of the cases people add the following 
+   workaround to their corporate pom:
 
+``` xml
+  <pluginManagment>
+    <plugins>
+      ..
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>..</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>DISABLE_FORKED_LIFECYCLE_MSOURCES</phase>
+          </execution>
+        </executions>
+      </plugin>
+      ..
+    </plugins> 
+  </pluginManagment>
+..
+```
+  
+   The above will detach the maven-source-plugin from the life-cycle and prevent
+   calling the `generate-sources` and `generate-resources` twice. But to keep
+   generating a source package during the release you need to add the following to
+   your pom file:
+
+``` xml
+  <plugins>
+    <plugin>
+      <inherited>true</inherited>
+      <artifactId>maven-source-plugin</artifactId>
+      <executions>
+        <execution>
+          <id>attach-sources-no-fork</id>
+          <inherited>true</inherited>
+          <goals>
+            <goal>jar-no-fork</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+  </plugins>
+```
+
+   The above workaround is no longer needed cause the super pom has been changed
+   accordingly [MNG-5940][MNG-5940].
+
+ * In Maven 3.3.9 we have removed the bindings for maven-ejb3-plugin cause it 
+   does not exist. We followup and removed also the ArtifactHandler for ejb3 
+   and also for par lifecycle. This has been fixed with [MNG-6014][MNG-6014], 
+   [MNG-6017][MNG-6017].
+
+ * In previous Maven versions there had been a larger problem related to 
+   memory usage in case of very large reactors (200-300 modules or more)
+   which caused failures with out of memeory execptions or the need to increase
+   the memory settings. This problem has been fixed with [MNG-6030][MNG-6030].
 
 
 Bugs:

@@ -1,3 +1,4 @@
+MNG-6049 Add behavior to filter resolved version ranges of an artifact
 MNG-6046 upgrade JAnsi from 1.12 to 1.13
 MNG-6045 Document Jansi's native support limitation
 MNG-6044 Document how to configure Gossip
@@ -26,7 +27,6 @@ MNG-5967 Dependency updates.
 MNG-5963 mvn.cmd does not return ERROR_CODE
 MNG-5962 mvn fails when the current directory has spaces in between
 MNG-5961 Maven possibly not aware of log4j2
-MNG-5959 Can maven provide a features that exclude dependency gloablly
 MNG-5958 java.lang.String cannot be cast to org.apache.maven.lifecycle.mapping.LifecyclePhase
 MNG-5954 Remove outdated maven-embedder/src/main/resources/META-INF/MANIFEST.MF
 MNG-5951 add an option to avoid path addition to inherited URLs
@@ -53,6 +53,7 @@ MNG-5600 Dependency management import should support exclusions.
 MNG-5579 Unify error output/check logic from shell and batch scripts
 MNG-5567 Zip files are not included in classpaths at all
 MNG-5538 mvn start script causes cygwin warning
+MNG-5527 Dependency management import should support relocations.
 MNG-5387 Add ability to replace an artifact in mid-build
 MNG-5368 UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
 MNG-5359 Declared execution in PluginMgmt gets bound to lifecycle (regression)
@@ -62,7 +63,6 @@ MNG-4463 Version ranges cannot be used for artifacts with 'import' scope
 MNG-3507 ANSI Color logging for improved output visibility.
 MNG-2478 add "resources-filtered" filtered resource directories to super POM
 MNG-2199 Support version ranges in parent elements
-MNG-1977 Global dependency exclusions
 
 
 ----------------------------------------------------
@@ -90,18 +90,19 @@ MNG-5815 reporter: Peter Kjær Guldbæk
 MNG-5629 reporter: Anthony Whitford
 MNG-5567 reporter: Pablo La Greca
 MNG-5538 reporter: Martin Vavra
+MNG-5527 reporter: Matous Jobanek
 MNG-5387 reporter: Benson Margulies
 MNG-5368 reporter: Andrew Haines
 MNG-5359 reporter: Anders Hammar
 MNG-4463 reporter: Rob ten Hove
 Improvements
+MNG-6049 reporter: Uwe Barthel
 MNG-6046 reporter: Hervé Boutemy
 MNG-6035, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5940, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
 MNG-6030 reporter: Andriy
 MNG-6003, MNG-6001, MNG-5977, MNG-5976, MNG-5975, MNG-5579 reporter: Michael Osipov
 MNG-5992 reporter: Ryan J. McDonough
 MNG-5968 reporter: Christian Schulte
-MNG-5959 reporter: vongosling
 MNG-5951 reporter: Jörg Sesterhenn
 MNG-5934 reporter: Alex Henrie
 MNG-5883 reporter: Ben Caradoc-Davies
