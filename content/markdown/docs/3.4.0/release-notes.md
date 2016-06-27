@@ -161,17 +161,17 @@ Overview about the changes
 ```
 
    The above workaround is no longer needed cause the super pom has been changed
-   accordingly [MNG-5940][MNG-5940].
+   accordingly [MNG-5940].
 
- * In Maven 3.3.9 we have removed the bindings for maven-ejb3-plugin cause it 
-   does not exist. We followup and removed also the ArtifactHandler for ejb3 
-   and also for par lifecycle. This has been fixed with [MNG-6014][MNG-6014], 
-   [MNG-6017][MNG-6017].
+ * In Maven 3.3.9 we have removed bindings for maven-ejb3-plugin cause it 
+   does not exist. We follow-up and removed the ArtifactHandler for ejb3
+   and the `par` lifecycle. This has been fixed with [MNG-6014], 
+   [MNG-6017].
 
  * In previous Maven versions there had been a larger problem related to 
    memory usage in case of very large reactors (200-300 modules or more)
    which caused failures with out of memeory execptions or the need to increase
-   the memory settings. This problem has been fixed with [MNG-6030][MNG-6030].
+   the memory settings. This problem has been fixed with [MNG-6030].
 
 
 Bugs:
@@ -281,6 +281,7 @@ See [complete release notes for all versions][5]
 [MNG-1977]: https://issues.apache.org/jira/browse/MNG-1977
 [MNG-2199]: https://issues.apache.org/jira/browse/MNG-2199
 [MNG-2478]: https://issues.apache.org/jira/browse/MNG-2478
+[MNG-3507]: https://issues.apache.org/jira/browse/MNG-3507
 [MNG-4463]: https://issues.apache.org/jira/browse/MNG-4463
 [MNG-4508]: https://issues.apache.org/jira/browse/MNG-4508
 [MNG-5227]: https://issues.apache.org/jira/browse/MNG-5227
@@ -323,8 +324,14 @@ See [complete release notes for all versions][5]
 [MNG-5977]: https://issues.apache.org/jira/browse/MNG-5977
 [MNG-5981]: https://issues.apache.org/jira/browse/MNG-5981
 [MNG-5984]: https://issues.apache.org/jira/browse/MNG-5984
+[MNG-5992]: https://issues.apache.org/jira/browse/MNG-5992
 [MNG-6001]: https://issues.apache.org/jira/browse/MNG-6001
 [MNG-6003]: https://issues.apache.org/jira/browse/MNG-6003
 [MNG-6014]: https://issues.apache.org/jira/browse/MNG-6014
 [MNG-6017]: https://issues.apache.org/jira/browse/MNG-6017
 [MNG-6022]: https://issues.apache.org/jira/browse/MNG-6022
+[MNG-6030]: https://issues.apache.org/jira/browse/MNG-6030
+[MNG-6032]: https://issues.apache.org/jira/browse/MNG-6032
+[MNG-6035]: https://issues.apache.org/jira/browse/MNG-6035
+[MNG-6037]: https://issues.apache.org/jira/browse/MNG-6037
+[MNG-6038]: https://issues.apache.org/jira/browse/MNG-6038
