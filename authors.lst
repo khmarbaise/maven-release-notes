@@ -1,3 +1,6 @@
+MNG-6057 Problem with CI friendly usage of ${..} reactor order is changed
+MNG-6056 Implement Feature Toggle Module to handle Feature Toggles
+MNG-6054 Removal of super pom plugin management.
 MNG-6049 Add behavior to filter resolved version ranges of an artifact
 MNG-6046 upgrade JAnsi from 1.12 to 1.13
 MNG-6045 Document Jansi's native support limitation
@@ -58,6 +61,7 @@ MNG-5387 Add ability to replace an artifact in mid-build
 MNG-5368 UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
 MNG-5359 Declared execution in PluginMgmt gets bound to lifecycle (regression)
 MNG-5227 Make 'optional' flag of a dependency manageable.
+MNG-4645 Move central repo definition out of Maven's core so it can be more easily changed
 MNG-4508 No way to avoid adding artifactId to site urls
 MNG-4463 Version ranges cannot be used for artifacts with 'import' scope
 MNG-3507 ANSI Color logging for improved output visibility.
@@ -69,8 +73,8 @@ MNG-2199 Support version ranges in parent elements
 
 New Features: 
 Bugs: 
+MNG-6057, MNG-6041, MNG-5868 reporter: Karl Heinz Marbaise
 MNG-6043, MNG-6029, MNG-6022 reporter: Michael Osipov
-MNG-6041, MNG-5868 reporter: Karl Heinz Marbaise
 MNG-5984 reporter: Gabriël Konat
 MNG-5981 reporter: Stuart McCulloch
 MNG-5971 reporter: Stephane Nicoll
@@ -107,6 +111,7 @@ MNG-5951 reporter: Jörg Sesterhenn
 MNG-5934 reporter: Alex Henrie
 MNG-5883 reporter: Ben Caradoc-Davies
 MNG-5600 reporter: Radai Rosenblatt
+MNG-4645 reporter: Paul Gier
 MNG-4508 reporter: Richard van der Hoff
 Wish
 MNG-2199 reporter: Christian Schulte
