@@ -117,7 +117,7 @@ Overview about the changes
    workaround to their corporate pom:
 
 ``` xml
-  <pluginManagment>
+  <pluginManagement>
     <plugins>
       ..
       <plugin>
@@ -133,7 +133,7 @@ Overview about the changes
       </plugin>
       ..
     </plugins> 
-  </pluginManagment>
+  </pluginManagement>
 ..
 ```
   
