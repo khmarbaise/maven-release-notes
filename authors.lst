@@ -1,5 +1,6 @@
+MNG-6068 Document default scope compile in XSD
+MNG-6059 Important use cases not covered, as child.inherit.append.path affects all children
 MNG-6057 Problem with CI friendly usage of ${..} reactor order is changed
-MNG-6056 Implement Feature Toggle Module to handle Feature Toggles
 MNG-6054 Removal of super pom plugin management.
 MNG-6049 Add behavior to filter resolved version ranges of an artifact
 MNG-6046 upgrade JAnsi from 1.12 to 1.13
@@ -73,6 +74,7 @@ MNG-2199 Support version ranges in parent elements
 
 New Features: 
 Bugs: 
+MNG-6059 reporter: Andreas Sewe
 MNG-6057, MNG-6041, MNG-5868 reporter: Karl Heinz Marbaise
 MNG-6043, MNG-6029, MNG-6022 reporter: Michael Osipov
 MNG-5984 reporter: Gabriël Konat
@@ -100,9 +102,9 @@ MNG-5368 reporter: Andrew Haines
 MNG-5359 reporter: Anders Hammar
 MNG-4463 reporter: Rob ten Hove
 Improvements
+MNG-6068, MNG-6035, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5940, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
 MNG-6049 reporter: Uwe Barthel
 MNG-6046 reporter: Hervé Boutemy
-MNG-6035, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5940, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
 MNG-6030 reporter: Andriy
 MNG-6003, MNG-6001, MNG-5977, MNG-5976, MNG-5975, MNG-5579 reporter: Michael Osipov
 MNG-5992 reporter: Ryan J. McDonough
