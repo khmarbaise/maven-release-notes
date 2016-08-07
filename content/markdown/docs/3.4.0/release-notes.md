@@ -163,6 +163,7 @@ Overview about the changes
    The above workaround is no longer needed cause the super pom has been changed
    accordingly [MNG-5940].
 
+
  * In Maven 3.3.9 we have removed bindings for maven-ejb3-plugin cause it 
    does not exist. We follow-up and removed the ArtifactHandler for ejb3
    and the `par` lifecycle. This has been fixed with [MNG-6014], 
@@ -177,8 +178,45 @@ Overview about the changes
    it was not possible to overwrite the property via command line.
    This has been fixed with [MNG-6078][MNG-6078].
 
+Improvements:
+
+ * If you have used Bill of Materials which makes it easier to handle larger
+   number of dependencies you might have been faced with a situation like this.
+   You do an import like the following: 
+
+``` xml
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-framework-bom</artifactId>
+    <version>${org.springframework.version}</version>
+    <type>pom</type>
+    <scope>import</scope>    
+</dependency>
+```
+
+   But now you would like to exclude some of transitive dependencies like this:
+
+``` xml
+<dependency>
+  <groupId>org.springframework</groupId>
+  <artifactId>spring-framework-bom</artifactId>
+  <version>${org.springframework.version}</version>
+  <type>pom</type>
+  <scope>import</scope>
+  <exclusions>
+    <exclusion>
+      <artifactId>commons-logging</artifactId>
+      <groupId>commons-logging</groupId>
+    </exclusion>
+  </exclusions>
+</dependency>
+```
+   This has been introduced with [MNG-5600][MNG-5600] to make the users life
+   easier.
+
 Bugs:
 
+ * [MNG-5600] - Dependency management import should support exclusions.
  * [MNG-4463] - Version ranges cannot be used for artifacts with 'import' scope
  * [MNG-5359] - Declared execution in PluginMgmt gets bound to lifecycle (regression)
  * [MNG-5368] - UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
@@ -295,6 +333,7 @@ See [complete release notes for all versions][5]
 [MNG-5538]: https://issues.apache.org/jira/browse/MNG-5538
 [MNG-5567]: https://issues.apache.org/jira/browse/MNG-5567
 [MNG-5579]: https://issues.apache.org/jira/browse/MNG-5579
+[MNG-5600]: https://issues.apache.org/jira/browse/MNG-5600
 [MNG-5607]: https://issues.apache.org/jira/browse/MNG-5607
 [MNG-5629]: https://issues.apache.org/jira/browse/MNG-5629
 [MNG-5815]: https://issues.apache.org/jira/browse/MNG-5815
