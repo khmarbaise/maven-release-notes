@@ -2,8 +2,1140 @@
   "expand": "schema,names",
   "startAt": 0,
   "maxResults": 99,
-  "total": 70,
+  "total": 76,
   "issues": [
+    {
+      "expand": "operations,editmeta,changelog,transitions,renderedFields",
+      "id": "12995471",
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/12995471",
+      "key": "MNG-6078",
+      "fields": {
+        "issuetype": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issuetype/4",
+          "id": "4",
+          "description": "An improvement or enhancement to an existing feature or task.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/improvement.png",
+          "name": "Improvement",
+          "subtask": false
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://issues.apache.org/jira/rest/api/2/project/12316922",
+          "id": "12316922",
+          "key": "MNG",
+          "name": "Maven",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12316922&avatarId=10011",
+            "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12316922&avatarId=10011",
+            "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12316922&avatarId=10011",
+            "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12316922&avatarId=10011"
+          },
+          "projectCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/10510",
+            "id": "10510",
+            "description": "Apache Maven related projects",
+            "name": "Maven"
+          }
+        },
+        "fixVersions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12333545",
+            "id": "12333545",
+            "name": "3.4.0",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "aggregatetimespent": null,
+        "resolution": {
+          "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+          "id": "1",
+          "description": "A fix for this issue is checked into the tree and tested.",
+          "name": "Fixed"
+        },
+        "customfield_12310220": "2016-08-07 11:15:41.041",
+        "customfield_12312322": null,
+        "customfield_12312520": null,
+        "customfield_12312323": null,
+        "customfield_12312521": "Sun Aug 07 11:15:41 UTC 2016",
+        "customfield_12310420": "9223372036854775807",
+        "customfield_12310222": "1_*:*_1_*:*_2564366_*|*_6_*:*_1_*:*_0",
+        "customfield_12312320": null,
+        "customfield_12312321": null,
+        "customfield_12312120": null,
+        "customfield_12312121": null,
+        "resolutiondate": "2016-08-07T11:10:05.000+0000",
+        "workratio": -1,
+        "customfield_12312328": null,
+        "customfield_12312329": null,
+        "customfield_12312326": null,
+        "customfield_12310300": null,
+        "customfield_12312327": null,
+        "customfield_12312324": null,
+        "customfield_12312325": null,
+        "lastViewed": "2016-08-07T11:11:44.933+0000",
+        "watches": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6078/watchers",
+          "watchCount": 2,
+          "isWatching": true
+        },
+        "created": "2016-08-07T10:27:21.000+0000",
+        "priority": {
+          "self": "https://issues.apache.org/jira/rest/api/2/priority/3",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/major.png",
+          "name": "Major",
+          "id": "3"
+        },
+        "labels": [],
+        "customfield_12312333": null,
+        "customfield_12312334": null,
+        "customfield_12310310": "0.0",
+        "customfield_12312331": null,
+        "customfield_12312332": null,
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12333074",
+            "id": "12333074",
+            "description": "Issues for 3.3.9",
+            "name": "3.3.9",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2015-11-15"
+          }
+        ],
+        "customfield_12311120": null,
+        "customfield_12312330": null,
+        "issuelinks": [
+          {
+            "id": "12476988",
+            "self": "https://issues.apache.org/jira/rest/api/2/issueLink/12476988",
+            "type": {
+              "id": "10030",
+              "name": "Reference",
+              "inward": "is related to",
+              "outward": "relates to",
+              "self": "https://issues.apache.org/jira/rest/api/2/issueLinkType/10030"
+            },
+            "outwardIssue": {
+              "id": "12995442",
+              "key": "MNG-6076",
+              "self": "https://issues.apache.org/jira/rest/api/2/issue/12995442",
+              "fields": {
+                "summary": "Add the options of maven.config at the beginning to make it possible to overwrite via command line",
+                "status": {
+                  "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+                  "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+                  "name": "Closed",
+                  "id": "6",
+                  "statusCategory": {
+                    "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Complete"
+                  }
+                },
+                "priority": {
+                  "self": "https://issues.apache.org/jira/rest/api/2/priority/4",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/minor.png",
+                  "name": "Minor",
+                  "id": "4"
+                },
+                "issuetype": {
+                  "self": "https://issues.apache.org/jira/rest/api/2/issuetype/4",
+                  "id": "4",
+                  "description": "An improvement or enhancement to an existing feature or task.",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/improvement.png",
+                  "name": "Improvement",
+                  "subtask": false
+                }
+              }
+            }
+          },
+          {
+            "id": "12476987",
+            "self": "https://issues.apache.org/jira/rest/api/2/issueLink/12476987",
+            "type": {
+              "id": "10030",
+              "name": "Reference",
+              "inward": "is related to",
+              "outward": "relates to",
+              "self": "https://issues.apache.org/jira/rest/api/2/issueLinkType/10030"
+            },
+            "outwardIssue": {
+              "id": "12995443",
+              "key": "MNG-6077",
+              "self": "https://issues.apache.org/jira/rest/api/2/issue/12995443",
+              "fields": {
+                "summary": "Options given in maven.config can not be overridden via command line",
+                "status": {
+                  "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+                  "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+                  "name": "Closed",
+                  "id": "6",
+                  "statusCategory": {
+                    "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Complete"
+                  }
+                },
+                "priority": {
+                  "self": "https://issues.apache.org/jira/rest/api/2/priority/4",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/minor.png",
+                  "name": "Minor",
+                  "id": "4"
+                },
+                "issuetype": {
+                  "self": "https://issues.apache.org/jira/rest/api/2/issuetype/4",
+                  "id": "4",
+                  "description": "An improvement or enhancement to an existing feature or task.",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/improvement.png",
+                  "name": "Improvement",
+                  "subtask": false
+                }
+              }
+            }
+          }
+        ],
+        "customfield_12312339": null,
+        "assignee": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=khmarbaise",
+          "name": "khmarbaise",
+          "emailAddress": "khmarbaise at apache dot org",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=khmarbaise&avatarId=18932",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=khmarbaise&avatarId=18932",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=khmarbaise&avatarId=18932",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=khmarbaise&avatarId=18932"
+          },
+          "displayName": "Karl Heinz Marbaise",
+          "active": true
+        },
+        "customfield_12312337": null,
+        "customfield_12312338": null,
+        "updated": "2016-08-07T11:15:41.000+0000",
+        "customfield_12312335": null,
+        "customfield_12312336": null,
+        "status": {
+          "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
+          "statusCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Complete"
+          }
+        },
+        "components": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/component/12325617",
+            "id": "12325617",
+            "name": "Command Line"
+          }
+        ],
+        "timeoriginalestimate": null,
+        "description": "Currently properties which have been defined in {{.mvn/maven.config}} can't be overwritten via command line. This should be made possible.",
+        "customfield_10010": null,
+        "customfield_12312026": null,
+        "customfield_12312422": null,
+        "customfield_12312023": null,
+        "customfield_12312024": null,
+        "customfield_12312420": null,
+        "customfield_12312340": null,
+        "aggregatetimeestimate": null,
+        "customfield_12312022": null,
+        "customfield_12312341": null,
+        "customfield_12312220": null,
+        "customfield_12310921": null,
+        "customfield_12310920": "9223372036854775807",
+        "summary": "Can't overwrite properties which have been defined in .mvn/maven.config",
+        "creator": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=khmarbaise",
+          "name": "khmarbaise",
+          "emailAddress": "khmarbaise at apache dot org",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=khmarbaise&avatarId=18932",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=khmarbaise&avatarId=18932",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=khmarbaise&avatarId=18932",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=khmarbaise&avatarId=18932"
+          },
+          "displayName": "Karl Heinz Marbaise",
+          "active": true
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=khmarbaise",
+          "name": "khmarbaise",
+          "emailAddress": "khmarbaise at apache dot org",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=khmarbaise&avatarId=18932",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=khmarbaise&avatarId=18932",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=khmarbaise&avatarId=18932",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=khmarbaise&avatarId=18932"
+          },
+          "displayName": "Karl Heinz Marbaise",
+          "active": true
+        },
+        "customfield_12310291": null,
+        "customfield_12310290": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "environment": null,
+        "customfield_12311020": null,
+        "duedate": null,
+        "customfield_12310250": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6078/votes",
+          "votes": 0,
+          "hasVoted": false
+        },
+        "customfield_12311820": "0|i3209b:"
+      }
+    },
+    {
+      "expand": "operations,editmeta,changelog,transitions,renderedFields",
+      "id": "12993801",
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/12993801",
+      "key": "MNG-6075",
+      "fields": {
+        "issuetype": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issuetype/3",
+          "id": "3",
+          "description": "A task that needs to be done.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/task.png",
+          "name": "Task",
+          "subtask": false
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://issues.apache.org/jira/rest/api/2/project/12316922",
+          "id": "12316922",
+          "key": "MNG",
+          "name": "Maven",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12316922&avatarId=10011",
+            "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12316922&avatarId=10011",
+            "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12316922&avatarId=10011",
+            "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12316922&avatarId=10011"
+          },
+          "projectCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/10510",
+            "id": "10510",
+            "description": "Apache Maven related projects",
+            "name": "Maven"
+          }
+        },
+        "fixVersions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12333545",
+            "id": "12333545",
+            "name": "3.4.0",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "aggregatetimespent": null,
+        "resolution": {
+          "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+          "id": "1",
+          "description": "A fix for this issue is checked into the tree and tested.",
+          "name": "Fixed"
+        },
+        "customfield_12310220": "2016-07-31 16:04:29.692",
+        "customfield_12312322": null,
+        "customfield_12312520": null,
+        "customfield_12312323": null,
+        "customfield_12312521": "Mon Aug 01 08:20:12 UTC 2016",
+        "customfield_12310420": "9223372036854775807",
+        "customfield_12310222": "1_*:*_1_*:*_55614_*|*_6_*:*_1_*:*_0",
+        "customfield_12312320": null,
+        "customfield_12312321": null,
+        "customfield_12312120": null,
+        "customfield_12312121": null,
+        "resolutiondate": "2016-07-31T15:51:56.000+0000",
+        "workratio": -1,
+        "customfield_12312328": null,
+        "customfield_12312329": null,
+        "customfield_12312326": null,
+        "customfield_12310300": null,
+        "customfield_12312327": null,
+        "customfield_12312324": null,
+        "customfield_12312325": null,
+        "lastViewed": null,
+        "watches": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6075/watchers",
+          "watchCount": 2,
+          "isWatching": false
+        },
+        "created": "2016-07-31T15:51:01.000+0000",
+        "priority": {
+          "self": "https://issues.apache.org/jira/rest/api/2/priority/2",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/critical.png",
+          "name": "Critical",
+          "id": "2"
+        },
+        "labels": [],
+        "customfield_12312333": null,
+        "customfield_12312334": null,
+        "customfield_12310310": "0.0",
+        "customfield_12312331": null,
+        "customfield_12312332": null,
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "customfield_12311120": null,
+        "customfield_12312330": null,
+        "issuelinks": [],
+        "customfield_12312339": null,
+        "assignee": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "customfield_12312337": null,
+        "customfield_12312338": null,
+        "updated": "2016-08-01T08:20:12.000+0000",
+        "customfield_12312335": null,
+        "customfield_12312336": null,
+        "status": {
+          "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
+          "statusCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Complete"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": "Maven 3 has warned about various model related issues clearly stating that not reacting to those warnings may break with a future Maven version. Starting with Maven 3.4, the model validation level has been increased to the next minor version so that such warnings will become errors as of 3.4.\r\n",
+        "customfield_10010": null,
+        "customfield_12312026": null,
+        "customfield_12312422": null,
+        "customfield_12312023": null,
+        "customfield_12312024": null,
+        "customfield_12312420": null,
+        "customfield_12312340": null,
+        "aggregatetimeestimate": null,
+        "customfield_12312022": null,
+        "customfield_12312341": null,
+        "customfield_12312220": null,
+        "customfield_12310921": null,
+        "customfield_12310920": "9223372036854775807",
+        "summary": "Increase the model validation level to the next minor level version.",
+        "creator": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "customfield_12310291": null,
+        "customfield_12310290": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "environment": null,
+        "customfield_12311020": null,
+        "duedate": null,
+        "customfield_12310250": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6075/votes",
+          "votes": 0,
+          "hasVoted": false
+        },
+        "customfield_12311820": "0|i31pyf:"
+      }
+    },
+    {
+      "expand": "operations,editmeta,changelog,transitions,renderedFields",
+      "id": "12993756",
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/12993756",
+      "key": "MNG-6074",
+      "fields": {
+        "issuetype": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issuetype/4",
+          "id": "4",
+          "description": "An improvement or enhancement to an existing feature or task.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/improvement.png",
+          "name": "Improvement",
+          "subtask": false
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://issues.apache.org/jira/rest/api/2/project/12316922",
+          "id": "12316922",
+          "key": "MNG",
+          "name": "Maven",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12316922&avatarId=10011",
+            "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12316922&avatarId=10011",
+            "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12316922&avatarId=10011",
+            "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12316922&avatarId=10011"
+          },
+          "projectCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/10510",
+            "id": "10510",
+            "description": "Apache Maven related projects",
+            "name": "Maven"
+          }
+        },
+        "fixVersions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12333545",
+            "id": "12333545",
+            "name": "3.4.0",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "aggregatetimespent": null,
+        "resolution": {
+          "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+          "id": "1",
+          "description": "A fix for this issue is checked into the tree and tested.",
+          "name": "Fixed"
+        },
+        "customfield_12310220": "2016-07-30 19:19:31.848",
+        "customfield_12312322": null,
+        "customfield_12312520": null,
+        "customfield_12312323": null,
+        "customfield_12312521": "Sun Jul 31 17:04:31 UTC 2016",
+        "customfield_12310420": "9223372036854775807",
+        "customfield_12310222": "1_*:*_1_*:*_49566_*|*_6_*:*_1_*:*_0",
+        "customfield_12312320": null,
+        "customfield_12312321": null,
+        "customfield_12312120": null,
+        "customfield_12312121": null,
+        "resolutiondate": "2016-07-30T19:02:44.000+0000",
+        "workratio": -1,
+        "customfield_12312328": null,
+        "customfield_12312329": null,
+        "customfield_12312326": null,
+        "customfield_12310300": null,
+        "customfield_12312327": null,
+        "customfield_12312324": null,
+        "customfield_12312325": null,
+        "lastViewed": "2016-08-07T20:30:17.420+0000",
+        "watches": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6074/watchers",
+          "watchCount": 2,
+          "isWatching": false
+        },
+        "created": "2016-07-30T19:01:55.000+0000",
+        "priority": {
+          "self": "https://issues.apache.org/jira/rest/api/2/priority/2",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/critical.png",
+          "name": "Critical",
+          "id": "2"
+        },
+        "labels": [],
+        "customfield_12312333": null,
+        "customfield_12312334": null,
+        "customfield_12310310": "0.0",
+        "customfield_12312331": null,
+        "customfield_12312332": null,
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "customfield_12311120": null,
+        "customfield_12312330": null,
+        "issuelinks": [],
+        "customfield_12312339": null,
+        "assignee": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "customfield_12312337": null,
+        "customfield_12312338": null,
+        "updated": "2016-07-31T17:04:31.000+0000",
+        "customfield_12312335": null,
+        "customfield_12312336": null,
+        "status": {
+          "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
+          "statusCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Complete"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": "Maven currently only validates the model version to equal {{4.0.0}} when set. The XML element is optional. Starting with Maven 3.4.0 a warning message should be printed whenever no model version has been set so that it becomes possible to use that version to decide about Maven behaviour. For example: In Maven 3.5 we could add support for a new model version {{4.1.0}} which may be used to decide about how Maven 3.5 should behave. Behaviour for model version {{4.0.0}} will be the same as in Maven 3.4. Behaviour for model version {{4.1.0}} could be different. For this the model version needs to be set.\r\n",
+        "customfield_10010": null,
+        "customfield_12312026": null,
+        "customfield_12312422": null,
+        "customfield_12312023": null,
+        "customfield_12312024": null,
+        "customfield_12312420": null,
+        "customfield_12312340": null,
+        "aggregatetimeestimate": null,
+        "customfield_12312022": null,
+        "customfield_12312341": null,
+        "customfield_12312220": null,
+        "customfield_12310921": null,
+        "customfield_12310920": "9223372036854775807",
+        "summary": "Maven should produce an error if no model version has been set in a POM file used to build an effective model.",
+        "creator": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "customfield_12310291": null,
+        "customfield_12310290": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "environment": null,
+        "customfield_12311020": null,
+        "duedate": null,
+        "customfield_12310250": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6074/votes",
+          "votes": 0,
+          "hasVoted": false
+        },
+        "customfield_12311820": "0|i31pof:"
+      }
+    },
+    {
+      "expand": "operations,editmeta,changelog,transitions,renderedFields",
+      "id": "12993752",
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/12993752",
+      "key": "MNG-6073",
+      "fields": {
+        "issuetype": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issuetype/2",
+          "id": "2",
+          "description": "A new feature of the product, which has yet to be developed.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/newfeature.png",
+          "name": "New Feature",
+          "subtask": false
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://issues.apache.org/jira/rest/api/2/project/12316922",
+          "id": "12316922",
+          "key": "MNG",
+          "name": "Maven",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12316922&avatarId=10011",
+            "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12316922&avatarId=10011",
+            "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12316922&avatarId=10011",
+            "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12316922&avatarId=10011"
+          },
+          "projectCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/10510",
+            "id": "10510",
+            "description": "Apache Maven related projects",
+            "name": "Maven"
+          }
+        },
+        "fixVersions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12333545",
+            "id": "12333545",
+            "name": "3.4.0",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "aggregatetimespent": null,
+        "resolution": {
+          "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+          "id": "1",
+          "description": "A fix for this issue is checked into the tree and tested.",
+          "name": "Fixed"
+        },
+        "customfield_12310220": "2016-07-30 18:24:01.189",
+        "customfield_12312322": null,
+        "customfield_12312520": null,
+        "customfield_12312323": null,
+        "customfield_12312521": "Sun Jul 31 16:04:29 UTC 2016",
+        "customfield_12310420": "9223372036854775807",
+        "customfield_12310222": "1_*:*_1_*:*_261490_*|*_6_*:*_1_*:*_0",
+        "customfield_12312320": null,
+        "customfield_12312321": null,
+        "customfield_12312120": null,
+        "customfield_12312121": null,
+        "resolutiondate": "2016-07-30T18:12:06.000+0000",
+        "workratio": -1,
+        "customfield_12312328": null,
+        "customfield_12312329": null,
+        "customfield_12312326": null,
+        "customfield_12310300": null,
+        "customfield_12312327": null,
+        "customfield_12312324": null,
+        "customfield_12312325": null,
+        "lastViewed": null,
+        "watches": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6073/watchers",
+          "watchCount": 2,
+          "isWatching": false
+        },
+        "created": "2016-07-30T18:07:45.000+0000",
+        "priority": {
+          "self": "https://issues.apache.org/jira/rest/api/2/priority/5",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/trivial.png",
+          "name": "Trivial",
+          "id": "5"
+        },
+        "labels": [],
+        "customfield_12312333": null,
+        "customfield_12312334": null,
+        "customfield_12310310": "0.0",
+        "customfield_12312331": null,
+        "customfield_12312332": null,
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [],
+        "customfield_12311120": null,
+        "customfield_12312330": null,
+        "issuelinks": [
+          {
+            "id": "12476464",
+            "self": "https://issues.apache.org/jira/rest/api/2/issueLink/12476464",
+            "type": {
+              "id": "12310051",
+              "name": "Supercedes",
+              "inward": "is superceded by",
+              "outward": "supercedes",
+              "self": "https://issues.apache.org/jira/rest/api/2/issueLinkType/12310051"
+            },
+            "outwardIssue": {
+              "id": "12795237",
+              "key": "MNG-3825",
+              "self": "https://issues.apache.org/jira/rest/api/2/issue/12795237",
+              "fields": {
+                "summary": "Dependencies with classifier should not always require a version.",
+                "status": {
+                  "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+                  "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+                  "name": "Closed",
+                  "id": "6",
+                  "statusCategory": {
+                    "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Complete"
+                  }
+                },
+                "priority": {
+                  "self": "https://issues.apache.org/jira/rest/api/2/priority/3",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/major.png",
+                  "name": "Major",
+                  "id": "3"
+                },
+                "issuetype": {
+                  "self": "https://issues.apache.org/jira/rest/api/2/issuetype/4",
+                  "id": "4",
+                  "description": "An improvement or enhancement to an existing feature or task.",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/improvement.png",
+                  "name": "Improvement",
+                  "subtask": false
+                }
+              }
+            }
+          }
+        ],
+        "customfield_12312339": null,
+        "assignee": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "customfield_12312337": null,
+        "customfield_12312338": null,
+        "updated": "2016-07-31T16:04:29.000+0000",
+        "customfield_12312335": null,
+        "customfield_12312336": null,
+        "status": {
+          "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
+          "statusCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Complete"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": null,
+        "customfield_10010": null,
+        "customfield_12312026": null,
+        "customfield_12312422": null,
+        "customfield_12312023": null,
+        "customfield_12312024": null,
+        "customfield_12312420": null,
+        "customfield_12312340": null,
+        "aggregatetimeestimate": null,
+        "customfield_12312022": null,
+        "customfield_12312341": null,
+        "customfield_12312220": null,
+        "customfield_12310921": null,
+        "customfield_12310920": "9223372036854775807",
+        "summary": "Addition of a core extension point to the model builder supporting model finalization.",
+        "creator": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "customfield_12310291": null,
+        "customfield_12310290": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "environment": null,
+        "customfield_12311020": null,
+        "duedate": null,
+        "customfield_12310250": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6073/votes",
+          "votes": 0,
+          "hasVoted": false
+        },
+        "customfield_12311820": "0|i31pnj:"
+      }
+    },
+    {
+      "expand": "operations,editmeta,changelog,transitions,renderedFields",
+      "id": "12992044",
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/12992044",
+      "key": "MNG-6070",
+      "fields": {
+        "issuetype": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
+          "id": "1",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/bug.png",
+          "name": "Bug",
+          "subtask": false
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://issues.apache.org/jira/rest/api/2/project/12316922",
+          "id": "12316922",
+          "key": "MNG",
+          "name": "Maven",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12316922&avatarId=10011",
+            "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12316922&avatarId=10011",
+            "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12316922&avatarId=10011",
+            "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12316922&avatarId=10011"
+          },
+          "projectCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/10510",
+            "id": "10510",
+            "description": "Apache Maven related projects",
+            "name": "Maven"
+          }
+        },
+        "fixVersions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12333545",
+            "id": "12333545",
+            "name": "3.4.0",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "aggregatetimespent": null,
+        "resolution": {
+          "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+          "id": "1",
+          "description": "A fix for this issue is checked into the tree and tested.",
+          "name": "Fixed"
+        },
+        "customfield_12310220": "2016-07-23 18:18:29.647",
+        "customfield_12312322": null,
+        "customfield_12312520": null,
+        "customfield_12312323": null,
+        "customfield_12312521": "Sat Jul 23 18:18:29 UTC 2016",
+        "customfield_12310420": "9223372036854775807",
+        "customfield_12310222": "1_*:*_1_*:*_7058237_*|*_6_*:*_1_*:*_0",
+        "customfield_12312320": null,
+        "customfield_12312321": null,
+        "customfield_12312120": null,
+        "customfield_12312121": null,
+        "resolutiondate": "2016-07-23T18:16:40.000+0000",
+        "workratio": -1,
+        "customfield_12312328": null,
+        "customfield_12312329": null,
+        "customfield_12312326": null,
+        "customfield_12310300": null,
+        "customfield_12312327": null,
+        "customfield_12312324": null,
+        "customfield_12312325": null,
+        "lastViewed": "2016-07-23T18:24:03.300+0000",
+        "watches": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6070/watchers",
+          "watchCount": 2,
+          "isWatching": true
+        },
+        "created": "2016-07-23T16:19:01.000+0000",
+        "priority": {
+          "self": "https://issues.apache.org/jira/rest/api/2/priority/1",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/blocker.png",
+          "name": "Blocker",
+          "id": "1"
+        },
+        "labels": [],
+        "customfield_12312333": null,
+        "customfield_12312334": null,
+        "customfield_12310310": "0.0",
+        "customfield_12312331": null,
+        "customfield_12312332": null,
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12333545",
+            "id": "12333545",
+            "name": "3.4.0",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "customfield_12311120": null,
+        "customfield_12312330": null,
+        "issuelinks": [],
+        "customfield_12312339": null,
+        "assignee": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "customfield_12312337": null,
+        "customfield_12312338": null,
+        "updated": "2016-07-23T18:20:02.000+0000",
+        "customfield_12312335": null,
+        "customfield_12312336": null,
+        "status": {
+          "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
+          "statusCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Complete"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": "I have created a simple example project with the following pom file:\r\n{code:xml}\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd\">\r\n  <modelVersion>4.0.0</modelVersion>\r\n  <groupId>com.soebes.maven.example</groupId>\r\n  <artifactId>example</artifactId>\r\n  <packaging>jar</packaging>\r\n  <version>1.0-SNAPSHOT</version>\r\n\r\n  <properties>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n  </properties>\r\n\r\n  <build>\r\n    <pluginManagement>\r\n      <plugins>\r\n        <plugin>\r\n          <groupId>com.soebes.maven.plugins</groupId>\r\n          <artifactId>echo-maven-plugin</artifactId>\r\n          <version>0.3.0</version>\r\n        </plugin>\r\n      </plugins>\r\n    </pluginManagement>\r\n  </build>\r\n\r\n  <profiles>\r\n    <profile>\r\n      <activation>\r\n        <property>\r\n          <name>performRelease</name>\r\n          <value>true</value>\r\n        </property>\r\n      </activation>\r\n      <build>\r\n        <plugins>\r\n          <plugin>\r\n            <groupId>com.soebes.maven.plugins</groupId>\r\n            <artifactId>echo-maven-plugin</artifactId>\r\n            <executions>\r\n              <execution>\r\n                <phase>initialize</phase>\r\n                <goals>\r\n                  <goal>echo</goal>\r\n                </goals>\r\n              </execution>\r\n            </executions>\r\n            <configuration>\r\n              <echos>\r\n                <echo>Profile: performRelease property is activated '${performRelease}'.</echo>\r\n              </echos>\r\n            </configuration>\r\n          </plugin>\r\n        </plugins>\r\n      </build>\r\n    </profile>\r\n  </profiles>\r\n</project>\r\n{code}\r\n\r\nIf I use Maven 3.3.9 (also 3.0.5, 3.1.1, 3.2.5) and run it like this:\r\n{code}\r\n~/ws-git-maven-bugs/profiles (master)$ mvn initialize\r\n[INFO] Scanning for projects...\r\n[INFO]\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] Building example 1.0-SNAPSHOT\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] BUILD SUCCESS\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] Total time: 0.401 s\r\n[INFO] Finished at: 2016-07-23T18:11:47+02:00\r\n[INFO] Final Memory: 7M/245M\r\n[INFO] ------------------------------------------------------------------------\r\n{code}\r\nIf I run the current master of Maven Core (sha: 90f26c279af9738735be8f84f60dcf21b6244e24) I got the following result:\r\n{code}\r\n~/ws-git-maven-bugs/profiles (master)$ ~/tools/maven-test/apache-maven-3.4.0-SNAPSHOT/bin/mvn initialize\r\n[INFO] Scanning for projects...\r\n[INFO]\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] Building example 1.0-SNAPSHOT\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO]\r\n[INFO] --- echo-maven-plugin:0.3.0:echo (default) @ example ---\r\n[INFO] Profile: performRelease property is activated '${performRelease}'.\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] BUILD SUCCESS\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] Total time: 0.478 s\r\n[INFO] Finished at: 2016-07-23T18:12:54+02:00\r\n[INFO] Final Memory: 9M/245M\r\n[INFO] ------------------------------------------------------------------------\r\n{code}\r\n\r\nThis means the profile will be erroneously activated but the property does not contain a value.\r\n\r\nIf I add an id to the profile like this:\r\n\r\n{code:xml}\r\n  <profiles>\r\n    <profile>\r\n      <id>an-other-profile</id>\r\n      <activation>\r\n        <property>\r\n          <name>performRelease</name>\r\n          <value>true</value>\r\n        </property>\r\n      </activation>\r\n  ..\r\n{code}\r\nIt will produce the following (correct) result:\r\n{code}\r\n~/ws-git-maven-bugs/profiles (master *)$ ~/tools/maven-test/apache-maven-3.4.0-SNAPSHOT/bin/mvn initialize\r\n[INFO] Scanning for projects...\r\n[INFO]\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] Building example 1.0-SNAPSHOT\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] BUILD SUCCESS\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] Total time: 0.279 s\r\n[INFO] Finished at: 2016-07-23T18:18:23+02:00\r\n[INFO] Final Memory: 8M/245M\r\n[INFO] ------------------------------------------------------------------------\r\n{code}\r\n\r\nI have create a full working example here: https://github.com/khmarbaise/mng-6070",
+        "customfield_10010": null,
+        "customfield_12312026": null,
+        "customfield_12312422": null,
+        "customfield_12312023": null,
+        "customfield_12312024": null,
+        "customfield_12312420": null,
+        "customfield_12312340": null,
+        "aggregatetimeestimate": null,
+        "customfield_12312022": null,
+        "customfield_12312341": null,
+        "customfield_12312220": null,
+        "customfield_12310921": null,
+        "customfield_12310920": "9223372036854775807",
+        "summary": "Default profile in settings.xml must not use an id possibly already in use. ",
+        "creator": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=khmarbaise",
+          "name": "khmarbaise",
+          "emailAddress": "khmarbaise at apache dot org",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=khmarbaise&avatarId=18932",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=khmarbaise&avatarId=18932",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=khmarbaise&avatarId=18932",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=khmarbaise&avatarId=18932"
+          },
+          "displayName": "Karl Heinz Marbaise",
+          "active": true
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=khmarbaise",
+          "name": "khmarbaise",
+          "emailAddress": "khmarbaise at apache dot org",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=khmarbaise&avatarId=18932",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=khmarbaise&avatarId=18932",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=khmarbaise&avatarId=18932",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=khmarbaise&avatarId=18932"
+          },
+          "displayName": "Karl Heinz Marbaise",
+          "active": true
+        },
+        "customfield_12310291": null,
+        "customfield_12310290": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "environment": "~/ws-git-maven-bugs/profiles (master)$ ~/tools/maven-test/apache-maven-3.4.0-SNAPSHOT/bin/mvn --version\r\nApache Maven 3.4.0-SNAPSHOT (90f26c279af9738735be8f84f60dcf21b6244e24; 2016-07-23T16:24:50+02:00)\r\nMaven home: /Users/kama/tools/maven-test/apache-maven-3.4.0-SNAPSHOT\r\nJava version: 1.7.0_79, vendor: Oracle Corporation\r\nJava home: /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre\r\nDefault locale: en_US, platform encoding: UTF-8\r\nOS name: \"Mac OS X\", version: \"10.8.5\", arch: \"x86_64\", family: \"Unix\"",
+        "customfield_12311020": null,
+        "duedate": null,
+        "customfield_12310250": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6070/votes",
+          "votes": 0,
+          "hasVoted": false
+        },
+        "customfield_12311820": "0|i31f3z:"
+      }
+    },
     {
       "expand": "operations,editmeta,changelog,transitions,renderedFields",
       "id": "12990332",
@@ -225,11 +1357,11 @@
       "key": "MNG-6059",
       "fields": {
         "issuetype": {
-          "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
-          "id": "1",
-          "description": "A problem which impairs or prevents the functions of the product.",
-          "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/bug.png",
-          "name": "Bug",
+          "self": "https://issues.apache.org/jira/rest/api/2/issuetype/4",
+          "id": "4",
+          "description": "An improvement or enhancement to an existing feature or task.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/improvement.png",
+          "name": "Improvement",
           "subtask": false
         },
         "timespent": null,
@@ -266,7 +1398,7 @@
         "customfield_12312322": null,
         "customfield_12312520": null,
         "customfield_12312323": null,
-        "customfield_12312521": "Wed Jul 13 07:16:08 UTC 2016",
+        "customfield_12312521": "Thu Aug 04 21:25:06 UTC 2016",
         "customfield_12310420": "9223372036854775807",
         "customfield_12310222": null,
         "customfield_12312320": null,
@@ -356,10 +1488,22 @@
           }
         ],
         "customfield_12312339": null,
-        "assignee": null,
+        "assignee": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=hboutemy",
+          "name": "hboutemy",
+          "emailAddress": "herve dot boutemy at free dot fr",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Hervé Boutemy",
+          "active": true
+        },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2016-07-13T07:16:08.000+0000",
+        "updated": "2016-08-04T21:25:06.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -517,7 +1661,7 @@
         "customfield_12312327": null,
         "customfield_12312324": null,
         "customfield_12312325": null,
-        "lastViewed": "2016-07-16T21:18:15.917+0000",
+        "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6057/watchers",
           "watchCount": 2,
@@ -908,6 +2052,209 @@
           "hasVoted": false
         },
         "customfield_12311820": "0|i30acv:"
+      }
+    },
+    {
+      "expand": "operations,editmeta,changelog,transitions,renderedFields",
+      "id": "12984396",
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/12984396",
+      "key": "MNG-6053",
+      "fields": {
+        "issuetype": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
+          "id": "1",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/bug.png",
+          "name": "Bug",
+          "subtask": false
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://issues.apache.org/jira/rest/api/2/project/12316922",
+          "id": "12316922",
+          "key": "MNG",
+          "name": "Maven",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12316922&avatarId=10011",
+            "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12316922&avatarId=10011",
+            "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12316922&avatarId=10011",
+            "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12316922&avatarId=10011"
+          },
+          "projectCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/10510",
+            "id": "10510",
+            "description": "Apache Maven related projects",
+            "name": "Maven"
+          }
+        },
+        "fixVersions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12333545",
+            "id": "12333545",
+            "name": "3.4.0",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "aggregatetimespent": null,
+        "resolution": {
+          "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+          "id": "1",
+          "description": "A fix for this issue is checked into the tree and tested.",
+          "name": "Fixed"
+        },
+        "customfield_12310220": "2016-07-25 17:20:39.945",
+        "customfield_12312322": null,
+        "customfield_12312520": null,
+        "customfield_12312323": null,
+        "customfield_12312521": "Thu Jul 28 15:34:52 UTC 2016",
+        "customfield_12310420": "9223372036854775807",
+        "customfield_12310222": "1_*:*_1_*:*_2343886115_*|*_6_*:*_1_*:*_0",
+        "customfield_12312320": null,
+        "customfield_12312321": null,
+        "customfield_12312120": null,
+        "customfield_12312121": null,
+        "resolutiondate": "2016-07-25T17:46:17.000+0000",
+        "workratio": -1,
+        "customfield_12312328": null,
+        "customfield_12312329": null,
+        "customfield_12312326": null,
+        "customfield_12310300": null,
+        "customfield_12312327": null,
+        "customfield_12312324": null,
+        "customfield_12312325": null,
+        "lastViewed": null,
+        "watches": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6053/watchers",
+          "watchCount": 5,
+          "isWatching": false
+        },
+        "created": "2016-06-28T14:41:31.000+0000",
+        "priority": {
+          "self": "https://issues.apache.org/jira/rest/api/2/priority/3",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/major.png",
+          "name": "Major",
+          "id": "3"
+        },
+        "labels": [],
+        "customfield_12312333": null,
+        "customfield_12312334": null,
+        "customfield_12310310": "0.0",
+        "customfield_12312331": null,
+        "customfield_12312332": null,
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "versions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12333074",
+            "id": "12333074",
+            "description": "Issues for 3.3.9",
+            "name": "3.3.9",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2015-11-15"
+          }
+        ],
+        "customfield_12311120": null,
+        "customfield_12312330": null,
+        "issuelinks": [],
+        "customfield_12312339": null,
+        "assignee": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=schulte77",
+          "name": "schulte77",
+          "emailAddress": "cs at schulte dot it",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Christian Schulte",
+          "active": true
+        },
+        "customfield_12312337": null,
+        "customfield_12312338": null,
+        "updated": "2016-07-28T15:34:52.000+0000",
+        "customfield_12312335": null,
+        "customfield_12312336": null,
+        "status": {
+          "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
+          "statusCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Complete"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": "This bug has been reported in m2e https://bugs.eclipse.org/bugs/show_bug.cgi?id=493871:\r\n\r\n{quote}\r\nI'm occasionally, not 100% reliably reproducible, but regularly enough (like it occurs every now and then, not just once) seeing the error below, in the Error Log of Eclipse during workspace rebuilds.  This is with M2E 1.7.0. -- I'm not sure if this is just \"annoying\" or actually prevents M2E from correctly configuring projects (?).  Either way, perhaps it would be possible to \"harden\" respective code to prevent this?\r\n\r\njava.lang.NullPointerException\r\n\tat java.util.Hashtable.put(Hashtable.java:459)\r\n\tat org.apache.maven.repository.internal.MavenRepositorySystemUtils.newSession(MavenRepositorySystemUtils.java:133)\r\n\tat org.apache.maven.internal.aether.DefaultRepositorySystemSessionFactory.newRepositorySession(DefaultRepositorySystemSessionFactory.java:98)\r\n\tat org.apache.maven.DefaultMaven.newRepositorySession(DefaultMaven.java:352)\r\n\tat org.eclipse.m2e.core.internal.embedder.MavenImpl.createRepositorySession(MavenImpl.java:309)\r\n{quote}\r\n\r\nLooking at https://github.com/apache/maven/blob/86b656167923923e2e416def4a48303b4e6248fa/maven-aether-provider/src/main/java/org/apache/maven/repository/internal/MavenRepositorySystemUtils.java#L132, it seems some system property is null (maybe due to some concurrency issue), and given that Hashtable doesn't support null values, then it throws an NPE on the put() call",
+        "customfield_10010": null,
+        "customfield_12312026": null,
+        "customfield_12312422": null,
+        "customfield_12312023": null,
+        "customfield_12312024": null,
+        "customfield_12312420": null,
+        "customfield_12312340": null,
+        "aggregatetimeestimate": null,
+        "customfield_12312022": null,
+        "customfield_12312341": null,
+        "customfield_12312220": null,
+        "customfield_12310921": null,
+        "customfield_12310920": "9223372036854775807",
+        "summary": "Unsafe System Properties copy in MavenRepositorySystemUtils, causing NPEs",
+        "creator": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=fbricon",
+          "name": "fbricon",
+          "emailAddress": "fbricon at gmail dot com",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=fbricon&avatarId=28434",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=fbricon&avatarId=28434",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=fbricon&avatarId=28434",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=fbricon&avatarId=28434"
+          },
+          "displayName": "Fred Bricon",
+          "active": true
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=fbricon",
+          "name": "fbricon",
+          "emailAddress": "fbricon at gmail dot com",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=fbricon&avatarId=28434",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=fbricon&avatarId=28434",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=fbricon&avatarId=28434",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=fbricon&avatarId=28434"
+          },
+          "displayName": "Fred Bricon",
+          "active": true
+        },
+        "customfield_12310291": null,
+        "customfield_12310290": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "environment": "Eclipse m2e 1.7",
+        "customfield_12311020": "https://bugs.eclipse.org/bugs/show_bug.cgi?id=493871",
+        "duedate": null,
+        "customfield_12310250": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6053/votes",
+          "votes": 1,
+          "hasVoted": false
+        },
+        "customfield_12311820": "0|i309fb:"
       }
     },
     {
@@ -1443,17 +2790,17 @@
           "fields": {
             "summary": "ANSI Color logging for improved output visibility.",
             "status": {
-              "self": "https://issues.apache.org/jira/rest/api/2/status/1",
-              "description": "The issue is open and ready for the assignee to start work on it.",
-              "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/open.png",
-              "name": "Open",
-              "id": "1",
+              "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
               "statusCategory": {
-                "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "New"
+                "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Complete"
               }
             },
             "priority": {
@@ -1679,17 +3026,17 @@
           "fields": {
             "summary": "use Gossip slf4j provider as default logging, since it supports level colorization",
             "status": {
-              "self": "https://issues.apache.org/jira/rest/api/2/status/1",
-              "description": "The issue is open and ready for the assignee to start work on it.",
-              "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/open.png",
-              "name": "Open",
-              "id": "1",
+              "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+              "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+              "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+              "name": "Closed",
+              "id": "6",
               "statusCategory": {
-                "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/2",
-                "id": 2,
-                "key": "new",
-                "colorName": "blue-gray",
-                "name": "New"
+                "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Complete"
               }
             },
             "priority": {
@@ -1738,11 +3085,11 @@
         ],
         "aggregatetimespent": null,
         "resolution": null,
-        "customfield_12310220": null,
+        "customfield_12310220": "2016-08-03 19:42:18.669",
         "customfield_12312322": null,
         "customfield_12312520": null,
         "customfield_12312323": null,
-        "customfield_12312521": "2016-06-14 20:18:51.0",
+        "customfield_12312521": "Wed Aug 03 19:42:18 UTC 2016",
         "customfield_12310420": "9223372036854775807",
         "customfield_12310222": null,
         "customfield_12312320": null,
@@ -1761,7 +3108,7 @@
         "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6044/watchers",
-          "watchCount": 5,
+          "watchCount": 6,
           "isWatching": false
         },
         "created": "2016-06-14T20:18:51.000+0000",
@@ -1795,7 +3142,7 @@
         "assignee": null,
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2016-07-11T09:28:33.000+0000",
+        "updated": "2016-08-03T19:42:18.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -2177,7 +3524,7 @@
         "customfield_12312327": null,
         "customfield_12312324": null,
         "customfield_12312325": null,
-        "lastViewed": "2016-07-16T18:55:35.614+0000",
+        "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6041/watchers",
           "watchCount": 3,
@@ -2358,19 +3705,24 @@
           }
         ],
         "aggregatetimespent": null,
-        "resolution": null,
+        "resolution": {
+          "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+          "id": "1",
+          "description": "A fix for this issue is checked into the tree and tested.",
+          "name": "Fixed"
+        },
         "customfield_12310220": "2016-06-11 11:40:14.155",
         "customfield_12312322": null,
         "customfield_12312520": null,
         "customfield_12312323": null,
         "customfield_12312521": "Sat Jun 11 11:40:14 UTC 2016",
         "customfield_12310420": "9223372036854775807",
-        "customfield_12310222": null,
+        "customfield_12310222": "1_*:*_1_*:*_4607680019_*|*_6_*:*_1_*:*_0",
         "customfield_12312320": null,
         "customfield_12312321": null,
         "customfield_12312120": null,
         "customfield_12312121": null,
-        "resolutiondate": null,
+        "resolutiondate": "2016-08-03T19:19:06.000+0000",
         "workratio": -1,
         "customfield_12312328": null,
         "customfield_12312329": null,
@@ -2478,21 +3830,21 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2016-06-11T11:40:14.000+0000",
+        "updated": "2016-08-03T19:19:06.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
-          "self": "https://issues.apache.org/jira/rest/api/2/status/1",
-          "description": "The issue is open and ready for the assignee to start work on it.",
-          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/open.png",
-          "name": "Open",
-          "id": "1",
+          "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
           "statusCategory": {
-            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/2",
-            "id": 2,
-            "key": "new",
-            "colorName": "blue-gray",
-            "name": "New"
+            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Complete"
           }
         },
         "components": [
@@ -2725,17 +4077,17 @@
               "fields": {
                 "summary": "ANSI Color logging for improved output visibility.",
                 "status": {
-                  "self": "https://issues.apache.org/jira/rest/api/2/status/1",
-                  "description": "The issue is open and ready for the assignee to start work on it.",
-                  "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/open.png",
-                  "name": "Open",
-                  "id": "1",
+                  "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+                  "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+                  "name": "Closed",
+                  "id": "6",
                   "statusCategory": {
-                    "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/2",
-                    "id": 2,
-                    "key": "new",
-                    "colorName": "blue-gray",
-                    "name": "New"
+                    "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Complete"
                   }
                 },
                 "priority": {
@@ -2772,17 +4124,17 @@
               "fields": {
                 "summary": "use Gossip slf4j provider as default logging, since it supports level colorization",
                 "status": {
-                  "self": "https://issues.apache.org/jira/rest/api/2/status/1",
-                  "description": "The issue is open and ready for the assignee to start work on it.",
-                  "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/open.png",
-                  "name": "Open",
-                  "id": "1",
+                  "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+                  "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+                  "name": "Closed",
+                  "id": "6",
                   "statusCategory": {
-                    "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/2",
-                    "id": 2,
-                    "key": "new",
-                    "colorName": "blue-gray",
-                    "name": "New"
+                    "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Complete"
                   }
                 },
                 "priority": {
@@ -6436,7 +7788,7 @@
         "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-5971/watchers",
-          "watchCount": 8,
+          "watchCount": 9,
           "isWatching": false
         },
         "created": "2016-02-02T09:56:59.000+0000",
@@ -7845,17 +9197,17 @@
               "fields": {
                 "summary": "ANSI Color logging for improved output visibility.",
                 "status": {
-                  "self": "https://issues.apache.org/jira/rest/api/2/status/1",
-                  "description": "The issue is open and ready for the assignee to start work on it.",
-                  "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/open.png",
-                  "name": "Open",
-                  "id": "1",
+                  "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+                  "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+                  "name": "Closed",
+                  "id": "6",
                   "statusCategory": {
-                    "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/2",
-                    "id": 2,
-                    "key": "new",
-                    "colorName": "blue-gray",
-                    "name": "New"
+                    "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+                    "id": 3,
+                    "key": "done",
+                    "colorName": "green",
+                    "name": "Complete"
                   }
                 },
                 "priority": {
@@ -8755,11 +10107,11 @@
                   "id": "3"
                 },
                 "issuetype": {
-                  "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
-                  "id": "1",
-                  "description": "A problem which impairs or prevents the functions of the product.",
-                  "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/bug.png",
-                  "name": "Bug",
+                  "self": "https://issues.apache.org/jira/rest/api/2/issuetype/4",
+                  "id": "4",
+                  "description": "An improvement or enhancement to an existing feature or task.",
+                  "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/improvement.png",
+                  "name": "Improvement",
                   "subtask": false
                 }
               }
@@ -16931,7 +18283,7 @@
         "customfield_12312322": null,
         "customfield_12312520": null,
         "customfield_12312323": null,
-        "customfield_12312521": "Thu Jun 30 19:17:45 UTC 2016",
+        "customfield_12312521": "Sat Jul 23 18:34:50 UTC 2016",
         "customfield_12310420": "9223372036854775807",
         "customfield_12310222": "1_*:*_1_*:*_118121476215_*|*_4_*:*_1_*:*_64649091209_*|*_6_*:*_2_*:*_12095936778",
         "customfield_12312320": null,
@@ -17046,7 +18398,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2016-06-30T19:17:45.000+0000",
+        "updated": "2016-07-23T18:34:50.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -17951,19 +19303,24 @@
           }
         ],
         "aggregatetimespent": null,
-        "resolution": null,
+        "resolution": {
+          "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+          "id": "1",
+          "description": "A fix for this issue is checked into the tree and tested.",
+          "name": "Fixed"
+        },
         "customfield_12310220": "2008-04-25 06:30:11.584",
         "customfield_12312322": null,
         "customfield_12312520": null,
         "customfield_12312323": null,
-        "customfield_12312521": "Sun Jul 10 09:55:03 UTC 2016",
+        "customfield_12312521": "Tue Jul 26 21:21:38 UTC 2016",
         "customfield_12310420": "9223372036854775807",
-        "customfield_12310222": null,
+        "customfield_12310222": "1_*:*_1_*:*_262662169189_*|*_6_*:*_1_*:*_0",
         "customfield_12312320": null,
         "customfield_12312321": null,
         "customfield_12312120": null,
         "customfield_12312121": null,
-        "resolutiondate": null,
+        "resolutiondate": "2016-08-03T19:19:51.000+0000",
         "workratio": -1,
         "customfield_12312328": null,
         "customfield_12312329": null,
@@ -18375,24 +19732,36 @@
           }
         ],
         "customfield_12312339": null,
-        "assignee": null,
+        "assignee": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=hboutemy",
+          "name": "hboutemy",
+          "emailAddress": "herve dot boutemy at free dot fr",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Hervé Boutemy",
+          "active": true
+        },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2016-07-10T09:55:03.000+0000",
+        "updated": "2016-08-03T19:19:51.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
-          "self": "https://issues.apache.org/jira/rest/api/2/status/1",
-          "description": "The issue is open and ready for the assignee to start work on it.",
-          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/open.png",
-          "name": "Open",
-          "id": "1",
+          "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are closed can be reopened.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
           "statusCategory": {
-            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/2",
-            "id": 2,
-            "key": "new",
-            "colorName": "blue-gray",
-            "name": "New"
+            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Complete"
           }
         },
         "components": [

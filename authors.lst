@@ -1,7 +1,13 @@
+MNG-6078 Can't overwrite properties which have been defined in .mvn/maven.config
+MNG-6075 Increase the model validation level to the next minor level version.
+MNG-6074 Maven should produce an error if no model version has been set in a POM file used to build an effective model.
+MNG-6073 Addition of a core extension point to the model builder supporting model finalization.
+MNG-6070 Default profile in settings.xml must not use an id possibly already in use. 
 MNG-6068 Document default scope compile in XSD
 MNG-6059 Important use cases not covered, as child.inherit.append.path affects all children
 MNG-6057 Problem with CI friendly usage of ${..} reactor order is changed
 MNG-6054 Removal of super pom plugin management.
+MNG-6053 Unsafe System Properties copy in MavenRepositorySystemUtils, causing NPEs
 MNG-6049 Add behavior to filter resolved version ranges of an artifact
 MNG-6046 upgrade JAnsi from 1.12 to 1.13
 MNG-6045 Document Jansi's native support limitation
@@ -74,8 +80,8 @@ MNG-2199 Support version ranges in parent elements
 
 New Features: 
 Bugs: 
-MNG-6059 reporter: Andreas Sewe
-MNG-6057, MNG-6041, MNG-5868 reporter: Karl Heinz Marbaise
+MNG-6070, MNG-6057, MNG-6041, MNG-5868 reporter: Karl Heinz Marbaise
+MNG-6053 reporter: Fred Bricon
 MNG-6043, MNG-6029, MNG-6022 reporter: Michael Osipov
 MNG-5984 reporter: Gabriël Konat
 MNG-5981 reporter: Stuart McCulloch
@@ -102,13 +108,14 @@ MNG-5368 reporter: Andrew Haines
 MNG-5359 reporter: Anders Hammar
 MNG-4463 reporter: Rob ten Hove
 Improvements
-MNG-6068, MNG-6035, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5940, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
+MNG-6078, MNG-6068, MNG-6035, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5940, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
+MNG-6074, MNG-5968 reporter: Christian Schulte
+MNG-6059 reporter: Andreas Sewe
 MNG-6049 reporter: Uwe Barthel
 MNG-6046 reporter: Hervé Boutemy
 MNG-6030 reporter: Andriy
 MNG-6003, MNG-6001, MNG-5977, MNG-5976, MNG-5975, MNG-5579 reporter: Michael Osipov
 MNG-5992 reporter: Ryan J. McDonough
-MNG-5968 reporter: Christian Schulte
 MNG-5951 reporter: Jörg Sesterhenn
 MNG-5934 reporter: Alex Henrie
 MNG-5883 reporter: Ben Caradoc-Davies
