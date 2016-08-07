@@ -173,6 +173,9 @@ Overview about the changes
    which caused failures with out of memeory execptions or the need to increase
    the memory settings. This problem has been fixed with [MNG-6030].
 
+ * If you have defined a property within the `.mvn/maven.config` file
+   it was not possible to overwrite the property via command line.
+   This has been fixed with [MNG-6078][MNG-6078].
 
 Bugs:
 
@@ -194,6 +197,7 @@ Bugs:
  * [MNG-5981] - Plexus lifecycle could be activated too late during overlapping parallel requests
  * [MNG-5984] - Maven core extension resolution ignores repositories from activeByDefault profiles in settings.xml
  * [MNG-6029] - Duplicate conditional and body in MetadataResolutionResult.java Dependency upgrade
+ * [MNG-6078] - Can't overwrite properties which have been defined in .mvn/maven.config
 
 Improvements:
 
@@ -336,3 +340,4 @@ See [complete release notes for all versions][5]
 [MNG-6035]: https://issues.apache.org/jira/browse/MNG-6035
 [MNG-6037]: https://issues.apache.org/jira/browse/MNG-6037
 [MNG-6038]: https://issues.apache.org/jira/browse/MNG-6038
+[MNG-6078]: https://issues.apache.org/jira/browse/MNG-6078
