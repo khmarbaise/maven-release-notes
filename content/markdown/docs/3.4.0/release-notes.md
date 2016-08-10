@@ -112,7 +112,7 @@ Overview about the changes
  * Creating source packages during a release of your artifacts you
    usually had to make workaround based on the current state of the super pom 
    where the maven-source-plugin is attached to the life cycle with the `jar` 
-   goal. Unfortunately the `jar` goal forkes the life-cycle which is not always 
+   goal. Unfortunately the `jar` goal forks the life-cycle which is not always 
    the right thing. So in the majority of the cases people add the following 
    workaround to their corporate pom:
 
@@ -162,7 +162,6 @@ Overview about the changes
 
    The above workaround is no longer needed cause the super pom has been changed
    accordingly [MNG-5940].
-
 
  * In Maven 3.3.9 we have removed bindings for maven-ejb3-plugin cause it 
    does not exist. We follow-up and removed the ArtifactHandler for ejb3
