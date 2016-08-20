@@ -1,3 +1,5 @@
+MNG-6082 Introduction of model version 4.1.0.
+MNG-6079 3.4 regression: cannot override version of a dependencyManagement in a submodule any more
 MNG-6078 Can't overwrite properties which have been defined in .mvn/maven.config
 MNG-6075 Increase the model validation level to the next minor level version.
 MNG-6074 Maven should produce an error if no model version has been set in a POM file used to build an effective model.
@@ -80,6 +82,7 @@ MNG-2199 Support version ranges in parent elements
 
 New Features: 
 Bugs: 
+MNG-6079 reporter: Samuel Langlois
 MNG-6070, MNG-6057, MNG-6041, MNG-5868 reporter: Karl Heinz Marbaise
 MNG-6053 reporter: Fred Bricon
 MNG-6043, MNG-6029, MNG-6022 reporter: Michael Osipov
