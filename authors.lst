@@ -1,84 +1,65 @@
-MNG-6102 Introduce maven.conf in m2.conf
-MNG-6096 Deprecate DefaultArtifactVersion class
+MNG-6166 mvn dependency:go-offline fails due to missing transitive dependency jdom:jdom:jar:1.1
+MNG-6165 Deprecate and replace incorrectly spelled public API
+MNG-6163 Introduce CLASSWORLDS_JAR in shell startup scripts
+MNG-6152 Add a Jenkinsfile so that builds.apache.org can use multibranch pipeline
+MNG-6151 Force Push master from 737de43e392fc15a0ce366db98d70aa18b3f6c03
+MNG-6150 Javadoc improvements for 3.5.0
+MNG-6147 MetadataResolutionResult#getGraph() contains duplicate if clause
+MNG-6146 Several small stylistic and spelling improvements to code and documentation
+MNG-6145  Remove non-existent m2 include in component.xml
+MNG-6144 DefaultWagonManagerTest#testGetMissingJarForced() passed incorrect value
+MNG-6140 update documentation's dependency graph with resolver + resolver-provider + slf4j-provider
+MNG-6138 Remove obsolete message_*.properties form maven-core
+MNG-6137 Clean up duplicate dependencies caused by incomplete Wagon HTTP Provider exclusions
+MNG-6136 Upgrade Maven Wagon to 2.12
+MNG-6117 ${session.parallel} not correctly set
+MNG-6110 Upgrade Aether to Maven Resolver
+MNG-6109 PluginDescriptor doesn't read since value of parameter
+MNG-6106 Remove maven.home default value setter from m2.conf
+MNG-6105 properties.internal.SystemProperties.addSystemProperties() is not really thread-safe
+MNG-6102 Introduce ${maven.conf} in m2.conf
+MNG-6093 create a slf4j-simple provider extension that supports level color rendering
 MNG-6092 warn if prerequisites.maven is used for non-plugin projects
 MNG-6088 after forked execution success, add an empty line
-MNG-6082 Introduction of model version 4.1.0.
-MNG-6079 3.4 regression: cannot override version of a dependencyManagement in a submodule any more
+MNG-6081 Log refactoring - Method Invocation Replaced By Variable
 MNG-6078 Can't overwrite properties which have been defined in .mvn/maven.config
-MNG-6075 Increase the model validation level to the next minor level version.
-MNG-6074 Maven should produce an error if no model version has been set in a POM file used to build an effective model.
-MNG-6073 Addition of a core extension point to the model builder supporting model finalization.
-MNG-6070 Default profile in settings.xml must not use an id possibly already in use. 
-MNG-6068 Document default scope compile in XSD
-MNG-6059 Important use cases not covered, as child.inherit.append.path affects all children
-MNG-6057 Problem with CI friendly usage of ${..} reactor order is changed
-MNG-6054 Removal of super pom plugin management.
+MNG-6068 Document default scope compile in pom XSD and reference documentation
 MNG-6053 Unsafe System Properties copy in MavenRepositorySystemUtils, causing NPEs
-MNG-6049 Add behavior to filter resolved version ranges of an artifact
-MNG-6046 upgrade JAnsi from 1.12 to 1.13
-MNG-6045 Document Jansi's native support limitation
-MNG-6044 Document how to configure Gossip
-MNG-6043 Colorization is disabled too late in batch mode
-MNG-6041 Option -l does not disable colorized output
-MNG-6038 use Gossip slf4j provider as default logging, since it supports level colorization
-MNG-6037 add gossip slf4j provider support
-MNG-6035 Upgrade animal-sniffer-maven-plugin to 1.15
 MNG-6032 WARNING during build based on absolute path in assembly-descriptor.
 MNG-6030 ReactorModelCache do not used effectively after maven version 3.0.5 which cause a large memory footprint
-MNG-6029 Duplicate conditional and body in MetadataResolutionResult.java
 MNG-6022 mvn.cmd fails if directory contains an ampersand (&)
 MNG-6017 Removing ArtifactHandler for par LifeCycle
 MNG-6014 Removing ArtifactHandler for ejb3
 MNG-6003 Drastically reduce JAVA_HOME discovery code
 MNG-6001 Replace %HOME% with %USERPROFILE% in mvn.cmd
 MNG-5993 Confusing error message in case of missing/empty artifactId and version in pluginManagement
-MNG-5992 Git passwords are exposed as the Super POM still uses Maven Release Plugin 2.3.2
-MNG-5984 Maven core extension resolution ignores repositories from activeByDefault profiles in settings.xml
-MNG-5981 Plexus lifecycle could be activated too late during overlapping parallel requests
 MNG-5977 Improve output readability of our MavenTransferListener implementations
 MNG-5975 Use Java 7's SimpleDateFormat in CLIReportingUtils#formatTimestamp
-MNG-5971 Imported dependencies should be available to inheritance processing
-MNG-5968 Default plugin version updates.
-MNG-5967 Dependency updates.
+MNG-5968 Default plugin version updates
+MNG-5967 Dependency updates
 MNG-5963 mvn.cmd does not return ERROR_CODE
-MNG-5962 mvn fails when the current directory has spaces in between
+MNG-5962 mvn.cmd fails when the current directory has spaces in between
 MNG-5961 Maven possibly not aware of log4j2
 MNG-5958 java.lang.String cannot be cast to org.apache.maven.lifecycle.mapping.LifecyclePhase
 MNG-5954 Remove outdated maven-embedder/src/main/resources/META-INF/MANIFEST.MF
-MNG-5951 add an option to avoid path addition to inherited URLs
 MNG-5946 Fix links etc. in README.txt which is part of the delivery
-MNG-5940 Change the maven-source-plugin jar goal into jar-no-fork in Maven Super POM
-MNG-5939 Problem doing release when sources are generate as well
-MNG-5935 Optional true getting lost in managed dependencies when transitive
 MNG-5934 String handling issues identified by PMD
 MNG-5931 Fixing documentation 
-MNG-5904 Remove the whole Ant Build
+MNG-5904 Remove the whole Ant build
+MNG-5889 .mvn directory should be picked when using --file
 MNG-5883 Silence unnecessary legacy local repository warning
 MNG-5878 add support for module name != artifactId in every calculated URLs (project, SCM, site): special project.directory property
-MNG-5868 Adding serval times the same artifact via MavenProjectHelper (attachArtifact) does not produce a failure 
-MNG-5863 default pom's release-profile should invoke source plugin with goal "jar-no-fork" instead of "jar"
-MNG-5852 "mvn" script invokes /bin/sh but requires /bin/bash functions
-MNG-5849 maven can not be found when current directory is drive/root at least on windows 7 64bit
-MNG-5837 Syntax error in bin/mvn on Solaris SPARC
-MNG-5836 logging config is overwritten by $M2_HOME/lib/ext/*.jar
+MNG-5852 mvn shell script invokes /bin/sh but requires Bash functions
+MNG-5836 logging config is overridden by $M2_HOME/lib/ext/*.jar
+MNG-5829 mvn shell script fails with syntax error on Solaris 10
 MNG-5823 mvnDebug doesn't work with M2_HOME with spaces - missing quotes
 MNG-5815 "mvn.cmd" does not indicate failure properly when using "&&"
 MNG-5629 ClosedChannelException from DefaultUpdateCheckManager.read
 MNG-5607 Don't use M2_HOME in mvn shell/command scripts anymore
-MNG-5600 Dependency management import should support exclusions.
 MNG-5579 Unify error output/check logic from shell and batch scripts
-MNG-5567 Zip files are not included in classpaths at all
-MNG-5538 mvn start script causes cygwin warning
-MNG-5527 Dependency management import should support relocations.
-MNG-5387 Add ability to replace an artifact in mid-build
 MNG-5368 UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
-MNG-5359 Declared execution in PluginMgmt gets bound to lifecycle (regression)
-MNG-5227 Make 'optional' flag of a dependency manageable.
-MNG-4645 Move central repo definition out of Maven's core so it can be more easily changed
-MNG-4508 No way to avoid adding artifactId to site urls
-MNG-4463 Version ranges cannot be used for artifacts with 'import' scope
-MNG-3507 ANSI Color logging for improved output visibility.
-MNG-2478 add "resources-filtered" filtered resource directories to super POM
+MNG-5297 Site should tell 'prerequisites.maven is deprecated'
+MNG-3507 ANSI color logging for improved output visibility
 MNG-2199 Support version ranges in parent elements
 
 
@@ -86,50 +67,37 @@ MNG-2199 Support version ranges in parent elements
 
 New Features: 
 Bugs: 
-MNG-6079 reporter: Samuel Langlois
-MNG-6070, MNG-6057, MNG-6041, MNG-5868 reporter: Karl Heinz Marbaise
+MNG-6166 reporter: Archimedes Trajano
+MNG-6144 reporter: August Shi
+MNG-6117 reporter: Richard Raumberger
+MNG-6109 reporter: Robert Scholte
+MNG-6105 reporter: Falko Modler
 MNG-6053 reporter: Fred Bricon
-MNG-6043, MNG-6029, MNG-6022 reporter: Michael Osipov
-MNG-5984 reporter: Gabriël Konat
-MNG-5981 reporter: Stuart McCulloch
-MNG-5971 reporter: Stephane Nicoll
+MNG-6022 reporter: Michael Osipov
 MNG-5963 reporter: Larry Singer
 MNG-5962 reporter: Miriam Lee
 MNG-5961 reporter: Mike Drob
 MNG-5958 reporter: Meytal Genah
-MNG-5939 reporter: chibbe
-MNG-5935 reporter: Marcel Schutte
-MNG-5863 reporter: Petr Kozelka
 MNG-5852 reporter: Jeffrey Alexander
-MNG-5849 reporter: Ali Reza Sharghi
-MNG-5837 reporter: Erlend Birkedal
 MNG-5836 reporter: Igor Fedorenko
+MNG-5829 reporter: Zac Thompson
 MNG-5823 reporter: Tobias Oberlies
 MNG-5815 reporter: Peter Kjær Guldbæk
 MNG-5629 reporter: Anthony Whitford
-MNG-5567 reporter: Pablo La Greca
-MNG-5538 reporter: Martin Vavra
-MNG-5527 reporter: Matous Jobanek
-MNG-5387 reporter: Benson Margulies
 MNG-5368 reporter: Andrew Haines
-MNG-5359 reporter: Anders Hammar
-MNG-4463 reporter: Rob ten Hove
+MNG-5297 reporter: Kengo TODA
 Improvements
-MNG-6102, MNG-6003, MNG-6001, MNG-5977, MNG-5975, MNG-5579 reporter: Michael Osipov
-MNG-6078, MNG-6068, MNG-6035, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5940, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
-MNG-6074, MNG-5968 reporter: Christian Schulte
-MNG-6059 reporter: Andreas Sewe
-MNG-6049 reporter: Uwe Barthel
-MNG-6046 reporter: Hervé Boutemy
+MNG-6165 reporter: Josh Soref
+MNG-6163, MNG-6147, MNG-6146, MNG-6145, MNG-6102, MNG-6003, MNG-6001, MNG-5977, MNG-5975, MNG-5579 reporter: Michael Osipov
+MNG-6150 reporter: Stephen Connolly
+MNG-6081 reporter: Nemo Chen
+MNG-6078, MNG-6068, MNG-6032, MNG-6017, MNG-6014, MNG-5946, MNG-5931, MNG-5904, MNG-5607 reporter: Karl Heinz Marbaise
 MNG-6030 reporter: Andriy
 MNG-5993 reporter: Konrad Windszus
-MNG-5992 reporter: Ryan J. McDonough
-MNG-5951 reporter: Jörg Sesterhenn
+MNG-5968 reporter: Christian Schulte
 MNG-5934 reporter: Alex Henrie
+MNG-5889 reporter: Daniel Spilker
 MNG-5883 reporter: Ben Caradoc-Davies
-MNG-5600 reporter: Radai Rosenblatt
-MNG-4645 reporter: Paul Gier
-MNG-4508 reporter: Richard van der Hoff
 Wish
 MNG-6092, MNG-6088 reporter: Hervé Boutemy
 MNG-2199 reporter: Christian Schulte

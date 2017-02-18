@@ -20,11 +20,11 @@
  http://maven.apache.org/doxia/references/apt-format.html
 -->
 
-# Release Notes &#x2013; Maven 3.4.0
+# Release Notes &#x2013; Maven 3.5.0
 
-The Apache Maven team would like to announce the release of Maven 3.4.0
+The Apache Maven team would like to announce the release of Maven 3.5.0
 
-Maven 3.4.0 is [available for download][0].
+Maven 3.5.0 is [available for download][0].
 
 Maven is a software project management and comprehension tool. Based on the concept of a project object model
 (POM), Maven can manage a project's build, reporting and documentation from a central place.
@@ -36,7 +36,7 @@ We hope you enjoy using Maven! If you have any questions, please consult:
 
 - the web site: [http://maven.apache.org/](/)
 - the maven-user mailing list: [http://maven.apache.org/mail-lists.html](/mail-lists.html)
-- the reference documentation: [http://maven.apache.org/ref/3.4.0/](/ref/3.4.0/)
+- the reference documentation: [http://maven.apache.org/ref/3.5.0/](/ref/3.5.0/)
 
 
 Reporters and Contributors of this release
