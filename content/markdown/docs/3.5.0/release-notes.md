@@ -44,44 +44,25 @@ Reporters and Contributors of this release
 
 Bugs: 
 
- * [MNG-5984] reporter: Gabriël Konat
- * [MNG-5981] reporter: Stuart McCulloch contributor: Stuart McCulloch
  * [MNG-5963] reporter: Larry Singer
  * [MNG-5962] reporter/contributor: Miriam Lee
  * [MNG-5961] reporter: Mike Drob
  * [MNG-5958] reporter: Meytal Genah contributor: Anton Tanasenko
- * [MNG-5939] reporter: chibbe
- * [MNG-5935] reporter: Marcel Schutte
- * [MNG-5863] reporter/contributor: Petr Kozelka
  * [MNG-5852] reporter: Jeffrey Alexander
- * [MNG-5849] reporter: Ali Reza Sharghi
- * [MNG-5837] reporter: Erlend Birkedal contributor: barthel
  * [MNG-5823] reporter: Tobias Oberlies
  * [MNG-5815] reporter: Peter Kjær Guldbæk
- * [MNG-5629] reporter: Anthony Whitford
- * [MNG-5567] reporter: Pablo La Greca
- * [MNG-5538] reporter: Martin Vavra contributor: barthel
  * [MNG-5368] reporter: Andrew Haines
- * [MNG-4463] reporter: Rob ten Hove contributor: barthel
 
 Improvements:
 
  * [MNG-6030] reporter: Andriy contributor: Andriy
- * [MNG-5992] reporter: Ryan J. McDonough
- * [MNG-5951] reporter: Jörg Sesterhenn
  * [MNG-5934] reporter/contributor: Alex Henrie 
  * [MNG-5883] reporter: Ben Caradoc-Davies
- * [MNG-4508] reporter: Richard van der Hoff
 
 Many thanks to all reporters and contributors for their time and support.
 
 Preliminary Testers
 -------------------
-
- * Oliver B. Fischer
- * Jieryn
- * Torsten Stolpmann
- * Anton Tanasenko
 
 Thank you also for your time and feedback.
 
@@ -102,66 +83,8 @@ Overview about the changes
    with `%USERPROFILE%` [MNG-6001]
 
  * Several issues have been reported and fixed related to the `mvn` script either
-   for Unix/Linux/Cygwin/Solaris or for Windows. Those issues have been fixed [MNG-5538],
-   [MNG-5815], [MNG-5837], [MNG-5849], [MNG-5852], [MNG-5963], [MNG-6022].
-
- * In Java it is possible to have a ZIP file being used on the classpath as
-   well as JAR files. This has not been supported in previous Maven versions. 
-   This has been fixed with [MNG-5567].
- 
- * Creating source packages during a release of your artifacts you
-   usually had to make workaround based on the current state of the super pom 
-   where the maven-source-plugin is attached to the life cycle with the `jar` 
-   goal. Unfortunately the `jar` goal forks the life-cycle which is not always 
-   the right thing. So in the majority of the cases people add the following 
-   workaround to their corporate pom:
-
-``` xml
-  <pluginManagement>
-    <plugins>
-      ..
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-        <version>..</version>
-        <executions>
-          <execution>
-            <id>attach-sources</id>
-            <phase>DISABLE_FORKED_LIFECYCLE_MSOURCES</phase>
-          </execution>
-        </executions>
-      </plugin>
-      ..
-    </plugins> 
-  </pluginManagement>
-..
-```
-  
-   The above will detach the maven-source-plugin from the life-cycle and prevent
-   calling the `generate-sources` and `generate-resources` twice. But to keep
-   generating a source package during the release you need to add the following to
-   your pom file:
-
-``` xml
-  <plugins>
-    <plugin>
-      <inherited>true</inherited>
-      <artifactId>maven-source-plugin</artifactId>
-      <executions>
-        <execution>
-          <id>attach-sources-no-fork</id>
-          <inherited>true</inherited>
-          <goals>
-            <goal>jar-no-fork</goal>
-          </goals>
-        </execution>
-      </executions>
-    </plugin>
-  </plugins>
-```
-
-   The above workaround is no longer needed cause the super pom has been changed
-   accordingly [MNG-5940].
+   for Unix/Linux/Cygwin/Solaris or for Windows. Those issues have been fixed 
+   [MNG-5815], [MNG-5852], [MNG-5963], [MNG-6022].
 
  * In Maven 3.3.9 we have removed bindings for maven-ejb3-plugin cause it 
    does not exist. We follow-up and removed the ArtifactHandler for ejb3
@@ -179,128 +102,89 @@ Overview about the changes
 
 Improvements:
 
- * If you have used Bill of Materials which makes it easier to handle larger
-   number of dependencies you might have been faced with a situation like this.
-   You do an import like the following: 
-
-``` xml
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-framework-bom</artifactId>
-    <version>${org.springframework.version}</version>
-    <type>pom</type>
-    <scope>import</scope>    
-</dependency>
-```
-
-   But now you would like to exclude some of transitive dependencies like this:
-
-``` xml
-<dependency>
-  <groupId>org.springframework</groupId>
-  <artifactId>spring-framework-bom</artifactId>
-  <version>${org.springframework.version}</version>
-  <type>pom</type>
-  <scope>import</scope>
-  <exclusions>
-    <exclusion>
-      <artifactId>commons-logging</artifactId>
-      <groupId>commons-logging</groupId>
-    </exclusion>
-  </exclusions>
-</dependency>
-```
-   This has been introduced with [MNG-5600][MNG-5600] to make the users life
-   easier.
 
 Bugs:
 
- * [MNG-5600] - Dependency management import should support exclusions.
- * [MNG-4463] - Version ranges cannot be used for artifacts with 'import' scope
- * [MNG-5359] - Declared execution in PluginMgmt gets bound to lifecycle (regression)
+ * [MNG-5297] - Site should tell 'prerequisites.maven is deprecated'
  * [MNG-5368] - UnsupportedOperationException thrown when version range is not correct in dependencyManagement definitions
- * [MNG-5387] - Add ability to replace an artifact in mid-build
  * [MNG-5629] - ClosedChannelException from DefaultUpdateCheckManager.read
- * [MNG-5849] - maven can not be found when current directory is drive/root at least on windows 7 64bit
- * [MNG-5863] - default pom's release-profile should invoke source plugin with goal "jar-no-fork" instead of "jar"
- * [MNG-5868] - Adding serval times the same artifact via MavenProjectHelper (attachArtifact) does not produce a failure
- * [MNG-5935] - Optional true getting lost in managed dependencies when transitive
- * [MNG-5939] - Problem doing release when sources are generate as well
+ * [MNG-5815] - "mvn.cmd" does not indicate failure properly when using "&&"
+ * [MNG-5823] - mvnDebug doesn't work with M2_HOME with spaces - missing quotes
+ * [MNG-5829] - mvn shell script fails with syntax error on Solaris 10
+ * [MNG-5836] - logging config is overridden by $M2_HOME/lib/ext/*.jar
+ * [MNG-5852] - mvn shell script invokes /bin/sh but requires Bash functions
  * [MNG-5958] - java.lang.String cannot be cast to org.apache.maven.lifecycle.mapping.LifecyclePhase
  * [MNG-5961] - Maven possibly not aware of log4j2
- * [MNG-5962] - mvn fails when the current directory has spaces in between
- * [MNG-5967] - Dependency updates.
- * [MNG-5971] - Imported dependencies should be available to inheritance processing
- * [MNG-5981] - Plexus lifecycle could be activated too late during overlapping parallel requests
- * [MNG-5984] - Maven core extension resolution ignores repositories from activeByDefault profiles in settings.xml
- * [MNG-6029] - Duplicate conditional and body in MetadataResolutionResult.java Dependency upgrade
- * [MNG-6078] - Can't overwrite properties which have been defined in .mvn/maven.config
+ * [MNG-5962] - mvn.cmd fails when the current directory has spaces in between
+ * [MNG-5963] - mvn.cmd does not return ERROR_CODE
+ * [MNG-6022] - mvn.cmd fails if directory contains an ampersand (&)
+ * [MNG-6053] - Unsafe System Properties copy in MavenRepositorySystemUtils, causing NPEs
+ * [MNG-6105] - properties.internal.SystemProperties.addSystemProperties() is not really thread-safe
+ * [MNG-6109] - PluginDescriptor doesn't read since value of parameter
+ * [MNG-6117] - ${session.parallel} not correctly set
+ * [MNG-6144] - DefaultWagonManagerTest#testGetMissingJarForced() passed incorrect value
+ * [MNG-6166] - mvn dependency:go-offline fails due to missing transitive dependency jdom:jdom:jar:1.1
+ * [MNG-6171] - REGRESSION: WARNING about usage of a non threadsafe marked plugin is not showed anymore
+ * [MNG-6172] - Precedence of command-line system property options has changed
+
+Dependency upgrade:
+
+ * [MNG-5967] - Dependency updates
+ * [MNG-6110] - Upgrade Aether to Maven Resolver
 
 Improvements:
 
- * [MNG-4508] - No way to avoid adding artifactId to site urls
  * [MNG-5579] - Unify error output/check logic from shell and batch scripts
+ * [MNG-5607] - Don't use M2_HOME in mvn shell/command scripts anymore
  * [MNG-5883] - Silence unnecessary legacy local repository warning
- * [MNG-5904] - Remove the whole Ant Build
+ * [MNG-5889] - .mvn directory should be picked when using --file
+ * [MNG-5904] - Remove the whole Ant build
  * [MNG-5931] - Fixing documentation
  * [MNG-5934] - String handling issues identified by PMD
- * [MNG-5940] - Change the maven-source-plugin jar goal into jar-no-fork in Maven Super POM
  * [MNG-5946] - Fix links etc. in README.txt which is part of the delivery
- * [MNG-5951] - add an option to avoid path addition to inherited URLs
- * [MNG-5968] - Default plugin version updates.
+ * [MNG-5968] - Default plugin version updates
  * [MNG-5975] - Use Java 7's SimpleDateFormat in CLIReportingUtils#formatTimestamp
- * [MNG-5976] - Replace Plexus Utils OS with Commons Lang SystemUtils
  * [MNG-5977] - Improve output readability of our MavenTransferListener implementations
- * [MNG-5992] - Git passwords are exposed as the Super POM still uses Maven Release Plugin 2.3.2
+ * [MNG-5993] - Confusing error message in case of missing/empty artifactId and version in pluginManagement
+ * [MNG-6001] - Replace %HOME% with %USERPROFILE% in mvn.cmd
+ * [MNG-6003] - Drastically reduce JAVA_HOME discovery code
  * [MNG-6014] - Removing ArtifactHandler for ejb3
  * [MNG-6017] - Removing ArtifactHandler for par LifeCycle
  * [MNG-6030] - ReactorModelCache do not used effectively after maven version 3.0.5 which cause a large memory footprint
  * [MNG-6032] - WARNING during build based on absolute path in assembly-descriptor.
- * [MNG-6035] - Upgrade animal-sniffer-maven-plugin to 1.15
+ * [MNG-6068] - Document default scope compile in pom XSD and reference documentation
+ * [MNG-6078] - Can't overwrite properties which have been defined in .mvn/maven.config
+ * [MNG-6081] - Log refactoring - Method Invocation Replaced By Variable
+ * [MNG-6102] - Introduce ${maven.conf} in m2.conf
+ * [MNG-6145] - Remove non-existent m2 include in component.xml
+ * [MNG-6146] - Several small stylistic and spelling improvements to code and documentation
+ * [MNG-6147] - MetadataResolutionResult#getGraph() contains duplicate if clause
+ * [MNG-6150] - Javadoc improvements for 3.5.0
+ * [MNG-6163] - Introduce CLASSWORLDS_JAR in shell startup scripts
+ * [MNG-6165] - Deprecate and replace incorrectly spelled public API
 
-New Features:
+New Feature:
 
- * [MNG-1977] - Global dependency exclusions
- * [MNG-2478] - add "resources-filtered" filtered resource directories to super POM
- * [MNG-3507] - ANSI Color logging for improved output visibility.
- * [MNG-5227] - Make 'optional' flag of a dependency manageable.
- * [MNG-5878] - add support for module name != artifactId in every calculated URLs (SCM, site): special project.directory property
- * [MNG-6037] - add gossip slf4j provider support
- * [MNG-6038] - use Gossip slf4j provider as default logging, since it supports level colorization
-
-Task:
-
+ * [MNG-3507] - ANSI color logging for improved output visibility
+ * [MNG-5878] - add support for module name != artifactId in every calculated URLs (project, SCM, site): special project.directory property
+ * [MNG-6093] - create a slf4j-simple provider extension that supports level color rendering Task
  * [MNG-5954] - Remove outdated maven-embedder/src/main/resources/META-INF/MANIFEST.MF
+ * [MNG-6106] - Remove maven.home default value setter from m2.conf
+ * [MNG-6136] - Upgrade Maven Wagon from 2.10 to 2.12
+ * [MNG-6137] - Clean up duplicate dependencies caused by incomplete Wagon HTTP Provider exclusions
+ * [MNG-6138] - Remove obsolete message_*.properties form maven-core
+ * [MNG-6140] - update documentation's dependency graph with resolver + resolver-provider + slf4j-provider
+ * [MNG-6151] - Force Push master from 737de43e392fc15a0ce366db98d70aa18b3f6c03
+ * [MNG-6152] - Add a Jenkinsfile so that builds.apache.org can use multibranch pipeline
 
-Wish:
+Wishes:
 
  * [MNG-2199] - Support version ranges in parent elements
+ * [MNG-6088] - after forked execution success, add an empty line
+ * [MNG-6092] - warn if prerequisites.maven is used for non-plugin projects
 
 
 
-New Features
-------------
-
- * Hm...[MNG-2478] - add "resources-filtered" filtered resource directories to super POM
-
-   Improving the `Convention over Configuration` paradigm the super POM has been enhanced
-   with two supplemental entries for filtered resources.
-
-``` xml
-```
-
-Wishes
-------
-
-
-
-Improvements
-------------
-
-
-
-Task
-----
 
 
 
@@ -313,69 +197,10 @@ See [complete release notes for all versions][5]
 [0]: ../../download.html
 [1]: ../../plugins/index.html
 [2]: http://maven.apache.org/
-[4]: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12316922&amp;version=12333545
+[4]: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12316922&version=12339664&styleName=Text
 [5]: ../../docs/history.html
 [maven-enforcer-plugin]: /enforcer/maven-enforcer-plugin/
 [maven-resources-plugin]: /enforcer/maven-resources-plugin/
-[maven-aether-provider]: /ref/3.4.0/maven-aether-provider/
-[maven-compat]: /ref/3.4.0/maven-compat/
+[maven-aether-provider]: /ref/3.5.0/maven-aether-provider/
+[maven-compat]: /ref/3.5.0/maven-compat/
 [MNG-1977]: https://issues.apache.org/jira/browse/MNG-1977
-[MNG-2199]: https://issues.apache.org/jira/browse/MNG-2199
-[MNG-2478]: https://issues.apache.org/jira/browse/MNG-2478
-[MNG-3507]: https://issues.apache.org/jira/browse/MNG-3507
-[MNG-4463]: https://issues.apache.org/jira/browse/MNG-4463
-[MNG-4508]: https://issues.apache.org/jira/browse/MNG-4508
-[MNG-5227]: https://issues.apache.org/jira/browse/MNG-5227
-[MNG-5359]: https://issues.apache.org/jira/browse/MNG-5359
-[MNG-5368]: https://issues.apache.org/jira/browse/MNG-5368
-[MNG-5387]: https://issues.apache.org/jira/browse/MNG-5387
-[MNG-5538]: https://issues.apache.org/jira/browse/MNG-5538
-[MNG-5567]: https://issues.apache.org/jira/browse/MNG-5567
-[MNG-5579]: https://issues.apache.org/jira/browse/MNG-5579
-[MNG-5600]: https://issues.apache.org/jira/browse/MNG-5600
-[MNG-5607]: https://issues.apache.org/jira/browse/MNG-5607
-[MNG-5629]: https://issues.apache.org/jira/browse/MNG-5629
-[MNG-5815]: https://issues.apache.org/jira/browse/MNG-5815
-[MNG-5823]: https://issues.apache.org/jira/browse/MNG-5823
-[MNG-5836]: https://issues.apache.org/jira/browse/MNG-5836
-[MNG-5837]: https://issues.apache.org/jira/browse/MNG-5837
-[MNG-5849]: https://issues.apache.org/jira/browse/MNG-5849
-[MNG-5852]: https://issues.apache.org/jira/browse/MNG-5852
-[MNG-5863]: https://issues.apache.org/jira/browse/MNG-5863
-[MNG-5868]: https://issues.apache.org/jira/browse/MNG-5868
-[MNG-5878]: https://issues.apache.org/jira/browse/MNG-5878
-[MNG-5883]: https://issues.apache.org/jira/browse/MNG-5883
-[MNG-5904]: https://issues.apache.org/jira/browse/MNG-5904
-[MNG-5931]: https://issues.apache.org/jira/browse/MNG-5931
-[MNG-5934]: https://issues.apache.org/jira/browse/MNG-5934
-[MNG-5935]: https://issues.apache.org/jira/browse/MNG-5935
-[MNG-5939]: https://issues.apache.org/jira/browse/MNG-5939
-[MNG-5940]: https://issues.apache.org/jira/browse/MNG-5940
-[MNG-5946]: https://issues.apache.org/jira/browse/MNG-5946
-[MNG-5951]: https://issues.apache.org/jira/browse/MNG-5951
-[MNG-5954]: https://issues.apache.org/jira/browse/MNG-5954
-[MNG-5958]: https://issues.apache.org/jira/browse/MNG-5958
-[MNG-5961]: https://issues.apache.org/jira/browse/MNG-5961
-[MNG-5962]: https://issues.apache.org/jira/browse/MNG-5962
-[MNG-5963]: https://issues.apache.org/jira/browse/MNG-5963
-[MNG-5967]: https://issues.apache.org/jira/browse/MNG-5967
-[MNG-5968]: https://issues.apache.org/jira/browse/MNG-5968
-[MNG-5971]: https://issues.apache.org/jira/browse/MNG-5971
-[MNG-5975]: https://issues.apache.org/jira/browse/MNG-5975
-[MNG-5976]: https://issues.apache.org/jira/browse/MNG-5976
-[MNG-5977]: https://issues.apache.org/jira/browse/MNG-5977
-[MNG-5981]: https://issues.apache.org/jira/browse/MNG-5981
-[MNG-5984]: https://issues.apache.org/jira/browse/MNG-5984
-[MNG-5992]: https://issues.apache.org/jira/browse/MNG-5992
-[MNG-6001]: https://issues.apache.org/jira/browse/MNG-6001
-[MNG-6003]: https://issues.apache.org/jira/browse/MNG-6003
-[MNG-6014]: https://issues.apache.org/jira/browse/MNG-6014
-[MNG-6017]: https://issues.apache.org/jira/browse/MNG-6017
-[MNG-6022]: https://issues.apache.org/jira/browse/MNG-6022
-[MNG-6029]: https://issues.apache.org/jira/browse/MNG-6029
-[MNG-6030]: https://issues.apache.org/jira/browse/MNG-6030
-[MNG-6032]: https://issues.apache.org/jira/browse/MNG-6032
-[MNG-6035]: https://issues.apache.org/jira/browse/MNG-6035
-[MNG-6037]: https://issues.apache.org/jira/browse/MNG-6037
-[MNG-6038]: https://issues.apache.org/jira/browse/MNG-6038
-[MNG-6078]: https://issues.apache.org/jira/browse/MNG-6078
