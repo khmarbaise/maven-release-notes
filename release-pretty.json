@@ -2,8 +2,455 @@
   "expand": "schema,names",
   "startAt": 0,
   "maxResults": 99,
-  "total": 63,
+  "total": 65,
   "issues": [
+    {
+      "expand": "operations,editmeta,changelog,transitions,renderedFields",
+      "id": "13042536",
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/13042536",
+      "key": "MNG-6172",
+      "fields": {
+        "issuetype": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
+          "id": "1",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/bug.png",
+          "name": "Bug",
+          "subtask": false
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://issues.apache.org/jira/rest/api/2/project/12316922",
+          "id": "12316922",
+          "key": "MNG",
+          "name": "Maven",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12316922&avatarId=10011",
+            "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12316922&avatarId=10011",
+            "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12316922&avatarId=10011",
+            "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12316922&avatarId=10011"
+          },
+          "projectCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/10510",
+            "id": "10510",
+            "description": "Apache Maven related projects",
+            "name": "Maven"
+          }
+        },
+        "fixVersions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
+            "id": "12336084",
+            "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "aggregatetimespent": null,
+        "resolution": {
+          "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+          "id": "1",
+          "description": "A fix for this issue is checked into the tree and tested.",
+          "name": "Fixed"
+        },
+        "customfield_12312520": null,
+        "customfield_12312322": null,
+        "customfield_12310220": "2017-02-13 10:59:11.032",
+        "customfield_12312521": "Thu Feb 23 14:37:55 UTC 2017",
+        "customfield_12312323": null,
+        "customfield_12312320": null,
+        "customfield_12310420": "9223372036854775807",
+        "customfield_12310222": "1_*:*_1_*:*_878891386_*|*_5_*:*_1_*:*_0",
+        "customfield_12312321": null,
+        "customfield_12312120": null,
+        "customfield_12312121": null,
+        "resolutiondate": "2017-02-23T14:37:55.000+0000",
+        "workratio": -1,
+        "customfield_12312328": null,
+        "customfield_12312329": null,
+        "customfield_12312326": null,
+        "customfield_12312327": null,
+        "customfield_12310300": null,
+        "customfield_12312324": null,
+        "customfield_12312325": null,
+        "lastViewed": "2017-02-20T19:02:54.285+0000",
+        "watches": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6172/watchers",
+          "watchCount": 4,
+          "isWatching": false
+        },
+        "created": "2017-02-13T10:29:43.000+0000",
+        "priority": {
+          "self": "https://issues.apache.org/jira/rest/api/2/priority/1",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/blocker.png",
+          "name": "Blocker",
+          "id": "1"
+        },
+        "labels": [],
+        "customfield_12312333": null,
+        "customfield_12312334": null,
+        "customfield_12312331": null,
+        "customfield_12310310": "0.0",
+        "customfield_12312332": null,
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "customfield_12312330": null,
+        "versions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12338967",
+            "id": "12338967",
+            "description": "Issues being considered for 3.5.0",
+            "name": "3.5.0-candidate",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "customfield_12311120": null,
+        "customfield_12312339": null,
+        "issuelinks": [],
+        "assignee": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=stephenc",
+          "name": "stephenc",
+          "emailAddress": "stephenc at apache dot org",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=stephenc&avatarId=23212",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=stephenc&avatarId=23212",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=stephenc&avatarId=23212",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=stephenc&avatarId=23212"
+          },
+          "displayName": "Stephen Connolly",
+          "active": true
+        },
+        "customfield_12312337": null,
+        "customfield_12312338": null,
+        "updated": "2017-02-23T15:02:29.000+0000",
+        "customfield_12312335": null,
+        "customfield_12312336": null,
+        "status": {
+          "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are not closed can be reopened.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
+          "statusCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Complete"
+          }
+        },
+        "components": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/component/12325617",
+            "id": "12325617",
+            "name": "Command Line"
+          }
+        ],
+        "timeoriginalestimate": null,
+        "description": "The current state of master (what will eventually become 3.5.0) has reversed the precedence of command-line system property options compared to previous releases of Maven.\r\n\r\nFor example, running this command with a basic project:\r\n{code}\r\nmvn -Dmaven.repo.local=/tmp/aaa -Dmaven.repo.local=/tmp/zzz validate\r\n{code}\r\nusing current master will cause {{/tmp/aaa}} to be created (first-one-wins), whereas for all previous releases of Maven {{/tmp/zzz}} would have been created (last-one-wins)\r\n\r\nThis has the potential to break CI builds which relied on the previous last-one-wins behaviour.\r\n\r\nThis was introduced by the fix for MNG-6078  https://github.com/apache/maven/commit/ca4303031357a7decaee8de770b71fb2c2fedd28 - by reversing the whole array the precedence between options on the same command line has been reversed, not just the relationship between .mvn/maven.config options and command line options.",
+        "customfield_10010": null,
+        "customfield_12312422": null,
+        "customfield_12312026": null,
+        "customfield_12312620": [],
+        "customfield_12312023": null,
+        "customfield_12312420": null,
+        "customfield_12312024": null,
+        "customfield_12312340": null,
+        "aggregatetimeestimate": null,
+        "customfield_12312341": null,
+        "customfield_12312220": null,
+        "customfield_12312022": null,
+        "customfield_12310921": null,
+        "customfield_12310920": "9223372036854775807",
+        "summary": "Precedence of command-line system property options has changed",
+        "creator": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=mcculls",
+          "name": "mcculls",
+          "emailAddress": "mcculls at gmail dot com",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Stuart McCulloch",
+          "active": true
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=mcculls",
+          "name": "mcculls",
+          "emailAddress": "mcculls at gmail dot com",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Stuart McCulloch",
+          "active": true
+        },
+        "customfield_12310291": null,
+        "customfield_12310290": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "environment": null,
+        "customfield_12311020": null,
+        "duedate": null,
+        "customfield_12310250": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6172/votes",
+          "votes": 1,
+          "hasVoted": false
+        },
+        "customfield_12311820": "0|i39zn3:"
+      }
+    },
+    {
+      "expand": "operations,editmeta,changelog,transitions,renderedFields",
+      "id": "13042398",
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/13042398",
+      "key": "MNG-6171",
+      "fields": {
+        "issuetype": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
+          "id": "1",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/issuetypes/bug.png",
+          "name": "Bug",
+          "subtask": false
+        },
+        "timespent": null,
+        "project": {
+          "self": "https://issues.apache.org/jira/rest/api/2/project/12316922",
+          "id": "12316922",
+          "key": "MNG",
+          "name": "Maven",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12316922&avatarId=10011",
+            "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12316922&avatarId=10011",
+            "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12316922&avatarId=10011",
+            "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12316922&avatarId=10011"
+          },
+          "projectCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/10510",
+            "id": "10510",
+            "description": "Apache Maven related projects",
+            "name": "Maven"
+          }
+        },
+        "fixVersions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
+            "id": "12336084",
+            "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
+          }
+        ],
+        "aggregatetimespent": null,
+        "resolution": {
+          "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+          "id": "1",
+          "description": "A fix for this issue is checked into the tree and tested.",
+          "name": "Fixed"
+        },
+        "customfield_12312520": null,
+        "customfield_12312322": null,
+        "customfield_12310220": "2017-02-18 07:26:19.833",
+        "customfield_12312521": "Sat Feb 18 16:41:20 UTC 2017",
+        "customfield_12312323": null,
+        "customfield_12312320": null,
+        "customfield_12310420": "9223372036854775807",
+        "customfield_12310222": "1_*:*_1_*:*_533365506_*|*_6_*:*_1_*:*_0",
+        "customfield_12312321": null,
+        "customfield_12312120": null,
+        "customfield_12312121": null,
+        "resolutiondate": "2017-02-18T16:37:28.000+0000",
+        "workratio": -1,
+        "customfield_12312328": null,
+        "customfield_12312329": null,
+        "customfield_12312326": null,
+        "customfield_12312327": null,
+        "customfield_12310300": null,
+        "customfield_12312324": null,
+        "customfield_12312325": null,
+        "lastViewed": "2017-02-18T16:52:01.255+0000",
+        "watches": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6171/watchers",
+          "watchCount": 4,
+          "isWatching": true
+        },
+        "created": "2017-02-12T12:28:03.000+0000",
+        "priority": {
+          "self": "https://issues.apache.org/jira/rest/api/2/priority/3",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/major.png",
+          "name": "Major",
+          "id": "3"
+        },
+        "labels": [],
+        "customfield_12312333": null,
+        "customfield_12312334": null,
+        "customfield_12312331": null,
+        "customfield_12310310": "0.0",
+        "customfield_12312332": null,
+        "timeestimate": null,
+        "aggregatetimeoriginalestimate": null,
+        "customfield_12312330": null,
+        "versions": [
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12330185",
+            "id": "12330185",
+            "description": "Issue for 3.2.1",
+            "name": "3.2.1",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2014-02-21"
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12330189",
+            "id": "12330189",
+            "description": "Issues for 3.2.5",
+            "name": "3.2.5",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2014-12-20"
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12333074",
+            "id": "12333074",
+            "description": "Issues for 3.3.9",
+            "name": "3.3.9",
+            "archived": false,
+            "released": true,
+            "releaseDate": "2015-11-15"
+          }
+        ],
+        "customfield_12311120": null,
+        "customfield_12312339": null,
+        "issuelinks": [],
+        "assignee": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=hboutemy",
+          "name": "hboutemy",
+          "emailAddress": "herve dot boutemy at free dot fr",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?avatarId=10452",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&avatarId=10452",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&avatarId=10452",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&avatarId=10452"
+          },
+          "displayName": "Hervé Boutemy",
+          "active": true
+        },
+        "customfield_12312337": null,
+        "customfield_12312338": null,
+        "updated": "2017-02-23T15:02:27.000+0000",
+        "customfield_12312335": null,
+        "customfield_12312336": null,
+        "status": {
+          "self": "https://issues.apache.org/jira/rest/api/2/status/6",
+          "description": "The issue is considered finished, the resolution is correct. Issues which are not closed can be reopened.",
+          "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/closed.png",
+          "name": "Closed",
+          "id": "6",
+          "statusCategory": {
+            "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Complete"
+          }
+        },
+        "components": [],
+        "timeoriginalestimate": null,
+        "description": "If you call Maven via command line like this:\r\n{{mvn -T 5 versions:set -DnewVersion=...}} in Maven 3.0.5, 3.1.1 you will get a message like this:\r\n{code}\r\n[INFO] Building with 20 threads\r\n[INFO]\r\n[INFO] ------------------------------------------------------------------------\r\n[INFO] Building reactor-parent 1.0-SNAPSHOT\r\n[INFO] ------------------------------------------------------------------------\r\n[WARNING] *****************************************************************\r\n[WARNING] * Your build is requesting parallel execution, but project      *\r\n[WARNING] * contains the following plugin(s) that are not marked as       *\r\n[WARNING] * @threadSafe to support parallel building.                     *\r\n[WARNING] * While this /may/ work fine, please look for plugin updates    *\r\n[WARNING] * and/or request plugins be made thread-safe.                   *\r\n[WARNING] * If reporting an issue, report it against the plugin in        *\r\n[WARNING] * question, not against maven-core                              *\r\n[WARNING] *****************************************************************\r\n[WARNING] The following plugins are not marked @threadSafe in reactor-parent:\r\n[WARNING] org.codehaus.mojo:versions-maven-plugin:2.3\r\n[WARNING] *****************************************************************\r\n[INFO]\r\n[INFO] --- versions-maven-plugin:2.3:set (default-cli) @ reactor-parent ---\r\n[INFO] Searching for local aggregator root...\r\n[INFO] Local aggregation root: /Users/kama/ws-git-soebes/maven-memory-problem/test-project/reactor\r\n[INFO] Processing change of org.test.parent:reactor-parent:1.0-SNAPSHOT -> 1.0-SNAPSHOT\r\n[INFO] ------------------------------------------------------------------------\r\n{code}\r\nStarting with Maven 3.2.5 and above you don't get the WARNING anymore. Also for [current Master of Maven|https://git-wip-us.apache.org/repos/asf?p=maven.git;a=commit;h=0284dda81beb43b54116326f9a6efd439d40c922] it will not beed showed.\r\n\r\n",
+        "customfield_10010": null,
+        "customfield_12312422": null,
+        "customfield_12312026": null,
+        "customfield_12312620": [],
+        "customfield_12312023": null,
+        "customfield_12312420": null,
+        "customfield_12312024": null,
+        "customfield_12312340": null,
+        "aggregatetimeestimate": null,
+        "customfield_12312341": null,
+        "customfield_12312220": null,
+        "customfield_12312022": null,
+        "customfield_12310921": null,
+        "customfield_12310920": "9223372036854775807",
+        "summary": "REGRESSION: WARNING about usage of a non threadsafe marked plugin is not showed anymore",
+        "creator": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=khmarbaise",
+          "name": "khmarbaise",
+          "emailAddress": "khmarbaise at apache dot org",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=khmarbaise&avatarId=18932",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=khmarbaise&avatarId=18932",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=khmarbaise&avatarId=18932",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=khmarbaise&avatarId=18932"
+          },
+          "displayName": "Karl Heinz Marbaise",
+          "active": true
+        },
+        "subtasks": [],
+        "reporter": {
+          "self": "https://issues.apache.org/jira/rest/api/2/user?username=khmarbaise",
+          "name": "khmarbaise",
+          "emailAddress": "khmarbaise at apache dot org",
+          "avatarUrls": {
+            "48x48": "https://issues.apache.org/jira/secure/useravatar?ownerId=khmarbaise&avatarId=18932",
+            "24x24": "https://issues.apache.org/jira/secure/useravatar?size=small&ownerId=khmarbaise&avatarId=18932",
+            "16x16": "https://issues.apache.org/jira/secure/useravatar?size=xsmall&ownerId=khmarbaise&avatarId=18932",
+            "32x32": "https://issues.apache.org/jira/secure/useravatar?size=medium&ownerId=khmarbaise&avatarId=18932"
+          },
+          "displayName": "Karl Heinz Marbaise",
+          "active": true
+        },
+        "customfield_12310291": null,
+        "customfield_12310290": null,
+        "aggregateprogress": {
+          "progress": 0,
+          "total": 0
+        },
+        "environment": null,
+        "customfield_12311020": null,
+        "duedate": null,
+        "customfield_12310250": null,
+        "progress": {
+          "progress": 0,
+          "total": 0
+        },
+        "votes": {
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6171/votes",
+          "votes": 1,
+          "hasVoted": false
+        },
+        "customfield_12311820": "0|i39ysf:"
+      }
+    },
     {
       "expand": "operations,editmeta,changelog,transitions,renderedFields",
       "id": "13040217",
@@ -42,6 +489,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -124,7 +579,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-06T19:41:56.000+0000",
+        "updated": "2017-02-23T15:02:34.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -254,6 +709,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -334,7 +797,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-06T19:41:52.000+0000",
+        "updated": "2017-02-23T15:02:31.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -456,6 +919,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -586,7 +1057,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-29T17:30:01.000+0000",
+        "updated": "2017-02-23T15:02:30.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -716,6 +1187,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -786,7 +1265,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-22T20:46:56.000+0000",
+        "updated": "2017-02-23T15:02:28.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -916,6 +1395,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -986,7 +1473,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-22T20:46:34.000+0000",
+        "updated": "2017-02-23T15:02:30.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -1116,6 +1603,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -1186,7 +1681,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-15T16:46:31.000+0000",
+        "updated": "2017-02-23T15:02:28.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -1314,6 +1809,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -1444,7 +1947,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-28T16:15:04.000+0000",
+        "updated": "2017-02-23T15:02:28.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -1574,6 +2077,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -1654,7 +2165,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-03T09:32:58.000+0000",
+        "updated": "2017-02-23T15:02:32.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -1778,6 +2289,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -1858,7 +2377,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-28T17:30:40.000+0000",
+        "updated": "2017-02-23T15:02:33.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -1988,6 +2507,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -2068,7 +2595,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-28T16:15:05.000+0000",
+        "updated": "2017-02-23T15:02:30.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -2198,6 +2725,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -2210,7 +2745,7 @@
         "customfield_12312520": null,
         "customfield_12312322": null,
         "customfield_12310220": "2016-12-26 18:31:13.987",
-        "customfield_12312521": "Wed Feb 01 07:11:38 UTC 2017",
+        "customfield_12312521": "Sat Feb 18 14:29:42 UTC 2017",
         "customfield_12312323": null,
         "customfield_12312320": null,
         "customfield_12310420": "9223372036854775807",
@@ -2363,7 +2898,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-01T07:11:38.000+0000",
+        "updated": "2017-02-23T15:02:33.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -2493,6 +3028,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -2573,7 +3116,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-22T20:45:21.000+0000",
+        "updated": "2017-02-23T15:02:34.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -2703,6 +3246,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -2783,7 +3334,7 @@
               "key": "MNG-6136",
               "self": "https://issues.apache.org/jira/rest/api/2/issue/13029436",
               "fields": {
-                "summary": "Upgrade Maven Wagon to 2.12",
+                "summary": "Upgrade Maven Wagon from 2.10 to 2.12",
                 "status": {
                   "self": "https://issues.apache.org/jira/rest/api/2/status/6",
                   "description": "The issue is considered finished, the resolution is correct. Issues which are not closed can be reopened.",
@@ -2831,7 +3382,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-31T21:03:58.000+0000",
+        "updated": "2017-02-23T15:02:27.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -2959,6 +3510,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -3089,7 +3648,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-31T21:03:57.000+0000",
+        "updated": "2017-02-23T15:02:34.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -3114,7 +3673,7 @@
           }
         ],
         "timeoriginalestimate": null,
-        "description": "Let's absorb latest improvements to Wagon into Maven.",
+        "description": "Let's absorb latest improvements to Wagon into Maven.\r\n\r\nRelease Notes - Maven Wagon - Version 2.11\r\n\r\nRelease Notes - Maven Wagon - Version 2.12\r\n\r\n** Bug\r\n    * [WAGON-408] - ITs for #testSecuredGet() fail with Windows\r\n    * [WAGON-426] - Fingerprints loss in known_hosts\r\n    * [WAGON-439] - Jsch issue in java 1.7 and Kerberos-enabled ssh servers\r\n    * [WAGON-449] - CLIENT not changed after setting PoolingHttpClientConnectionManager\r\n    * [WAGON-469] - wagon-http does not enable Expect-Continue by default\r\n    * [WAGON-475] - TransferEvent GET used instead of PUT and vice versa\r\n    * [WAGON-476] - HTTP Provider follows redirects on PUT and may change request method\r\n    * [WAGON-479] - Preemptive auth with HTTP Provider may fail because BasicScheme is added as completed=true to the AuthCache\r\n    * [WAGON-480] - Non-threadsafe HttpClientContext is shared between threaded use of HttpClientWagon\r\n    * [WAGON-481] - Sensitive (auth) information is not cleared when HttpClientWagon is disconnected\r\n    * [WAGON-485] - ScpWagon parses file size to int causing overflow for large files\r\n\r\n** Improvement\r\n    * [WAGON-455] - Upgrade of 'plexus-utils' to version 3.0.23.\r\n    * [WAGON-458] - Implementation for FTPS\r\n    * [WAGON-460] - Upgrade plexus-utils to 3.0.24\r\n    * [WAGON-464] - Upgrade jsch dependency to 0.1.51 or newer to support ECDSA host key typess\r\n    * [WAGON-465] - wagon-ssh: add API option to check for remote exit code \r\n    * [WAGON-466] - wagon-ssh: Better error message when ssh account is locked\r\n    * [WAGON-467] - wagon-ssh: options to configure hostKeyChecking and PreferredAuthentications \r\n    * [WAGON-472] - Upgrade Commons IO to 2.5\r\n    * [WAGON-484] - Update WebDAV Provider naming\r\n\r\n** Task\r\n    * [WAGON-389] - Incorrect versions on gh-pages\r\n    * [WAGON-447] - Remove Commons Lang 2 for a few cases\r\n    * [WAGON-457] - Wagon tests fail on Windows because Subversion crashes on a test repo\r\n    * [WAGON-470] - Update TLS certificates for HTTPS tests\r\n    * [WAGON-471] - Clean up dependency mess (reported by dependency:analyze)\r\n    * [WAGON-473] - Don't abuse IllegalArgumentException to intercept null input\r\n    * [WAGON-474] - Upgrade and revise all tests for Jetty 8\r\n    * [WAGON-483] - Upgrade SLF4J to 1.7.22",
         "customfield_10010": null,
         "customfield_12312422": null,
         "customfield_12312026": null,
@@ -3129,7 +3688,7 @@
         "customfield_12312022": null,
         "customfield_12310921": null,
         "customfield_12310920": "9223372036854775807",
-        "summary": "Upgrade Maven Wagon to 2.12",
+        "summary": "Upgrade Maven Wagon from 2.10 to 2.12",
         "creator": {
           "self": "https://issues.apache.org/jira/rest/api/2/user?username=michael-o",
           "name": "michael-o",
@@ -3219,6 +3778,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -3299,7 +3866,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-16T19:45:32.000+0000",
+        "updated": "2017-02-23T15:02:29.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -3421,6 +3988,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -3645,7 +4220,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-01T07:11:40.000+0000",
+        "updated": "2017-02-23T15:02:32.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -3773,6 +4348,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -3903,7 +4486,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-14T07:13:45.000+0000",
+        "updated": "2017-02-23T15:02:33.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -4033,6 +4616,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -4113,7 +4704,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-22T20:45:19.000+0000",
+        "updated": "2017-02-23T15:02:31.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -4246,6 +4837,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -4423,7 +5022,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-28T13:16:29.000+0000",
+        "updated": "2017-02-23T15:02:34.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -4553,6 +5152,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -4633,7 +5240,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-24T17:47:08.000+0000",
+        "updated": "2017-02-23T15:02:32.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -4776,6 +5383,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -5037,7 +5652,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-24T17:43:35.000+0000",
+        "updated": "2017-02-23T15:02:32.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -5165,6 +5780,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -5342,7 +5965,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-29T20:55:08.000+0000",
+        "updated": "2017-02-23T15:02:32.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -5470,6 +6093,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -5600,7 +6231,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-22T16:30:22.000+0000",
+        "updated": "2017-02-23T15:02:35.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -5731,6 +6362,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -5811,7 +6450,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-22T20:45:20.000+0000",
+        "updated": "2017-02-23T15:02:34.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -5941,6 +6580,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -5953,7 +6600,7 @@
         "customfield_12312520": null,
         "customfield_12312322": null,
         "customfield_12310220": "2016-08-07 11:15:41.041",
-        "customfield_12312521": "Sun Jan 29 20:30:16 UTC 2017",
+        "customfield_12312521": "Thu Feb 23 12:58:09 UTC 2017",
         "customfield_12312323": null,
         "customfield_12312320": null,
         "customfield_12310420": "9223372036854775807",
@@ -5970,7 +6617,7 @@
         "customfield_12310300": null,
         "customfield_12312324": null,
         "customfield_12312325": null,
-        "lastViewed": "2017-01-30T10:57:46.686+0000",
+        "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6078/watchers",
           "watchCount": 3,
@@ -6116,7 +6763,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-29T20:54:29.000+0000",
+        "updated": "2017-02-23T15:02:31.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -6246,6 +6893,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -6275,7 +6930,7 @@
         "customfield_12310300": null,
         "customfield_12312324": null,
         "customfield_12312325": null,
-        "lastViewed": "2017-01-30T11:50:10.491+0000",
+        "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6068/watchers",
           "watchCount": 4,
@@ -6326,7 +6981,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-30T12:01:23.000+0000",
+        "updated": "2017-02-23T15:02:26.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -6461,6 +7116,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -6589,7 +7252,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-28T13:16:41.000+0000",
+        "updated": "2017-02-23T15:02:32.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -6711,6 +7374,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -6840,7 +7511,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-24T21:42:50.000+0000",
+        "updated": "2017-02-23T15:02:33.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -6968,6 +7639,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -7127,7 +7806,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-25T20:00:04.000+0000",
+        "updated": "2017-02-23T15:02:32.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -7258,6 +7937,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -7386,7 +8073,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-30T19:36:19.000+0000",
+        "updated": "2017-02-23T15:02:26.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -7516,6 +8203,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -7596,7 +8291,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-25T19:49:02.000+0000",
+        "updated": "2017-02-23T15:02:28.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -7724,6 +8419,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -7854,7 +8557,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-30T10:57:29.000+0000",
+        "updated": "2017-02-23T15:02:35.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -7982,6 +8685,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -8112,7 +8823,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-30T21:45:20.000+0000",
+        "updated": "2017-02-23T15:02:29.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -8242,6 +8953,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -8271,7 +8990,7 @@
         "customfield_12310300": null,
         "customfield_12312324": null,
         "customfield_12312325": null,
-        "lastViewed": "2017-01-30T13:53:51.763+0000",
+        "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-6001/watchers",
           "watchCount": 3,
@@ -8322,7 +9041,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-30T21:45:21.000+0000",
+        "updated": "2017-02-23T15:02:31.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -8452,6 +9171,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -8481,7 +9208,7 @@
         "customfield_12310300": null,
         "customfield_12312324": null,
         "customfield_12312325": null,
-        "lastViewed": "2017-01-30T10:59:45.955+0000",
+        "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-5993/watchers",
           "watchCount": 5,
@@ -8532,7 +9259,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-29T20:54:48.000+0000",
+        "updated": "2017-02-23T15:02:29.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -8662,6 +9389,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -8742,7 +9477,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-23T19:26:48.000+0000",
+        "updated": "2017-02-23T15:02:27.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -8878,6 +9613,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -8958,7 +9701,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-22T20:45:18.000+0000",
+        "updated": "2017-02-23T15:02:26.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -9089,6 +9832,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -9169,7 +9920,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-18T09:06:07.000+0000",
+        "updated": "2017-02-23T15:02:30.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -9291,6 +10042,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -9505,7 +10264,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-11T20:32:54.000+0000",
+        "updated": "2017-02-23T15:02:35.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -9635,6 +10394,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -9664,7 +10431,7 @@
         "customfield_12310300": null,
         "customfield_12312324": null,
         "customfield_12312325": null,
-        "lastViewed": "2017-01-30T13:53:39.142+0000",
+        "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-5963/watchers",
           "watchCount": 5,
@@ -9715,7 +10482,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-30T21:45:19.000+0000",
+        "updated": "2017-02-23T15:02:27.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -9839,6 +10606,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -9868,7 +10643,7 @@
         "customfield_12310300": null,
         "customfield_12312324": null,
         "customfield_12312325": null,
-        "lastViewed": "2017-01-30T13:53:25.445+0000",
+        "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-5962/watchers",
           "watchCount": 5,
@@ -10026,7 +10801,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-30T21:45:20.000+0000",
+        "updated": "2017-02-23T15:02:30.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -10158,6 +10933,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -10286,7 +11069,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-06T19:42:12.000+0000",
+        "updated": "2017-02-23T15:02:35.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -10416,6 +11199,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -10445,7 +11236,7 @@
         "customfield_12310300": null,
         "customfield_12312324": null,
         "customfield_12312325": null,
-        "lastViewed": "2017-01-30T10:59:31.157+0000",
+        "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-5958/watchers",
           "watchCount": 11,
@@ -10591,7 +11382,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-01T04:48:40.000+0000",
+        "updated": "2017-02-23T15:02:33.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -10721,6 +11512,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -10801,7 +11600,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-22T20:45:17.000+0000",
+        "updated": "2017-02-23T15:02:26.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -10932,6 +11731,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -11012,7 +11819,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-25T20:45:42.000+0000",
+        "updated": "2017-02-23T15:02:27.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -11142,6 +11949,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -11227,7 +12042,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-11T15:44:56.000+0000",
+        "updated": "2017-02-23T15:02:29.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -11355,6 +12170,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -11532,7 +12355,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-25T20:47:07.000+0000",
+        "updated": "2017-02-23T15:02:34.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -11660,6 +12483,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -11883,7 +12714,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-24T18:02:36.000+0000",
+        "updated": "2017-02-23T15:02:27.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -12011,6 +12842,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -12235,7 +13074,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-14T07:18:00.000+0000",
+        "updated": "2017-02-23T15:02:26.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -12363,6 +13202,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -12549,7 +13396,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-26T19:47:01.000+0000",
+        "updated": "2017-02-23T15:02:28.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -12677,6 +13524,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -13042,7 +13897,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-01T07:11:37.000+0000",
+        "updated": "2017-02-23T15:02:27.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -13170,6 +14025,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -13347,7 +14210,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-30T12:15:02.000+0000",
+        "updated": "2017-02-23T15:02:31.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -13477,6 +14340,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -13547,7 +14418,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-22T16:30:21.000+0000",
+        "updated": "2017-02-23T15:02:33.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -13669,6 +14540,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -13799,7 +14678,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-30T12:15:01.000+0000",
+        "updated": "2017-02-23T15:02:33.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -13927,6 +14806,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -14057,7 +14944,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-29T22:14:46.000+0000",
+        "updated": "2017-02-23T15:02:30.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -14179,6 +15066,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -14309,7 +15204,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-29T21:01:30.000+0000",
+        "updated": "2017-02-23T15:02:30.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -14439,6 +15334,14 @@
             "name": "3.5.0",
             "archived": false,
             "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
+            "archived": false,
+            "released": false
           }
         ],
         "aggregatetimespent": null,
@@ -14519,7 +15422,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-16T03:05:21.000+0000",
+        "updated": "2017-02-23T15:02:31.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -14641,6 +15544,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -14865,7 +15776,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-29T17:44:41.000+0000",
+        "updated": "2017-02-23T15:02:29.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -14993,6 +15904,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -15216,7 +16135,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-30T21:33:39.000+0000",
+        "updated": "2017-02-23T15:02:29.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -15344,6 +16263,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -15474,7 +16401,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-31T22:01:15.000+0000",
+        "updated": "2017-02-23T15:02:26.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -15599,18 +16526,17 @@
         },
         "fixVersions": [
           {
-            "self": "https://issues.apache.org/jira/rest/api/2/version/12333074",
-            "id": "12333074",
-            "description": "Issues for 3.3.9",
-            "name": "3.3.9",
-            "archived": false,
-            "released": true,
-            "releaseDate": "2015-11-15"
-          },
-          {
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -15642,7 +16568,7 @@
         "customfield_12310300": null,
         "customfield_12312324": null,
         "customfield_12312325": null,
-        "lastViewed": "2017-01-30T11:00:38.646+0000",
+        "lastViewed": null,
         "watches": {
           "self": "https://issues.apache.org/jira/rest/api/2/issue/MNG-5297/watchers",
           "watchCount": 4,
@@ -15835,7 +16761,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-14T00:52:44.000+0000",
+        "updated": "2017-02-23T15:02:31.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -15963,6 +16889,14 @@
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -16647,7 +17581,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-01-24T18:02:38.000+0000",
+        "updated": "2017-02-23T15:02:34.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {
@@ -16809,18 +17743,17 @@
         },
         "fixVersions": [
           {
-            "self": "https://issues.apache.org/jira/rest/api/2/version/12330186",
-            "id": "12330186",
-            "description": "Issues for 3.2.2",
-            "name": "3.2.2",
-            "archived": false,
-            "released": true,
-            "releaseDate": "2014-06-26"
-          },
-          {
             "self": "https://issues.apache.org/jira/rest/api/2/version/12336084",
             "id": "12336084",
             "name": "3.5.0",
+            "archived": false,
+            "released": false
+          },
+          {
+            "self": "https://issues.apache.org/jira/rest/api/2/version/12339664",
+            "id": "12339664",
+            "description": "First alpha for 3.5.0",
+            "name": "3.5.0-alpha-1",
             "archived": false,
             "released": false
           }
@@ -16949,7 +17882,7 @@
         },
         "customfield_12312337": null,
         "customfield_12312338": null,
-        "updated": "2017-02-10T22:33:23.000+0000",
+        "updated": "2017-02-23T15:02:27.000+0000",
         "customfield_12312335": null,
         "customfield_12312336": null,
         "status": {

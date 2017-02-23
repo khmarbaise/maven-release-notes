@@ -1,3 +1,5 @@
+MNG-6172 Precedence of command-line system property options has changed
+MNG-6171 REGRESSION: WARNING about usage of a non threadsafe marked plugin is not showed anymore
 MNG-6166 mvn dependency:go-offline fails due to missing transitive dependency jdom:jdom:jar:1.1
 MNG-6165 Deprecate and replace incorrectly spelled public API
 MNG-6163 Introduce CLASSWORLDS_JAR in shell startup scripts
@@ -11,7 +13,7 @@ MNG-6144 DefaultWagonManagerTest#testGetMissingJarForced() passed incorrect valu
 MNG-6140 update documentation's dependency graph with resolver + resolver-provider + slf4j-provider
 MNG-6138 Remove obsolete message_*.properties form maven-core
 MNG-6137 Clean up duplicate dependencies caused by incomplete Wagon HTTP Provider exclusions
-MNG-6136 Upgrade Maven Wagon to 2.12
+MNG-6136 Upgrade Maven Wagon from 2.10 to 2.12
 MNG-6117 ${session.parallel} not correctly set
 MNG-6110 Upgrade Aether to Maven Resolver
 MNG-6109 PluginDescriptor doesn't read since value of parameter
@@ -67,6 +69,8 @@ MNG-2199 Support version ranges in parent elements
 
 New Features: 
 Bugs: 
+MNG-6172 reporter: Stuart McCulloch
+MNG-6171 reporter: Karl Heinz Marbaise
 MNG-6166 reporter: Archimedes Trajano
 MNG-6144 reporter: August Shi
 MNG-6117 reporter: Richard Raumberger
