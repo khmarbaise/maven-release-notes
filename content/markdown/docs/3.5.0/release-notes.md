@@ -100,6 +100,18 @@ Overview about the changes
    it was not possible to overwrite the property via command line.
    This has been fixed with [MNG-6078][MNG-6078].
 
+ * If you have are using `<prerequisites>..</prerequisites>` for a non
+   maven-plugin project you will get a WARNING which looks like this:
+
+
+```
+[INFO] Scanning for projects...
+[WARNING] The project org.apache.maven:maven:pom:3.5.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+```
+
+  This will tell you to use maven-enforcer-plugin to check the version your are
+  expecting to build your project with [MNG-5297], [MNG-6092].
+
 Improvements:
 
 
