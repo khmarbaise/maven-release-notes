@@ -69,6 +69,9 @@ Thank you also for your time and feedback.
 Overview about the changes
 --------------------------
 
+ * The most and obvious change you may encounter is that the console output
+   has colors now [MNG-3507], [MNG-6093].
+
  * The `JAVA_HOME` discovery has been reduced to simply if `JAVA_HOME` is set
    or not and trying to discover via `which java` nothing more [MNG-6003].
 
@@ -109,8 +112,12 @@ Overview about the changes
 [WARNING] The project org.apache.maven:maven:pom:3.5.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
 ```
 
-  This will tell you to use maven-enforcer-plugin to check the version your are
-  expecting to build your project with [MNG-5297], [MNG-6092].
+   This will tell you to use maven-enforcer-plugin to check the version of Maven
+   you are expecting to build your project with instead of using prerequisites 
+   [MNG-5297], [MNG-6092].
+
+ * Replace Eclipse Aether with [Maven Resolver][maven-resolver]
+   [MNG-6110], [MNG-6140].
 
 Improvements:
 
@@ -198,8 +205,6 @@ Wishes:
 
 
 
-
-
 The full list of changes can be found in our [issue management system][4].
 
 ## Complete Release Notes
@@ -215,6 +220,7 @@ See [complete release notes for all versions][5]
 [maven-resources-plugin]: /enforcer/maven-resources-plugin/
 [maven-aether-provider]: /ref/3.5.0-alpha-1/maven-aether-provider/
 [maven-compat]: /ref/3.5.0-alpha-1/maven-compat/
+[maven-resolver]: /maven.apache.org/resolver/
 
 [MNG-2199]: https://issues.apache.org/jira/browse/MNG-2199
 [MNG-3507]: https://issues.apache.org/jira/browse/MNG-3507
