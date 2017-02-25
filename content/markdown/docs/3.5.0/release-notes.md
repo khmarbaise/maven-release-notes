@@ -69,42 +69,41 @@ Thank you also for your time and feedback.
 Overview about the changes
 --------------------------
 
- * The most and obvious change you may encounter is that the console output
+ * The most obvious change you may encounter is that the console output
    has colors now [MNG-3507], [MNG-6093].
 
- * The `JAVA_HOME` discovery has been reduced to simply if `JAVA_HOME` is set
-   or not and trying to discover via `which java` nothing more [MNG-6003].
+ * The `JAVA_HOME` discovery has been reduced to simply check if `JAVA_HOME` is set
+   or not then trying to discover via `which java`, nothing more [MNG-6003].
 
- * The Bootstrapping support via Ant has been removed. You can only bootstrap Maven
-   with a previous version of Maven and not with Ant anymore [MNG-5904].
+ * The build bootstrapping support via Apache Ant has been removed. You can now only bootstrap Maven
+   build with a previous version of Maven, but not with Ant any more [MNG-5904].
 
- * Based on problems in using `M2_HOME` related to different Maven versions and 
-   to simplify things the usage of `M2_HOME` has been removed and is not
-   supported anymore [MNG-5823], [MNG-5836], [MNG-5607].
+ * Based on problems in using `M2_HOME` related to different Maven versions installed and 
+   to simplify things, the usage of `M2_HOME` has been removed and is not
+   supported any more [MNG-5823], [MNG-5836], [MNG-5607].
 
- * Imported change for windows users: The usage of `%HOME%` has been replaced
+ * Important change for windows users: The usage of `%HOME%` has been replaced
    with `%USERPROFILE%` [MNG-6001]
 
  * Several issues have been reported and fixed related to the `mvn` script either
-   for Unix/Linux/Cygwin/Solaris or for Windows. Those issues have been fixed 
+   for Unix/Linux/Cygwin/Solaris or for Windows
    [MNG-5815], [MNG-5852], [MNG-5963], [MNG-6022].
 
- * In Maven 3.3.9 we have removed bindings for maven-ejb3-plugin cause it 
-   does not exist. We follow-up and removed the ArtifactHandler for ejb3
-   and the `par` lifecycle. This has been fixed with [MNG-6014], 
-   [MNG-6017].
+ * In Maven 3.3.9, we have removed bindings for maven-ejb3-plugin because it 
+   does not exist. We follow-up and removed the artifact handler for `ejb3̀
+   and the `par` lifecycle [MNG-6014], [MNG-6017].
 
- * In previous Maven versions there had been a larger problem related to 
+ * In previous Maven versions, there had been a larger problem related to 
    memory usage in case of very large reactors (200-300 modules or more)
-   which caused failures with out of memeory execptions or the need to increase
+   which caused failures with out of memeory exceptions or the need to increase
    the memory settings. This problem has been fixed with [MNG-6030].
 
- * If you have defined a property within the `.mvn/maven.config` file
+ * If you have defined a property within the `.mvn/maven.config` file,
    it was not possible to overwrite the property via command line.
    This has been fixed with [MNG-6078][MNG-6078].
 
  * If you have are using `<prerequisites>..</prerequisites>` for a non
-   maven-plugin project you will get a WARNING which looks like this:
+   maven-plugin project, you will get a WARNING which looks like this:
 
 
 ```
@@ -113,10 +112,10 @@ Overview about the changes
 ```
 
    This will tell you to use maven-enforcer-plugin to check the version of Maven
-   you are expecting to build your project with instead of using prerequisites 
+   you are expecting to build your project with, instead of using `prerequisites`
    [MNG-5297], [MNG-6092].
 
- * Replace Eclipse Aether with [Maven Resolver][maven-resolver]
+ * Replaced Eclipse Aether with [Maven Resolver][maven-resolver]
    [MNG-6110], [MNG-6140].
 
 Improvements:
