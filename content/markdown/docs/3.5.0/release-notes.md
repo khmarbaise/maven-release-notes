@@ -47,7 +47,7 @@ Bugs:
  * [MNG-5963] reporter: Larry Singer
  * [MNG-5962] reporter/contributor: Miriam Lee
  * [MNG-5961] reporter: Mike Drob
- * [MNG-5958] reporter: Meytal Genah contributor: Anton Tanasenko
+ * [MNG-5958] reporter: Meytal Genah, contributor: Anton Tanasenko
  * [MNG-5852] reporter: Jeffrey Alexander
  * [MNG-5823] reporter: Tobias Oberlies
  * [MNG-5815] reporter: Peter Kjær Guldbæk
@@ -58,6 +58,7 @@ Improvements:
  * [MNG-6030] reporter: Andriy contributor: Andriy
  * [MNG-5934] reporter/contributor: Alex Henrie 
  * [MNG-5883] reporter: Ben Caradoc-Davies
+ * [MNG-3507] contributor: Sébastian Le Merdy
 
 Many thanks to all reporters and contributors for their time and support.
 
@@ -72,6 +73,9 @@ Overview about the changes
  * The most obvious change you may encounter is that the console output
    has colors now [MNG-3507], [MNG-6093].
 
+ * The new `project.directory` special property adds support in every calculated URLs (project, SCM, site)
+   for module directory name that does not match artifactId [MNG-5878]
+ 
  * The `JAVA_HOME` discovery has been reduced to simply check if `JAVA_HOME` is set
    or not then trying to discover via `which java`, nothing more [MNG-6003].
 
