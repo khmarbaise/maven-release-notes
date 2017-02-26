@@ -39,6 +39,24 @@ We hope you enjoy using Maven! If you have any questions, please consult:
 - the reference documentation: [http://maven.apache.org/ref/3.5.0-alpha-1/](/ref/3.5.0-alpha-1/)
 
 
+Why not Maven 3.4.0?
+--------------------
+
+Let me quote some things from Stephen Connolly on the mailing list:
+
+```
+Due to some misunderstanding, there were quite a number of other changes
+introduced which could be seen as modifying how dependencies and classpaths
+get built. While we want to get these changes released as bug fixes, it is
+also important to us to provide a clear progression of development. Some of
+the bugs we want to fix require changes to the resolver code and the
+developers feel it is important to mark the baseline of the migrated code
+such that it should be a drop-in replacement for 3.3.9.
+```
+
+The full text can be read in the [mailing list archive](http://www.mail-archive.com/dev@maven.apache.org/msg112103.html).
+
+
 Reporters and Contributors of this release
 ------------------------------------------
 
