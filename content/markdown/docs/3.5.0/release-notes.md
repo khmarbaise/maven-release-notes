@@ -58,7 +58,7 @@ Improvements:
  * [MNG-6030] reporter: Andriy contributor: Andriy
  * [MNG-5934] reporter/contributor: Alex Henrie 
  * [MNG-5883] reporter: Ben Caradoc-Davies
- * [MNG-3507] contributor: Sébastian Le Merdy
+ * [MNG-3507] contributors: Jason Dillon, Sébastian Le Merdy
 
 Many thanks to all reporters and contributors for their time and support.
 
