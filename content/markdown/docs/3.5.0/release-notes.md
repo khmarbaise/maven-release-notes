@@ -42,7 +42,7 @@ We hope you enjoy using Maven! If you have any questions, please consult:
 Why not Maven 3.4.0?
 --------------------
 
-Let me quote some things from Stephen Connolly on the mailing list:
+Let me quote some things from Stephen Connolly's post on the mailing list:
 
 ```
 Due to some misunderstanding, there were quite a number of other changes
