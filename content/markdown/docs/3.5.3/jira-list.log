@@ -1,0 +1,43 @@
+MNG-6353 Upgrade maven-shared-utils to 3.2.1
+MNG-6352 Printout version information at the end of the build
+MNG-6342 Emit a WARNING about LATEST/RELEASE in parent
+MNG-6340 [Performance]To make System.gc() call configurable in target summary code
+MNG-6335 Update test framework Mockito from 1.10 to 2.12
+MNG-6332 Cleaned up mvn.cmd Script
+MNG-6331 Remove maven-bundle-pugin from build pluginManagement
+MNG-6330 [regression] Parents relativePath not verified anymore
+MNG-6323 Deadlock in multithreaded dependency resolution
+MNG-6320 Apparently wrong encoding of non-ascii java class filename in error messages in the maven log
+MNG-6312 Update Maven Wagon dependency
+MNG-6308 display packaging & groupId:artifactId when building a module
+MNG-6306 Replace use of Guava in maven-resolver-provider with a lighter weight alternative
+MNG-6305 Validation of CI friendly version incorrect
+MNG-6302 Provide some "progress" hints
+MNG-6300 Multi module release creates empty directories in war file instead of jars
+MNG-6298 3.5.2: ClassNotFoundException: javax.annotation.security.RolesAllowed
+MNG-6296 New option -Dstyle.color is not working
+MNG-6282 Console output has no colors in shell (both Git Bash and Cygwin) [regression in Jansi 1.16 / Maven 3.5.1]
+MNG-6255 Maven script cannot parse jvm.config with CRLF
+MNG-6188 Console color not properly reset when interrupting build process
+MNG-5992 Git passwords are exposed as the Super POM still uses Maven Release Plugin 2.3.2
+
+
+----------------------------------------------------
+
+New Features:
+Bugs:
+MNG-6330, MNG-6305, MNG-6188 reporter: Robert Scholte
+MNG-6323 reporter: Ben Caradoc-Davies
+MNG-6320 reporter: Eugene Pliskin
+MNG-6300 reporter: Andreas Kurth
+MNG-6298 reporter: Ryan Heaton
+MNG-6296 reporter: Robin Müller
+MNG-6282 reporter: Dejan Stojadinović
+MNG-6255 reporter: Andrew Kennedy
+Improvements
+MNG-6364, MNG-6363, MNG-6362, MNG-6352, MNG-6342, MNG-6332 reporter: Karl Heinz Marbaise
+MNG-6340 reporter: Tony Guan
+MNG-6308 reporter: Hervé Boutemy
+MNG-6306 reporter: Andy Wilkinson
+MNG-5992 reporter: Ryan J. McDonough
+Wish
