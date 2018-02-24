@@ -71,23 +71,24 @@ Overview about the changes
 --------------------------
 
  * Issues have been fixed related to colorizations like to clean up the situation while interuppting 
-   the build process[MNG-6188][MNG-6188] and some issues related to Git Bash / Cygwin have been fixed [MNG-6282][MNG-6282] 
-   and the new options -Dstyle.color [MNG-6296][MNG-6296] has been fixed.
+   the build process [MNG-6188][MNG-6188] and some issues related to Git Bash / Cygwin 
+   have been fixed [MNG-6282][MNG-6282] and the new options -Dstyle.color 
+   [MNG-6296][MNG-6296] has been fixed.
    
  * The handling CRLF in `jvm.config` file has been fixed [MNG-6255][MNG-6255].
 
- * The wrong usage of the CI friendly version was not correctly identified which has been improved[MNG-6305][MNG-6305].
+ * The wrong usage of the CI friendly version was not correctly identified which has been improved [MNG-6305][MNG-6305].
 
  * Wrong encoding of non-ascii filenames has been fixed [MNG-6320][MNG-6320].
 
- * Deadlock in dependency resolution has been fixed [MNG-6323][MNG-6223].
+ * Deadlock in dependency resolution has been fixed [MNG-6323][MNG-6323].
 
  * A regression related to parents relativePath verification has been fixed [MNG-6330][MNG-6330]
 
  So now some more interesting things about new (small) features:
 
  * The log output contains now some progress informations related to the number of modules
-   which looks like this [MNG-6302][6302]:
+   which looks like this [MNG-6302][MNG-6302]:
 
 ```
 [INFO] Building parent 5.0.1-SNAPSHOT                                     [1/9]
@@ -99,7 +100,7 @@ Overview about the changes
 
 
    Furthermore the information about the packaging type and the groupId/artifactId
-   are now being shown during the build like the following[MNG-6308][MNG-6308]:
+   are now being shown during the build like the following [MNG-6308][MNG-6308]:
 
 ```
 [INFO] ------------------< com.soebes.examples.j2ee:parent >-------------------
@@ -130,17 +131,24 @@ Overview about the changes
    This can be helpful if you have a large number of modules to get the
    information about the version being built. This meant in the past to scroll up
    to the last module and look there for the version. Now this can simply being
-   seen at the end of build.  If you have a multi module build where the number if
+   seen at the end of build.  If you have a multi module build where the number is
    the same for all modules it will be given only on the first line and the last
    line. If you have an aggregator build the version will be printed out for each
    project.
 
+ * One more thing has been optimized. We have removed the System.gc()
+   call at the end of the build because this 
+   can cause costs for example on AWS systems related to the time 
+   taken to run the gc which is not really necessary [MNG-6340][MNG-6340].
+
+ * If you have used the deprecated version markers like `RELEASE` or `LATEST` 
+   this will now produce a WARNING during the build [MNG-6342][MNG-6342].
 
 Bugs:
 
  * [MNG-6188] - Console color not properly reset when interrupting build process
  * [MNG-6255] - Maven script cannot parse jvm.config with CRLF
- * [MNG-6282] - Console output has no colors in shell (both Git Bash and Cygwin) [regression in Jansi 1.16 / Maven 3.5.1]
+ * [MNG-6282] - Console output has no colors in shell (both Git Bash and Cygwin) \[regression in Jansi 1.16 / Maven 3.5.1\]
  * [MNG-6296] - New option -Dstyle.color is not working
  * [MNG-6298] - 3.5.2: ClassNotFoundException: javax.annotation.security.RolesAllowed
  * [MNG-6300] - Multi module release creates empty directories in war file instead of jars
