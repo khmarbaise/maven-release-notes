@@ -143,6 +143,18 @@ Overview about the changes
    call at the end of the build because this 
    can cause costs for example on AWS systems related to the time 
    taken to run the gc which is not really necessary [MNG-6340][MNG-6340].
+   This means also the resulting output will change a little bit like this:
+
+```
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.111 s
+[INFO] Finished at: 2018-02-25T15:34:10+01:00
+[INFO] ------------------------------------------------------------------------
+```
+
+   So there is no line anymore telling you about memory stuff.
 
  * If you have used the deprecated version markers like `RELEASE` or `LATEST` 
    this will now produce a WARNING during the build [MNG-6342][MNG-6342].
