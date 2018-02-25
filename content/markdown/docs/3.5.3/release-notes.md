@@ -44,7 +44,7 @@ Reporters and Contributors of this release
 
 We really value the contributions of these non committers, so this section
 is focused on those individuals. Descriptions of the issues fixed can be
-found at the end of these release notes
+found at the [end of these release notes][#the-detailed-issue-list].
 
 Bugs:
 
