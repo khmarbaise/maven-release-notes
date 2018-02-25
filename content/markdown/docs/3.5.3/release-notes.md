@@ -7,7 +7,7 @@
  "License"); you may not use this file except in compliance
  with the License.  You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+   https://www.apache.org/licenses/LICENSE-2.0
 
  Unless required by applicable law or agreed to in writing,
  software distributed under the License is distributed on an
@@ -17,7 +17,7 @@
  under the License.
 
  NOTE: For help with the syntax of this file, see:
- http://maven.apache.org/doxia/references/apt-format.html
+ https://maven.apache.org/doxia/references/apt-format.html
 -->
 
 # Release Notes &#x2013; Maven 3.5.3
@@ -34,9 +34,9 @@ See the [PluginList][1] for more information.
 
 We hope you enjoy using Maven! If you have any questions, please consult:
 
-- the web site: [http://maven.apache.org/](/)
-- the maven-user mailing list: [http://maven.apache.org/mail-lists.html](/mail-lists.html)
-- the reference documentation: [http://maven.apache.org/ref/3.5.3/](/ref/3.5.3/)
+- the web site: [https://maven.apache.org/](/)
+- the maven-user mailing list: [https://maven.apache.org/mail-lists.html](/mail-lists.html)
+- the reference documentation: [https://maven.apache.org/ref/3.5.3/](/ref/3.5.3/)
 
 
 Reporters and Contributors of this release
@@ -44,7 +44,7 @@ Reporters and Contributors of this release
 
 We really value the contributions of these non committers, so this section
 is focused on those individuals. Descriptions of the issues fixed can be
-found at the [end of these release notes][#the-detailed-issue-list].
+found at the [end of these release notes][release-notes.html#the-detailed-issue-list].
 
 Bugs:
 
@@ -197,7 +197,7 @@ See [complete release notes for all versions][5]
 
 [0]: ../../download.html
 [1]: ../../plugins/index.html
-[2]: http://maven.apache.org/
+[2]: https://maven.apache.org/
 [4]: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12316922&version=12341428
 [5]: ../../docs/history.html
 [maven-enforcer-plugin]: /enforcer/maven-enforcer-plugin/
