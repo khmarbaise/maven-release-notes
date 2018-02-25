@@ -44,7 +44,7 @@ Reporters and Contributors of this release
 
 We really value the contributions of these non committers, so this section
 is focused on those individuals. Descriptions of the issues fixed can be
-found at the [end of these release notes][release-notes.html#the-detailed-issue-list].
+found at the [end of these release notes](#the-detailed-issue-list).
 
 Bugs:
 
@@ -198,7 +198,7 @@ See [complete release notes for all versions][5]
 [0]: ../../download.html
 [1]: ../../plugins/index.html
 [2]: https://maven.apache.org/
-[4]: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12316922&version=12341428
+[4]: https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12316922&amp;version=12341428
 [5]: ../../docs/history.html
 [maven-enforcer-plugin]: /enforcer/maven-enforcer-plugin/
 [maven-resources-plugin]: /enforcer/maven-resources-plugin/
