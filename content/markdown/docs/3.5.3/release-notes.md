@@ -44,7 +44,7 @@ Reporters and Contributors of this release
 
 We really value the contributions of these non committers, so this section
 is focused on those individuals. Descriptions of the issues fixed can be
-found at the [end of these release notes](#the-detailed-issue-list).
+found at the [end of these release notes](#Details).
 
 Bugs:
 
@@ -147,7 +147,7 @@ Overview about the changes
  * If you have used the deprecated version markers like `RELEASE` or `LATEST` 
    this will now produce a WARNING during the build [MNG-6342][MNG-6342].
 
-The detailed issue list
+[The detailed issue list](#Details)
 -----------------------
 
 Bugs:
